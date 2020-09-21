@@ -1,0 +1,37 @@
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\DtsReceive.exe.config
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\DtsReceive.exe
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\DtsReceive.pdb
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\Batpox.Logging.dll
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\DataDtsReceive.dll
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\EntityFramework.dll
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\EventPumpClient.dll
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\EventPumpCommon.dll
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\ISimpleLogging.dll
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\CasterLibrary.dll
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\Interop.MSMQ.dll
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\DataDtsReceive.pdb
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\EntityFramework.xml
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\bin\Debug\CasterLibrary.pdb
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\obj\Debug\DtsReceive.csprojResolveAssemblyReference.cache
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\obj\Debug\DtsReceive.DialogAbout.resources
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\obj\Debug\DtsReceive.FormMain.resources
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\obj\Debug\DtsReceive.Properties.Resources.resources
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\obj\Debug\DtsReceive.csproj.GenerateResource.Cache
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\obj\Debug\DtsReceive.exe
+C:\(svn work)\MidlandCaster\DtsReceive\DtsReceive\obj\Debug\DtsReceive.pdb
+D:\(source)\DtsReceive\DtsReceive\bin\Debug\DtsReceive.exe.config
+D:\(source)\DtsReceive\DtsReceive\obj\Debug\DtsReceive.exe
+D:\(source)\DtsReceive\DtsReceive\obj\Debug\DtsReceive.pdb
+D:\(source)\DtsReceive\DtsReceive\bin\Debug\DtsReceive.exe
+D:\(source)\DtsReceive\DtsReceive\bin\Debug\DtsReceive.pdb
+D:\(source)\DtsReceive\DtsReceive\bin\Debug\DataDtsReceive.dll
+D:\(source)\DtsReceive\DtsReceive\bin\Debug\EntityFramework.dll
+D:\(source)\DtsReceive\DtsReceive\bin\Debug\CasterLibrary.dll
+D:\(source)\DtsReceive\DtsReceive\bin\Debug\DataDtsReceive.pdb
+D:\(source)\DtsReceive\DtsReceive\bin\Debug\EntityFramework.xml
+D:\(source)\DtsReceive\DtsReceive\bin\Debug\CasterLibrary.pdb
+D:\(source)\DtsReceive\DtsReceive\obj\Debug\DtsReceive.csprojResolveAssemblyReference.cache
+D:\(source)\DtsReceive\DtsReceive\obj\Debug\DtsReceive.DialogAbout.resources
+D:\(source)\DtsReceive\DtsReceive\obj\Debug\DtsReceive.FormMain.resources
+D:\(source)\DtsReceive\DtsReceive\obj\Debug\DtsReceive.Properties.Resources.resources
+D:\(source)\DtsReceive\DtsReceive\obj\Debug\DtsReceive.csproj.GenerateResource.Cache

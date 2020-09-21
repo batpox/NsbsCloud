@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NSINVOICE xmlns="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="EN">
+  <Header operation="Notify" event="0">
+    <SenderID type="MAXIMO" majorversion="6" minorversion="0" build="03" dbbuild="V600-341">MX</SenderID>
+    <CreationDateTime>2006-04-19T12:36:46-05:00</CreationDateTime>
+  </Header>
+  <Content>
+    <MXINVOICE>
+      <INVOICE>
+        <INVOICENUM />
+        <DESCRIPTION />
+        <PONUM />
+        <VENDOR />
+        <CONTACT />
+        <PAYMENTTERMS />
+        <CHECKCODE />
+        <CHECKNUM />
+        <CURRENCYCODE />
+        <EXCHANGERATE />
+        <EXCHANGEDATE />
+        <DOCUMENTTYPE />
+        <ORIGINVOICENUM />
+        <STATUS />
+        <STATUSDATE />
+        <APPROVALNUM />
+        <INVOICEDATE />
+        <DISCOUNTDATE />
+        <DUEDATE />
+        <PAIDDATE />
+        <PAID />
+        <ENTERDATE />
+        <ENTERBY />
+        <CHANGEDATE />
+        <CHANGEBY />
+        <HISTORYFLAG />
+        <TOTALTAX1 />
+        <TAX1GL>
+          <VALUE />
+        </TAX1GL>
+        <TOTALTAX2 />
+        <TAX2GL>
+          <VALUE />
+        </TAX2GL>
+        <TOTALTAX3 />
+        <TAX3GL>
+          <VALUE />
+        </TAX3GL>
+        <TOTALTAX4 />
+        <TAX4GL>
+          <VALUE />
+        </TAX4GL>
+        <INCLUSIVE1 />
+        <INCLUSIVE2 />
+        <INCLUSIVE3 />
+        <DISCOUNT />
+        <TOTALCOST />
+        <SYSCODE />
+        <TOTALTAX5 />
+        <TAX5GL>
+          <VALUE />
+        </TAX5GL>
+        <INCLUSIVE4 />
+        <INCLUSIVE5 />
+        <VENDORINVOICENUM />
+        <BASETOTALCOST />
+        <APSUSPENSEACCT>
+          <VALUE />
+        </APSUSPENSEACCT>
+        <APCONTROLACCT>
+          <VALUE />
+        </APCONTROLACCT>
+        <FINANCIALPERIOD />
+        <EXCHANGERATE2 />
+        <BANKACCOUNT />
+        <BANKNUM />
+        <SOURCESYSID />
+        <OWNERSYSID />
+        <EXTERNALREFID />
+        <SENDERSYSID />
+        <EINVOICE />
+        <SITEID />
+        <ORGID />
+        <DESCRIPTION_LONGDESCRIPTION />
+        <INVOICEID />
+        <SCHEDULEID />
+        <CONTRACTREFNUM />
+        <CONTRACTREFREV />
+        <CONTRACTREFID />
+        <TARGINVSTATUS />
+        <SCHEDULENUM />
+        <NP_STATUSMEMO />
+        <NS_INV_ROUTETO />
+        <NS_TOTAL_FREIGHT />
+        <NS_TOTAL_TAX />
+        <STATUSIFACE />
+        <TRANS_LANGCODE />
+        <INVOICELINE>
+          <VENDOR />
+          <PONUM />
+          <INVOICELINENUM />
+          <POLINENUM />
+          <ITEMNUM />
+          <DESCRIPTION />
+          <INVOICEQTY />
+          <INVOICEUNIT />
+          <UNITCOST />
+          <LINECOST />
+          <RECEIPTREQD />
+          <TAX1CODE />
+          <TAX1 />
+          <TAX2CODE />
+          <TAX2 />
+          <TAX3CODE />
+          <TAX3 />
+          <INVOICELIN1 />
+          <INVOICELIN2 />
+          <INVOICELIN3 />
+          <INVOICELIN4 />
+          <INVOICELIN5 />
+          <ENTERBY />
+          <ENTERDATE />
+          <TAX4CODE />
+          <TAX4 />
+          <TAX5CODE />
+          <TAX5 />
+          <LOADEDCOST />
+          <PRORATED />
+          <PRORATECOST />
+          <PRORATESERVICE />
+          <LINECOST2 />
+          <INVOICELIN6 />
+          <INVOICELIN7 />
+          <INVOICELIN8 />
+          <INVOICELIN9 />
+          <ORGID />
+          <LINETYPE />
+          <ITEMSETID />
+          <DESCRIPTION_LONGDESCRIPTION />
+          <LOADEDCOSTFORUI />
+          <CONDITIONCODE />
+          <COMMODITYGROUP />
+          <COMMODITY />
+          <INVOICELINEID />
+          <CONTRACTREFNUM />
+          <CONTRACTREFREV />
+          <CONTRACTREFID />
+          <LEASEASSET />
+          <CONTREFLINEID />
+          <CONVERSION />
+          <NS_TAXABLE />
+          <NS_PAYONRECEIPT />
+          <PRICEVAR />
+          <INVOICECOST>
+            <VENDOR />
+            <GLDEBITACCT>
+              <VALUE />
+            </GLDEBITACCT>
+            <GLCREDITACCT>
+              <VALUE />
+            </GLCREDITACCT>
+            <ASSETNUM />
+            <UNITCOST />
+            <LINECOST />
+            <PERCENTAGE />
+            <MEMO />
+            <COSTLINENUM />
+            <CHARGESTORE />
+            <ICT1 />
+            <ICT2 />
+            <ICT3 />
+            <QUANTITY />
+            <LOCATION />
+            <FINCNTRLID />
+            <ORGID />
+            <REFWO />
+            <ENTEREDASTASK />
+            <INVOICECOSTID />
+            <FCPROJECTID />
+            <FCTASKID />
+            <TOSITEID />
+          </INVOICECOST>
+        </INVOICELINE>
+        <INVOICETERM>
+          <SEQNUM />
+          <TERMID />
+          <DESCRIPTION />
+          <ORGID />
+          <DESCRIPTION_LONGDESCRIPTION />
+          <CANEDIT />
+          <INVOICETERMID />
+        </INVOICETERM>
+      </INVOICE>
+    </MXINVOICE>
+  </Content>
+</NSINVOICE>

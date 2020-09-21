@@ -1,0 +1,32 @@
+<rxeNode type='inflow' >
+	<!-- A transport receives from one source and places into 1 or more pipes -->
+	<transport  plugin='RxePlugins.RxeFileInflow' >
+		<!-- Begin Custom Transport mechanism -->
+		<folders root='' >
+			<folder name='in' path='d:\(test)\rxe\fromDynamicsFiles\in' maxFileSize='500000' />
+			<folder name='error' path='d:\(test)\rxe\fromDynamicsFiles\error' />
+			<folder name='success' path='d:\(test)\rxe\fromDynamicsFiles\success' />
+			
+			<!--
+			<folder name='in' path='\\srv50241\maximo_to_rxe' maxFileSize='500000' />
+			<folder name='error' path='\\srv50241\maximo_to_rxe_errors' />
+			<folder name='success' path='\\srv50241\maximo_to_rxe_backup' />
+			-->
+		</folders>
+		<!-- Begin Standard Transport mechanism -->
+		<!-- Message payload matching to determine message name -->
+		
+		
+		<messages payloadType='XML'>
+			<message Regex='&lt;Customer_Balances:root' name='DS01' />
+			<message Regex='&lt;AP_APPL_FINAL:root' name='DM01a' />
+			<message Regex='&lt;AP_APPL_PSTD_Payment:root' name='DM01b' />
+
+		</messages>
+
+		<!-- Now use the derived message name and regular expression to select pipe -->
+		<pipes>
+			<pipe name='FromDynamics' messageNamePattern='.*'  />
+		</pipes>
+	</transport>
+</rxeNode>

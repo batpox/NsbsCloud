@@ -1,0 +1,20 @@
+<rxeNode type='outflow' >
+	<transports>
+	<transport plugin='RxePlugins.RxeDbOutflow'
+		deadMessageFolder='D:\RxE\NSBSTest\DeadMessages'
+		logEachMessage='false'>
+		<!-- Begin Custom Transport mechanism -->
+		<!-- External tables receiving the data -->
+		<tables connectString='Data Source=NSDELSQL2014V;Initial Catalog=NStar;Integrated Security=False;User ID=rxe_writer;Password=RXE_1022_writer' >
+			<table name='nb_ot_customer_master_tx' message='SO01' processMode='Insert'  />
+			<table name='nb_ot_contact_tx' message='SO01' processMode='Insert'  />
+			<table name='nb_ot_transaction_outbound' message='SO01' processMode='Insert'  />
+		</tables>
+		<!-- Begin Standard Transport mechanism -->
+		<!-- Now use the message name and filter to find pipe messages to send. Use .* to send all -->
+		<pipes>
+			<pipe name='ToOpenTrac' messageNamePattern='.*' bucketSize='1' checkSeconds='1' maxRetries='12' retrySeconds='7200' />
+		</pipes>
+	</transport>
+	</transports>
+</rxeNode>

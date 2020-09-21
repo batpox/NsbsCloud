@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PublishCGMXPO xmlns="http://www.ibm.com/maximo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creationDateTime="2013-05-28T11:49:00-04:00" transLanguage="EN" baseLanguage="EN" messageID="1369756141052324552" maximoVersion="7 5 20120713-1120 V7503-157" event="1">
+  <CGMXPOSet>
+    <PO action="Replace">
+      <ALLOWRECEIPT>1</ALLOWRECEIPT>
+      <BILLTO>PRIMARY</BILLTO>
+      <BILLTOATTN />
+      <BUYAHEAD>0</BUYAHEAD>
+      <BUYERCOMPANY />
+      <CHANGEBY changed="1">MAXADMIN</CHANGEBY>
+      <CHANGEDATE changed="1">2013-05-28T11:49:00-04:00</CHANGEDATE>
+      <CONTACT>Jay Thome</CONTACT>
+      <CONTRACTREFID xsi:nil="true" />
+      <CONTRACTREFNUM />
+      <CONTRACTREFREV xsi:nil="true" />
+      <CONTRELEASESEQ xsi:nil="true" />
+      <CURRENCYCODE>USD</CURRENCYCODE>
+      <CUSTOMERNUM />
+      <DESCRIPTION />
+      <DESCRIPTION_LONGDESCRIPTION />
+      <ECOMSTATUSDATE xsi:nil="true" />
+      <EMAIL>jthome@scrapdynamics.com</EMAIL>
+      <ENDDATE xsi:nil="true" />
+      <EXCHANGEDATE>2012-11-08T00:00:00-05:00</EXCHANGEDATE>
+      <EXCHANGERATE>1.0</EXCHANGERATE>
+      <EXCHANGERATE2 xsi:nil="true" />
+      <EXTERNALREFID />
+      <FAXPHONE>330-995-0005</FAXPHONE>
+      <FOB>DEST</FOB>
+      <FOLLOWUPDATE xsi:nil="true" />
+      <FREIGHTTERMS />
+      <FREIGHTTERMS_LONGDESCRIPTION />
+      <HISTORYFLAG changed="1">1</HISTORYFLAG>
+      <IGNORECNTREV>0</IGNORECNTREV>
+      <INCLUSIVE1>0</INCLUSIVE1>
+      <INCLUSIVE2>0</INCLUSIVE2>
+      <INCLUSIVE3>0</INCLUSIVE3>
+      <INCLUSIVE4>0</INCLUSIVE4>
+      <INCLUSIVE5>0</INCLUSIVE5>
+      <INSPECTIONREQUIRED>0</INSPECTIONREQUIRED>
+      <INTERNAL>0</INTERNAL>
+      <INTERNALCHANGE>0</INTERNALCHANGE>
+      <MNETSENT />
+      <NP_STATUSMEMO changed="1" />
+      <NS_CONFIRM>0</NS_CONFIRM>
+      <NS_OVERRECEIVE>0</NS_OVERRECEIVE>
+      <NS_OVRCVQTY xsi:nil="true" />
+      <NS_OVRRCVPCT xsi:nil="true" />
+      <NS_PAYONRECEIPT>0</NS_PAYONRECEIPT>
+      <NS_PRI_COMMENT />
+      <NS_RECEIPTS changed="1">0</NS_RECEIPTS>
+      <NS_SENDTERMS>1</NS_SENDTERMS>
+      <ORDERDATE>2012-11-07T12:16:16-05:00</ORDERDATE>
+      <ORGID>STEELMILL</ORGID>
+      <ORIGINALPONUM />
+      <OWNERSYSID />
+      <PAYMENTTERMS>NET 45</PAYMENTTERMS>
+      <PAYONRECEIPT>1</PAYONRECEIPT>
+      <PO1 />
+      <PO10>0</PO10>
+      <PO2 />
+      <PO3 />
+      <PO4 />
+      <PO5 />
+      <PO6 xsi:nil="true" />
+      <PO7 xsi:nil="true" />
+      <PO8 xsi:nil="true" />
+      <PO9 xsi:nil="true" />
+      <POID>650038</POID>
+      <PONUM>9712290</PONUM>
+      <POTYPE>SCRAP</POTYPE>
+      <PO_NS_CONFIRM>0</PO_NS_CONFIRM>
+      <PRIORITY>0</PRIORITY>
+      <PURCHASEAGENT>NBTOWK</PURCHASEAGENT>
+      <PWPREF_TRANS maxvalue="EMAIL">EMAIL</PWPREF_TRANS>
+      <PWPRINTOFFICE>0</PWPRINTOFFICE>
+      <PWSEND>0</PWSEND>
+      <RECEIPTS maxvalue="PARTIAL">PARTIAL</RECEIPTS>
+      <REQUIREDDATE>2012-11-30T00:00:00-05:00</REQUIREDDATE>
+      <REVCOMMENTS />
+      <REVISIONNUM>0</REVISIONNUM>
+      <SENDERSYSID>SPC-RXE</SENDERSYSID>
+      <SHIPTO>PRIMARY</SHIPTO>
+      <SHIPTOATTN>RECEIVING</SHIPTOATTN>
+      <SHIPVIA>Best Way</SHIPVIA>
+      <SITEID>DELTA</SITEID>
+      <SOURCESYSID />
+      <STARTDATE xsi:nil="true" />
+      <STATUS changed="1" maxvalue="CLOSE">CLOSE</STATUS>
+      <STATUSDATE changed="1">2013-05-28T11:48:42-04:00</STATUSDATE>
+      <STATUSIFACE changed="1">0</STATUSIFACE>
+      <STORELOC />
+      <STORELOCSITEID />
+      <TOTALCOST>37500.0</TOTALCOST>
+      <TOTALTAX1>0.0</TOTALTAX1>
+      <TOTALTAX2>0.0</TOTALTAX2>
+      <TOTALTAX3>0.0</TOTALTAX3>
+      <TOTALTAX4>0.0</TOTALTAX4>
+      <TOTALTAX5>0.0</TOTALTAX5>
+      <VENDELIVERYDATE xsi:nil="true" />
+      <VENDOR>6258</VENDOR>
+      <POLINE>
+        <ASSETNUM />
+        <CATALOGCODE>unknown</CATALOGCODE>
+        <CATEGORY />
+        <CHARGESTORE>0</CHARGESTORE>
+        <CLASSSTRUCTUREID />
+        <COMMODITY />
+        <COMMODITYGROUP>SCRAP</COMMODITYGROUP>
+        <CONDITIONCODE />
+        <CONSIGNMENT>0</CONSIGNMENT>
+        <CONTRACTREFID xsi:nil="true" />
+        <CONTRACTREFNUM />
+        <CONTRACTREFREV xsi:nil="true" />
+        <CONTREFLINEID xsi:nil="true" />
+        <CONVERSION>1.0</CONVERSION>
+        <DESCRIPTION>Plate &amp; Structural per North Star BlueScope specification SY 11.13</DESCRIPTION>
+        <DESCRIPTION_LONGDESCRIPTION />
+        <ENTERBY>NBTOWK</ENTERBY>
+        <ENTERDATE>2012-11-07T12:17:32-05:00</ENTERDATE>
+        <ENTEREDASTASK>0</ENTEREDASTASK>
+        <FCPROJECTID />
+        <FCTASKID />
+        <FINCNTRLID />
+        <GLCREDITACCT>
+          <VALUE>10-23000-000-0000</VALUE>
+          <GLCOMP glorder="0">10</GLCOMP>
+          <GLCOMP glorder="1">23000</GLCOMP>
+          <GLCOMP glorder="2">000</GLCOMP>
+          <GLCOMP glorder="3">0000</GLCOMP>
+        </GLCREDITACCT>
+        <GLDEBITACCT>
+          <VALUE>10-17100-000-0000</VALUE>
+          <GLCOMP glorder="0">10</GLCOMP>
+          <GLCOMP glorder="1">17100</GLCOMP>
+          <GLCOMP glorder="2">000</GLCOMP>
+          <GLCOMP glorder="3">0000</GLCOMP>
+        </GLDEBITACCT>
+        <INSPECTIONREQUIRED>0</INSPECTIONREQUIRED>
+        <ISDISTRIBUTED>0</ISDISTRIBUTED>
+        <ISSUE>1</ISSUE>
+        <ITEMNUM>PLATE &amp; STRUCTU</ITEMNUM>
+        <ITEMSETID>MASTER</ITEMSETID>
+        <LINECOST>37500.0</LINECOST>
+        <LINECOST2>0.0</LINECOST2>
+        <LINETYPE>ITEM</LINETYPE>
+        <LOADEDCOST>37500.0</LOADEDCOST>
+        <LOCATION />
+        <MANUFACTURER>UNKNOWN</MANUFACTURER>
+        <MKTPLCITEM>0</MKTPLCITEM>
+        <MODELNUM>unknown</MODELNUM>
+        <MRLINENUM xsi:nil="true" />
+        <MRNUM />
+        <NS_PAYONRECEIPT>1</NS_PAYONRECEIPT>
+        <NS_REVIEWED />
+        <NS_TAXABLE>0</NS_TAXABLE>
+        <NS_UPDATEBIDPRICE>1</NS_UPDATEBIDPRICE>
+        <NS_UPDATELASTCOST>1</NS_UPDATELASTCOST>
+        <ORDERQTY>100.0</ORDERQTY>
+        <ORDERUNIT>GT</ORDERUNIT>
+        <ORGID>STEELMILL</ORGID>
+        <PCARDEXPDATE />
+        <PCARDNUM />
+        <PCARDTYPE />
+        <PCARDVERIFICATION />
+        <PL1 />
+        <PL10 />
+        <PL2 />
+        <PL3 />
+        <PL4 xsi:nil="true" />
+        <PL5 />
+        <PL6 />
+        <PL7 />
+        <PL8 />
+        <PL9 />
+        <PLIN1 />
+        <PLIN2>0</PLIN2>
+        <PLIN3>0</PLIN3>
+        <PLIN4 xsi:nil="true" />
+        <PLIN5 xsi:nil="true" />
+        <PLIN6 />
+        <PLIN7 />
+        <PLIN8 />
+        <PLIN9 />
+        <POLALN1 />
+        <POLALN2>0</POLALN2>
+        <POLALN3 />
+        <POLALN4 />
+        <POLALN5 />
+        <POLINEID>1142407</POLINEID>
+        <POLINENUM>1</POLINENUM>
+        <PRLINENUM xsi:nil="true" />
+        <PRNUM />
+        <PRORATECOST>0.0</PRORATECOST>
+        <PRORATESERVICE>0</PRORATESERVICE>
+        <RECEIPTREQD>1</RECEIPTREQD>
+        <RECEIPTSCOMPLETE>0</RECEIPTSCOMPLETE>
+        <RECEIPTTOLAMT xsi:nil="true" />
+        <RECEIPTTOLERANCE xsi:nil="true" />
+        <RECEIPTTOLQTY xsi:nil="true" />
+        <RECEIVEDQTY>91.83</RECEIVEDQTY>
+        <RECEIVEDTOTALCOST>34436.25</RECEIVEDTOTALCOST>
+        <RECEIVEDUNITCOST>375.0</RECEIVEDUNITCOST>
+        <REFWO />
+        <REJECTEDQTY>0.0</REJECTEDQTY>
+        <REMARK />
+        <REMARK_LONGDESCRIPTION />
+        <REQDELIVERYDATE>2012-11-30T00:00:00-05:00</REQDELIVERYDATE>
+        <REQUESTEDBY>NBTOWK</REQUESTEDBY>
+        <RESTYPE maxvalue="AUTOMATIC">AUTOMATIC</RESTYPE>
+        <REVSTATUS />
+        <SCHEDULEID xsi:nil="true" />
+        <SHIPTO>PRIMARY</SHIPTO>
+        <SHIPTOATTN>RECEIVING</SHIPTOATTN>
+        <STORELOC />
+        <SUPERVISOR />
+        <TAX1>0.0</TAX1>
+        <TAX1CODE />
+        <TAX2>0.0</TAX2>
+        <TAX2CODE />
+        <TAX3>0.0</TAX3>
+        <TAX3CODE />
+        <TAX4>0.0</TAX4>
+        <TAX4CODE />
+        <TAX5>0.0</TAX5>
+        <TAX5CODE />
+        <TAXED>0</TAXED>
+        <TAXEXEMPT>0</TAXEXEMPT>
+        <TOSITEID>DELTA</TOSITEID>
+        <UNITCOST>375.0</UNITCOST>
+        <VENDELIVERYDATE xsi:nil="true" />
+        <VENDORPACKCODE />
+        <VENDORPACKQUANTITY />
+        <VENDORWAREHOUSE />
+        <POCOST>
+          <COSTLINENUM>1</COSTLINENUM>
+          <FCPROJECTID />
+          <FCTASKID />
+          <FINCNTRLID />
+          <GLCREDITACCT>
+            <VALUE>10-23000-000-0000</VALUE>
+            <GLCOMP glorder="0">10</GLCOMP>
+            <GLCOMP glorder="1">23000</GLCOMP>
+            <GLCOMP glorder="2">000</GLCOMP>
+            <GLCOMP glorder="3">0000</GLCOMP>
+          </GLCREDITACCT>
+          <GLDEBITACCT>
+            <VALUE>10-17100-000-0000</VALUE>
+            <GLCOMP glorder="0">10</GLCOMP>
+            <GLCOMP glorder="1">17100</GLCOMP>
+            <GLCOMP glorder="2">000</GLCOMP>
+            <GLCOMP glorder="3">0000</GLCOMP>
+          </GLDEBITACCT>
+          <LINECOST>37500.0</LINECOST>
+          <LOADEDCOST>37500.0</LOADEDCOST>
+          <ORGID>STEELMILL</ORGID>
+          <PERCENTAGE>100.0</PERCENTAGE>
+          <POCOSTID>1754167</POCOSTID>
+          <POLINEID>1142407</POLINEID>
+          <QUANTITY>100.0</QUANTITY>
+          <REVSTATUS />
+        </POCOST>
+      </POLINE>
+    </PO>
+  </CGMXPOSet>
+</PublishCGMXPO>
+

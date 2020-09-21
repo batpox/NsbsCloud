@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<eConnect  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RMApplyType>
+		<eConnectProcessInfo>
+			<Sender>RxE</Sender>
+		</eConnectProcessInfo>
+		<taRMApply>
+			<APTODCNM></APTODCNM>
+			<APFRDCNM></APFRDCNM>
+			<APPTOAMT></APPTOAMT>
+			<APFRDCTY></APFRDCTY>
+			<APTODCTY></APTODCTY>
+			<APPLYDATE></APPLYDATE>
+			<DISTKNAM></DISTKNAM>
+			<WROFAMNT></WROFAMNT>
+		</taRMApply>
+	</RMApplyType>
+</eConnect>

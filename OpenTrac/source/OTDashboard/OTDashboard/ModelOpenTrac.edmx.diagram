@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d48abd665782405790e8ef3ca6cd7d36" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="NsbsOpenTracModel.KeyStore" Width="3.25" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NsbsOpenTracModel.PREQ_HEAD_TX" Width="3.25" PointX="7.125" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NsbsOpenTracModel.PREQ_LINE_TX" Width="2.75" PointX="7.125" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="NsbsOpenTracModel.CONTACT_TX" Width="3.125" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NsbsOpenTracModel.CUSTOMER_MASTER_TX" Width="2.875" PointX="11.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NsbsOpenTracModel.MILL_TRANS_IN_TX" Width="3.5" PointX="20.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NsbsOpenTracModel.TRANSACTION_INBOUND" Width="3.25" PointX="0.625" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NsbsOpenTracModel.TRANSACTION_OUTBOUND" Width="3.125" PointX="0.625" PointY="6.5" IsExpanded="true" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

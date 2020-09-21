@@ -1,0 +1,8 @@
+<NewDataSet>
+  <nb_l3que_credit_status>
+    <credit_seq_no>Integer()</credit_seq_no>
+    <custnmbr>Char(15)</custnmbr>
+    <crlmtamt>Currency()</crlmtamt>
+    <userdefnd2>Char(50)</userdefnd2>
+  </nb_l3que_credit_status>
+</NewDataSet>

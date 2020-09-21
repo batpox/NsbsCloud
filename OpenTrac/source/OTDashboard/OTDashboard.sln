@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTDashboard", "OTDashboard\OTDashboard.csproj", "{2D4E539C-5EEB-4ABC-9252-2859E492C61D}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "OT Dashboard Setup", "OTDashboard Setup\OT Dashboard Setup.isproj", "{B7EDEA13-5D2B-40B0-8197-22BC29E2FCDA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2D4E539C-5EEB-4ABC-9252-2859E492C61D} = {2D4E539C-5EEB-4ABC-9252-2859E492C61D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D4E539C-5EEB-4ABC-9252-2859E492C61D}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4E539C-5EEB-4ABC-9252-2859E492C61D}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{2D4E539C-5EEB-4ABC-9252-2859E492C61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4E539C-5EEB-4ABC-9252-2859E492C61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4E539C-5EEB-4ABC-9252-2859E492C61D}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4E539C-5EEB-4ABC-9252-2859E492C61D}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{2D4E539C-5EEB-4ABC-9252-2859E492C61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4E539C-5EEB-4ABC-9252-2859E492C61D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4E539C-5EEB-4ABC-9252-2859E492C61D}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4E539C-5EEB-4ABC-9252-2859E492C61D}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{B7EDEA13-5D2B-40B0-8197-22BC29E2FCDA}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{B7EDEA13-5D2B-40B0-8197-22BC29E2FCDA}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{B7EDEA13-5D2B-40B0-8197-22BC29E2FCDA}.Debug|Any CPU.ActiveCfg = DVD-5
+		{B7EDEA13-5D2B-40B0-8197-22BC29E2FCDA}.Debug|Any CPU.Build.0 = DVD-5
+		{B7EDEA13-5D2B-40B0-8197-22BC29E2FCDA}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{B7EDEA13-5D2B-40B0-8197-22BC29E2FCDA}.DVD-5|Any CPU.Build.0 = DVD-5
+		{B7EDEA13-5D2B-40B0-8197-22BC29E2FCDA}.Release|Any CPU.ActiveCfg = SingleImage
+		{B7EDEA13-5D2B-40B0-8197-22BC29E2FCDA}.Release|Any CPU.Build.0 = SingleImage
+		{B7EDEA13-5D2B-40B0-8197-22BC29E2FCDA}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{B7EDEA13-5D2B-40B0-8197-22BC29E2FCDA}.SingleImage|Any CPU.Build.0 = SingleImage
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

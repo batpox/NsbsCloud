@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-16"?>
+<RxePipeMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PipeDataId>37a92699-68d0-11e6-80f9-005056b1095c</PipeDataId>
+  <lastPipeDataId>00000000-0000-0000-0000-000000000000</lastPipeDataId>
+  <PipeId>10</PipeId>
+  <InsertUtcTime>2016-08-23T01:23:45.6025427Z</InsertUtcTime>
+  <messageName>SO01</messageName>
+  <insertNodeId>20</insertNodeId>
+  <ProcessStatus>Defective</ProcessStatus>
+  <processTime>0001-01-01T00:00:00</processTime>
+  <processNodeId>0</processNodeId>
+  <payload />
+  <insertInfoXml />
+  <processInfoXml />
+  <sequencer>36808898256025427</sequencer>
+  <retries>0</retries>
+  <days>20160823</days>
+  <hours>2016082301</hours>
+</RxePipeMessage>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PublishCGMXGLTXN xmlns="http://www.ibm.com/maximo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creationDateTime="2013-05-16T12:52:16-04:00" transLanguage="EN" baseLanguage="EN" messageID="1368723136246314356" maximoVersion="7 5 20120713-1120 V7503-157" event="1">
+	<CGMXGLTXNSet>
+		<MXGLTXN action="Add">
+			<ACCEPTEDCOST xsi:nil="true" />
+			<ACTUALCOST >2.41</ACTUALCOST>
+			<ACTUALDATE >2013-05-16T12:52:06-04:00</ACTUALDATE>
+			<ASSETNUM  />
+			<BELONGSTO xsi:nil="true" />
+			<BINNUM >50B6</BINNUM>
+			<CHANGEBY />
+			<CHANGEDATE xsi:nil="true" />
+			<CLAIMNUM />
+			<COMMODITY  />
+			<COMMODITYGROUP >SAFETY</COMMODITYGROUP>
+			<CONDITIONCODE  />
+			<CONDRATE >100</CONDRATE>
+			<CONTRACTNUM />
+			<CONVERSION >1.0</CONVERSION>
+			<COSTINFO>1</COSTINFO>
+			<COSTLINENUM xsi:nil="true" />
+			<COURIER />
+			<CRAFT />
+			<CURBAL >47.0</CURBAL>
+			<CURRENCYCODE >USD</CURRENCYCODE>
+			<CURRENCYLINECOST >2.41</CURRENCYLINECOST>
+			<CURRENCYUNITCOST >2.41</CURRENCYUNITCOST>
+			<DESCRIPTION >GLOVE, WELDING, LEATHER, LARGE</DESCRIPTION>
+			<ENTERBY >MAXADMIN</ENTERBY>
+			<ENTERDATE xsi:nil="true" />
+			<ENTEREDASTASK >0</ENTEREDASTASK>
+			<EXCHANGERATE >1.0</EXCHANGERATE>
+			<EXCHANGERATE2  xsi:nil="true" />
+			<EXTERNALREFID  />
+			<FCPROJECTID  />
+			<FCTASKID  />
+			<FINANCIALPERIOD >7</FINANCIALPERIOD>
+			<FINCNTRLID  />
+			<FINISHDATE xsi:nil="true" />
+			<FINISHTIME xsi:nil="true" />
+			<FROMBIN />
+			<FROMCONDITIONCODE />
+			<FROMLOT />
+			<FROMSITEID />
+			<FROMSTORELOC />
+			<GENAPPRSERVRECEIPT>0</GENAPPRSERVRECEIPT>
+			<GLCREDITACCT >
+				<VALUE>10-17119-000-0000</VALUE>
+				<GLCOMP glorder="0">10</GLCOMP>
+				<GLCOMP glorder="1">17119</GLCOMP>
+				<GLCOMP glorder="2">000</GLCOMP>
+				<GLCOMP glorder="3">0000</GLCOMP>
+			</GLCREDITACCT>
+			<GLDEBITACCT >
+				<VALUE>10-70590-840-0000</VALUE>
+				<GLCOMP glorder="0">10</GLCOMP>
+				<GLCOMP glorder="1">70590</GLCOMP>
+				<GLCOMP glorder="2">840</GLCOMP>
+				<GLCOMP glorder="3">0000</GLCOMP>
+			</GLDEBITACCT>
+			<INSPECTEDQTY xsi:nil="true" />
+			<INSPECTIONCOST xsi:nil="true" />
+			<INVOICELINENUM xsi:nil="true" />
+			<INVOICENUM />
+			<INVOICETRANSID xsi:nil="true" />
+			<INVTRANSID xsi:nil="true" />
+			<ISSUE>0</ISSUE>
+			<ISSUEID  xsi:nil="true" />
+			<ISSUETO  />
+			<ISSUETYPE >ISSUE</ISSUETYPE>
+			<IT1  />
+			<IT10  />
+			<IT2  />
+			<IT3  />
+			<IT4  xsi:nil="true" />
+			<IT5  />
+			<IT6  />
+			<IT7  />
+			<IT8  />
+			<IT9  />
+			<ITEMNUM >26000027</ITEMNUM>
+			<ITEMSETID >MASTER</ITEMSETID>
+			<ITIN1  />
+			<ITIN2 >0</ITIN2>
+			<ITIN3 >0</ITIN3>
+			<ITIN4  />
+			<ITIN5  />
+			<ITIN6  />
+			<ITIN7  />
+			<LABORCODE />
+			<LABTRANSID xsi:nil="true" />
+			<LINECOST >2.41</LINECOST>
+			<LINECOST2  xsi:nil="true" />
+			<LINETYPE >ITEM</LINETYPE>
+			<LOADEDCOST xsi:nil="true" />
+			<LOCATION  />
+			<LOTNUM  />
+			<MANUFACTURER />
+			<MATRECTRANSID  xsi:nil="true" />
+			<MATUSETRANSID >1811004</MATUSETRANSID>
+			<MEMO  />
+			<MODELNUM />
+			<MRLINENUM  xsi:nil="true" />
+			<MRNUM  />
+			<NEWCOST xsi:nil="true" />
+			<OLDAVGCOST xsi:nil="true" />
+			<OLDCOST xsi:nil="true" />
+			<ORGID >STEELMILL</ORGID>
+			<OUTSIDE >0</OUTSIDE>
+			<OWNERSYSID  />
+			<PACKINGSLIPNUM  />
+			<PAYMENTTRANSDATE xsi:nil="true" />
+			<PAYRATE xsi:nil="true" />
+			<PHYSCNT >0.0</PHYSCNT>
+			<POLINENUM  xsi:nil="true" />
+			<PONUM  />
+			<POREVISIONNUM  xsi:nil="true" />
+			<POSITEID />
+			<PREMIUMPAYCODE />
+			<PREMIUMPAYHOURS xsi:nil="true" />
+			<PREMIUMPAYRATE xsi:nil="true" />
+			<PREMIUMPAYRATETYPE />
+			<PRORATECOST xsi:nil="true" />
+			<PRORATED>0</PRORATED>
+			<QTYHELD xsi:nil="true" />
+			<QTYREQUESTED >1.0</QTYREQUESTED>
+			<QTYRETURNED  xsi:nil="true" />
+			<QUANTITY >-1.0</QUANTITY>
+			<RECEIPTREF xsi:nil="true" />
+			<RECEIVEDUNIT />
+			<REFWO  />
+			<REGULARHRS xsi:nil="true" />
+			<REJECTCODE />
+			<REJECTCOST xsi:nil="true" />
+			<REJECTQTY xsi:nil="true" />
+			<REMARK />
+			<REQUESTEDBY />
+			<REVISIONNUM xsi:nil="true" />
+			<ROLLUP >0</ROLLUP>
+			<ROTASSETNUM  />
+			<ROTASSETSITE />
+			<SENDERSYSID />
+			<SERVRECTRANSID xsi:nil="true" />
+			<SITEID >DELTA</SITEID>
+			<SKILLLEVEL />
+			<SOURCEMBO >MATUSETRANS</SOURCEMBO>
+			<SOURCESYSID  />
+			<SPAREPARTADDED >0</SPAREPARTADDED>
+			<SSPL1 />
+			<SSPL2 />
+			<SSPL3 />
+			<SSPL4 />
+			<SSPL5 />
+			<SSPL6 />
+			<SSPL7 />
+			<STARTDATE xsi:nil="true" />
+			<STARTTIME xsi:nil="true" />
+			<STATUS />
+			<STATUSCHANGEBY />
+			<STATUSDATE xsi:nil="true" />
+			<STORELOC >WAREHOUS</STORELOC>
+			<TASKID  xsi:nil="true" />
+			<TAX1 xsi:nil="true" />
+			<TAX1CODE />
+			<TAX2 xsi:nil="true" />
+			<TAX2CODE />
+			<TAX3 xsi:nil="true" />
+			<TAX3CODE />
+			<TAX4 xsi:nil="true" />
+			<TAX4CODE />
+			<TAX5 xsi:nil="true" />
+			<TAX5CODE />
+			<TICKETCLASS />
+			<TICKETID />
+			<TIMERSTATUS />
+			<TOBIN />
+			<TOLOT />
+			<TOOLHRS xsi:nil="true" />
+			<TOOLQTY xsi:nil="true" />
+			<TOOLRATE xsi:nil="true" />
+			<TOOLTRANSID xsi:nil="true" />
+			<TOSITEID >DELTA</TOSITEID>
+			<TOSTORELOC />
+			<TOTALCURBAL xsi:nil="true" />
+			<TRANSDATE >2013-05-16T12:52:15-04:00</TRANSDATE>
+			<TRANSTYPE />
+			<UNITCOST >2.41</UNITCOST>
+			<VENDOR />
+			<WONUM  />
+			<NS_CUST_FLD>GLOVE, WELDING, LEATHE........</NS_CUST_FLD>
+		</MXGLTXN>
+	</CGMXGLTXNSet>
+</PublishCGMXGLTXN>

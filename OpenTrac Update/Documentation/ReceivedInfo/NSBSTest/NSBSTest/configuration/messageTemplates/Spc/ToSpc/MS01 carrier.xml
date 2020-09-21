@@ -1,0 +1,25 @@
+<NewDataSet>
+  <Table name="carrier">
+    <carrier_mode>T</carrier_mode>
+    <carrier_cd>1</carrier_cd>
+    <name>Dallas &amp; Mavis Specialized Carrier Co.</name>
+    <attention>Barb Strong</attention>
+    <street_1>625 55th Street</street_1>
+    <city>Kenosha</city>
+    <state>WI</state>
+    <zip_code>53140</zip_code>
+    <country>United States</country>
+    <insurance_expire_date>2004-11-01T00:00:00-05:00</insurance_expire_date>
+    <contract_number>unknown</contract_number>
+    <contract_rate_expire_dt>2004-11-01T00:00:00-05:00</contract_rate_expire_dt>
+    <contract_rate_effective_dt>1997-01-22T00:00:00-05:00</contract_rate_effective_dt>
+    <ap_street1>625 55th Street</ap_street1>
+    <ap_city>Kenosha</ap_city>
+    <ap_state>WI</ap_state>
+    <ap_zip_code>53140</ap_zip_code>
+    <ap_country>United States</ap_country>
+    <contact_cd>3</contact_cd>
+    <change_datetime>2005-02-24T14:17:26.476-05:00</change_datetime>
+    <change_user_id>3096</change_user_id>
+  </Table>
+</NewDataSet>

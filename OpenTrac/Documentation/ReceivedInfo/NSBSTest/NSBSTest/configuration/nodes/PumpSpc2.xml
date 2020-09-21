@@ -1,0 +1,13 @@
+<rxeNode type='pump'>
+	<transfers>
+	
+	<!-- Note that you can change the message name. If blank, it defaults to same -->
+	<transfer name='PumpSpc2' plugin='RxePlugins.RxeXmlTransfer' transformFile='FromSpc1.xml' checkInterval='30000' deadMessageFolder='D:\RxE\NSBSTest\DeadMessages'>
+		<in pipe='FromSpc' messageNamePattern='SO01$' description='customers' state='on' >
+			<out pipe='ToOpenTrac' transform='SO01' message='SO01' />
+		</in>
+	</transfer>
+	
+	</transfers>
+	
+</rxeNode>

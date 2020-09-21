@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CoilStoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CoilReadings">
+          <Key>
+            <PropertyRef Name="CoilReadingId" />
+          </Key>
+          <Property Name="CoilReadingId" Type="int" Nullable="false" />
+          <Property Name="CoilId" Type="int" Nullable="false" />
+          <Property Name="ReadingNumber" Type="smallint" Nullable="false" />
+          <Property Name="Value" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Coils">
+          <Key>
+            <PropertyRef Name="CoilId" />
+          </Key>
+          <Property Name="CoilId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CoilNumber" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="GageInUse" Type="int" />
+          <Property Name="NumberOfReadings" Type="int" />
+          <Property Name="OrderValue" Type="decimal" Precision="18" Scale="6" />
+          <Property Name="ProducedTime" Type="datetimeoffset" Precision="7" />
+          <Property Name="PositiveTolerance" Type="decimal" Precision="18" Scale="6" />
+          <Property Name="NegativeTolerance" Type="decimal" Precision="18" Scale="6" />
+          <Property Name="CreationTimeUTC" Type="datetime" />
+          <Property Name="Readings" Type="varchar(max)" />
+        </EntityType>
+        <Association Name="FK_CoilReadings_Coils">
+          <End Role="Coils" Type="Self.Coils" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CoilReadings" Type="Self.CoilReadings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Coils">
+              <PropertyRef Name="CoilId" />
+            </Principal>
+            <Dependent Role="CoilReadings">
+              <PropertyRef Name="CoilId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CoilStoreModelStoreContainer">
+          <EntitySet Name="CoilReadings" EntityType="Self.CoilReadings" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Coils" EntityType="Self.Coils" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_CoilReadings_Coils" Association="Self.FK_CoilReadings_Coils">
+            <End Role="Coils" EntitySet="Coils" />
+            <End Role="CoilReadings" EntitySet="CoilReadings" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CoilStoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CoilReading">
+          <Key>
+            <PropertyRef Name="CoilReadingId" />
+          </Key>
+          <Property Name="CoilReadingId" Type="Int32" Nullable="false" />
+          <Property Name="CoilId" Type="Int32" Nullable="false" />
+          <Property Name="Value" Type="Decimal" Precision="18" Scale="6" Nullable="false" />
+          <NavigationProperty Name="Coil" Relationship="Self.FK_CoilReadings_Coils" FromRole="CoilReadings" ToRole="Coils" />
+          <Property Name="ReadingNumber" Type="Int16" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Coil">
+          <Key>
+            <PropertyRef Name="CoilId" />
+          </Key>
+          <Property Name="CoilId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CoilNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="GageInUse" Type="Int32" />
+          <Property Name="NumberOfReadings" Type="Int32" />
+          <Property Name="OrderValue" Type="Decimal" Precision="18" Scale="6" />
+          <Property Name="ProducedTime" Type="DateTimeOffset" Precision="7" />
+          <Property Name="PositiveTolerance" Type="Decimal" Precision="18" Scale="6" />
+          <Property Name="NegativeTolerance" Type="Decimal" Precision="18" Scale="6" />
+          <Property Name="CreationTimeUTC" Type="DateTime" Precision="3" />
+          <Property Name="Readings" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CoilReadings" Relationship="Self.FK_CoilReadings_Coils" FromRole="Coils" ToRole="CoilReadings" />
+        </EntityType>
+        <Association Name="FK_CoilReadings_Coils">
+          <End Role="Coils" Type="Self.Coil" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CoilReadings" Type="Self.CoilReading" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Coils">
+              <PropertyRef Name="CoilId" />
+            </Principal>
+            <Dependent Role="CoilReadings">
+              <PropertyRef Name="CoilId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CoilStoreContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CoilReadings" EntityType="Self.CoilReading" />
+          <EntitySet Name="Coils" EntityType="Self.Coil" />
+          <AssociationSet Name="FK_CoilReadings_Coils" Association="Self.FK_CoilReadings_Coils">
+            <End Role="Coils" EntitySet="Coils" />
+            <End Role="CoilReadings" EntitySet="CoilReadings" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CoilStoreModelStoreContainer" CdmEntityContainer="CoilStoreContext">
+          <EntitySetMapping Name="CoilReadings">
+            <EntityTypeMapping TypeName="CoilStoreModel.CoilReading">
+              <MappingFragment StoreEntitySet="CoilReadings">
+                <ScalarProperty Name="ReadingNumber" ColumnName="ReadingNumber" />
+                <ScalarProperty Name="CoilReadingId" ColumnName="CoilReadingId" />
+                <ScalarProperty Name="CoilId" ColumnName="CoilId" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Coils">
+            <EntityTypeMapping TypeName="CoilStoreModel.Coil">
+              <MappingFragment StoreEntitySet="Coils">
+                <ScalarProperty Name="CoilId" ColumnName="CoilId" />
+                <ScalarProperty Name="CoilNumber" ColumnName="CoilNumber" />
+                <ScalarProperty Name="GageInUse" ColumnName="GageInUse" />
+                <ScalarProperty Name="NumberOfReadings" ColumnName="NumberOfReadings" />
+                <ScalarProperty Name="OrderValue" ColumnName="OrderValue" />
+                <ScalarProperty Name="ProducedTime" ColumnName="ProducedTime" />
+                <ScalarProperty Name="PositiveTolerance" ColumnName="PositiveTolerance" />
+                <ScalarProperty Name="NegativeTolerance" ColumnName="NegativeTolerance" />
+                <ScalarProperty Name="CreationTimeUTC" ColumnName="CreationTimeUTC" />
+                <ScalarProperty Name="Readings" ColumnName="Readings" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

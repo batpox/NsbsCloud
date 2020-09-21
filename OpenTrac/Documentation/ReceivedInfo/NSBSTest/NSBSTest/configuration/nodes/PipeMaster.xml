@@ -1,0 +1,6 @@
+<rxeNode type='PipeMaster'>
+<!-- Set logging to ':update:insert' if you want actions to be logged -->
+	<options timeInterval='200' logging='' />
+
+	
+</rxeNode>

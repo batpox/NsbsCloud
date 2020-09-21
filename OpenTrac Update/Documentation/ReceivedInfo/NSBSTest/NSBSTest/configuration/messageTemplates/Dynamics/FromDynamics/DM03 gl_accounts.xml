@@ -1,0 +1,39 @@
+<GL_Accounts:root xmlns:GL_Accounts="http://microsoft.com/eConnect/GL_Accounts.xsd">
+  <eConnect ACTION="1" Requester_DOCTYPE="GL_Accounts" DBNAME="GPPLY" TABLENAME="GL00105" DATE1="2006-04-13T13:00:15.420" ACTINDX="5004">
+    <GL_Accounts>
+      <ACTINDX>5004</ACTINDX>
+      <ACTNUMST>55-55555-555-5555</ACTNUMST>
+      <Details>
+        <ACTINDX>5004</ACTINDX>
+        <ACTALIAS></ACTALIAS>
+        <MNACSGMT>55555</MNACSGMT>
+        <ACCTTYPE>1</ACCTTYPE>
+        <ACTDESCR>Test eConnect 05</ACTDESCR>
+        <PSTNGTYP>0</PSTNGTYP>
+        <ACCATNUM>1</ACCATNUM>
+        <ACTIVE>1</ACTIVE>
+        <TPCLBLNC>0</TPCLBLNC>
+        <DECPLACS>0</DECPLACS>
+        <FXDORVAR>0</FXDORVAR>
+        <BALFRCLC>0</BALFRCLC>
+        <USERDEF1></USERDEF1>
+        <USERDEF2></USERDEF2>
+        <PostSlsIn>1</PostSlsIn>
+        <PostIvIn>1</PostIvIn>
+        <PostPurchIn>1</PostPurchIn>
+        <PostPRIn>1</PostPRIn>
+        <ADJINFL>0</ADJINFL>
+        <INFLAREV>0</INFLAREV>
+        <INFLAEQU>0</INFLAEQU>
+        <CNVRMTHD>1</CNVRMTHD>
+        <HSTRCLRT>0.0000000</HSTRCLRT>
+        <NOTEINDX>71.00000</NOTEINDX>
+        <CREATDDT>2006-04-13T00:00:00</CREATDDT>
+        <MODIFDT>2006-04-13T00:00:00</MODIFDT>
+        <ACCTENTR>1</ACCTENTR>
+        <USRDEFS1></USRDEFS1>
+        <USRDEFS2></USRDEFS2>
+      </Details>
+    </GL_Accounts>
+  </eConnect>
+</GL_Accounts:root>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MXRECEIPTInterface xmlns="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="EN">
+  <Header operation="Notify" event="1">
+    <SenderID type="MAXIMO" majorversion="6" minorversion="0" build="01" dbbuild="V600-76">SPC</SenderID>
+    <CreationDateTime>2006-02-21T13:29:01-05:00</CreationDateTime>
+    <RecipientID>MX</RecipientID>
+    <MessageID>11405465418672325</MessageID>
+  </Header>
+  <Content>
+    <MXRECEIPT>
+      <MXRECEIPT action="Add">
+        <ITEMNUM>560-00</ITEMNUM>
+        <TOSTORELOC>CENTRAL</TOSTORELOC>
+        <TRANSDATE>2006-02-21T13:28:59-05:00</TRANSDATE>
+        <ACTUALDATE>2006-02-21T13:28:59-05:00</ACTUALDATE>
+        <RECEIVEDUNIT>EACH</RECEIVEDUNIT>
+        <ISSUETYPE maxvalue="RECEIPT">RECEIPT</ISSUETYPE>
+        <ACTUALCOST>25.0</ACTUALCOST>
+        <PONUM>1075</PONUM>
+        <INVOICENUM />
+        <REJECTCODE />
+        <REJECTQTY>0.0</REJECTQTY>
+        <CONVERSION>1.0</CONVERSION>
+        <ASSETNUM />
+        <ENTERBY>WILSON</ENTERBY>
+        <IT1 />
+        <IT2 />
+        <IT3 />
+        <IT4 xsi:nil="true" />
+        <IT5 />
+        <OUTSIDE>0</OUTSIDE>
+        <ISSUETO />
+        <PACKINGSLIPNUM />
+        <POLINENUM>1</POLINENUM>
+        <ISSUE>0</ISSUE>
+        <REQUESTEDBY>WILSON</REQUESTEDBY>
+        <TOTALCURBAL>612.0</TOTALCURBAL>
+        <OLDAVGCOST>0.0</OLDAVGCOST>
+        <ITIN1 />
+        <ITIN2 />
+        <ITIN3 />
+        <TOBIN>A-9-2</TOBIN>
+        <GLDEBITACCT>
+          <VALUE>6600-800-800</VALUE>
+          <GLCOMP glorder="0">6600</GLCOMP>
+          <GLCOMP glorder="1">800</GLCOMP>
+          <GLCOMP glorder="2">800</GLCOMP>
+        </GLDEBITACCT>
+        <GLCREDITACCT>
+          <VALUE>6800-930-600</VALUE>
+          <GLCOMP glorder="0">6800</GLCOMP>
+          <GLCOMP glorder="1">930</GLCOMP>
+          <GLCOMP glorder="2">600</GLCOMP>
+        </GLCREDITACCT>
+        <FINANCIALPERIOD>200602</FINANCIALPERIOD>
+        <CURRENCYCODE>USD</CURRENCYCODE>
+        <EXCHANGERATE>1.0</EXCHANGERATE>
+        <CURRENCYUNITCOST>25.0</CURRENCYUNITCOST>
+        <MANUFACTURER />
+        <MODELNUM />
+        <CURRENCYLINECOST>100.0</CURRENCYLINECOST>
+        <LOCATION />
+        <DESCRIPTION>Tubing, Copper-1 In ID X .030 In Wall</DESCRIPTION>
+        <REMARK />
+        <FROMSTORELOC />
+        <FROMBIN />
+        <QTYHELD xsi:nil="true" />
+        <FROMLOT />
+        <TOLOT />
+        <LOADEDCOST>100.0</LOADEDCOST>
+        <TAX1CODE>MA</TAX1CODE>
+        <TAX1>5.0</TAX1>
+        <TAX2CODE />
+        <TAX2>0.0</TAX2>
+        <TAX3CODE />
+        <TAX3>0.0</TAX3>
+        <TAX4CODE />
+        <TAX4>0.0</TAX4>
+        <TAX5CODE />
+        <TAX5>0.0</TAX5>
+        <PRORATED>0</PRORATED>
+        <PRORATECOST>0.0</PRORATECOST>
+        <STATUS maxvalue="COMP">COMP</STATUS>
+        <STATUSDATE xsi:nil="true" />
+        <STATUSCHANGEBY />
+        <SOURCESYSID />
+        <QTYREQUESTED>4.0</QTYREQUESTED>
+        <CURBAL>612.0</CURBAL>
+        <EXCHANGERATE2>1.0</EXCHANGERATE2>
+        <LINECOST2>100.0</LINECOST2>
+        <MRNUM />
+        <MRLINENUM xsi:nil="true" />
+        <MATRECTRANSID>1336104192</MATRECTRANSID>
+        <OWNERSYSID />
+        <EXTERNALREFID />
+        <IT6 />
+        <IT7 />
+        <IT8 />
+        <IT9 />
+        <IT10 />
+        <ITIN4 />
+        <ITIN5 />
+        <ITIN6 />
+        <ITIN7 />
+        <SENDERSYSID>MX</SENDERSYSID>
+        <FINCNTRLID />
+        <ORGID>EAGLENA</ORGID>
+        <SITEID>BEDFORD</SITEID>
+        <COSTINFO>1</COSTINFO>
+        <BELONGSTO xsi:nil="true" />
+        <REFWO />
+        <ENTEREDASTASK>0</ENTEREDASTASK>
+        <FROMSITEID>BEDFORD</FROMSITEID>
+        <RECEIPTREF xsi:nil="true" />
+        <LINETYPE>ITEM</LINETYPE>
+        <ITEMSETID>SET1</ITEMSETID>
+        <CURRENCYORDERUNITCOST>25.0</CURRENCYORDERUNITCOST>
+        <CURRENCYLOADEDCOST>100.0</CURRENCYLOADEDCOST>
+        <RECEIPTQUANTITY>4.0</RECEIPTQUANTITY>
+        <CONDITIONCODE />
+        <FROMCONDITIONCODE />
+        <CONDRATE xsi:nil="true" />
+        <COMMODITYGROUP>MECH</COMMODITYGROUP>
+        <COMMODITY />
+        <MATUSETRANSID xsi:nil="true" />
+        <COURIER />
+        <INSPECTEDQTY>0.0</INSPECTEDQTY>
+        <ACCEPTEDQTY>0.0</ACCEPTEDQTY>
+        <POSITEID>BEDFORD</POSITEID>
+        <ROTASSETNUM />
+        <INSPECTED />
+        <TRANS_LANGCODE>EN</TRANS_LANGCODE>
+      </MXRECEIPT>
+    </MXRECEIPT>
+  </Content>
+</MXRECEIPTInterface>
+

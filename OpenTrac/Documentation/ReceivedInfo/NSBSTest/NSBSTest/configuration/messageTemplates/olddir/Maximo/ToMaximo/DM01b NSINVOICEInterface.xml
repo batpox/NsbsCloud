@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NSINVOICE xmlns="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="EN">
+  <Header operation="Notify" event="0">
+    <SenderID type="MAXIMO" majorversion="6" minorversion="0" build="03" dbbuild="V600-341">DYNAMICS-RXE</SenderID>
+    <CreationDateTime>2006-04-19T12:36:46-05:00</CreationDateTime>
+  </Header>
+  <Content>
+    <MXINVOICE>
+      <INVOICE action="Change">
+        <INVOICENUM />
+
+        <PAIDDATE />
+        <PAID />
+
+        <CHANGEDATE />
+        <CHANGEBY />
+
+
+        <SENDERSYSID />
+
+        <SITEID />
+        <ORGID />
+        
+        
+      </INVOICE>
+    </MXINVOICE>
+  </Content>
+</NSINVOICE>

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<eConnect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PMTransactionType>
+		<eConnectProcessInfo>
+			<Sender></Sender>
+		</eConnectProcessInfo>
+
+		<taPMTransactionTaxInsert_Items>
+			<taPMTransactionTaxInsert>
+				<VENDORID></VENDORID>
+				<VCHRNMBR></VCHRNMBR>
+				<DOCTYPE></DOCTYPE>
+				<BACHNUMB></BACHNUMB>
+				<TAXDTLID></TAXDTLID>
+				<TAXAMNT></TAXAMNT>
+
+				<USRDEFND1></USRDEFND1>
+			</taPMTransactionTaxInsert>
+		</taPMTransactionTaxInsert_Items>
+		
+		<taPMDistribution_Items>
+
+			<taPMDistribution>
+				<DOCTYPE></DOCTYPE>
+				<VCHRNMBR></VCHRNMBR>
+				<VENDORID></VENDORID>
+
+				<DISTTYPE></DISTTYPE>
+				<DistRef></DistRef>
+
+				<ACTNUMST></ACTNUMST>
+				<DEBITAMT></DEBITAMT>
+				<CRDTAMNT></CRDTAMNT>
+
+				<USRDEFND1></USRDEFND1>
+			</taPMDistribution>
+
+		</taPMDistribution_Items>
+		<taPMTransactionInsert>
+
+			<BACHNUMB></BACHNUMB>
+			<VCHNUMWK></VCHNUMWK>
+			<VENDORID></VENDORID>
+			<DOCNUMBR></DOCNUMBR>
+			<DOCTYPE></DOCTYPE>
+			<DOCAMNT></DOCAMNT>
+			<DOCDATE></DOCDATE>
+			<PSTGDATE></PSTGDATE>
+
+			<VADCDTRO></VADCDTRO>
+			<VADDCDPR></VADDCDPR>
+			<PYMTRMID></PYMTRMID>
+
+			<DUEDATE></DUEDATE>
+			<PRCHAMNT></PRCHAMNT>
+			<CHRGAMNT></CHRGAMNT>
+
+			<TRXDSCRN></TRXDSCRN>
+
+			<TAXAMNT></TAXAMNT>
+			<FRTAMNT></FRTAMNT>
+
+			<MSCCHAMT></MSCCHAMT>
+			<PORDNMBR></PORDNMBR>
+
+			<MDFUSRID></MDFUSRID>
+
+			<CURNCYID></CURNCYID>
+			
+			<CREATEDIST></CREATEDIST>
+
+			<USRDEFND1></USRDEFND1>
+
+		</taPMTransactionInsert>
+	</PMTransactionType>
+</eConnect>

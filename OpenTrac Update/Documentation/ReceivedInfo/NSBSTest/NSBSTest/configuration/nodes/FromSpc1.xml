@@ -1,0 +1,84 @@
+<rxeNode type='inflow' >
+	<!-- A transport receives from one source and places into 1 or more pipes -->
+	<transport  plugin='RxePlugins.RxeDbInflow' >
+		<!-- Begin Custom Transport mechanism -->
+		<tables connectString='Provider=Sybase.ASEOLEDBProvider.2;Initial Catalog=nsbhp_spc_prod;Password=danHtemp;User ID=RxE_interface;Data Source=L3_Test;Persist Security Info=True' >
+		
+			<table name='SM01' tablename='ap_freight_costs'  keyField='invoice_no' 
+				sqlSelect="SELECT TOP 1 * FROM ap_freight_costs WHERE sent_to_financial_system_flag='N' ORDER BY invoice_no"
+				processMode='UpdateStatus' statusField='sent_to_financial_system_flag' statusProcessed='Y'
+				pollSeconds='300' 
+				special1='Combine:carrier:SELECT * FROM carrier c LEFT OUTER JOIN carrier_contacts cc ON c.carrier_cd = cc.carrier_cd AND c.contact_cd = cc.contact_cd WHERE c.carrier_cd=@carrier_cd' 
+				state='on'/>
+				
+			<table name='SM02' tablename='nb_l3que_rmr'  keyField='rowid' 
+				sqlSelect="SELECT TOP 1 * FROM nb_l3que_rmr WHERE status='U' and rxe_yn = 'Y' ORDER BY rowid"
+			  	processMode='UpdateStatus' statusField='status' statusProcessed='P'
+				pollSeconds='30'  
+				state='on'/>
+
+
+			<table name='SM03' tablename='nb_maximo_meter_readings' processMode='StoreAndDelete' keyField='meter_seq_no' 
+				sqlOrder='reading_date' pollSeconds='300'  
+				state='off'/>
+
+			<table name='SM04' tablename='nb_l3que_heat_material'  keyField='rowid' 
+				sqlSelect="SELECT TOP 1 * FROM nb_l3que_heat_material WHERE status='U' ORDER BY rowid"
+			  	processMode='UpdateStatus' statusField='status' statusProcessed='P'
+				pollSeconds='30'  
+				state='off'/>
+				
+				
+			<table name='SD01' tablename='nb_l3que_customer_data' processMode='StoreAndDelete' keyField='address_seq_no' 
+				sqlSelect="SELECT TOP 100 * FROM nb_l3que_customer_data WHERE adrscode = 'INVOICE_TO' ORDER BY address_seq_no"
+				special1='Combine:customer:SELECT * FROM customer WHERE customer_id=@custnmbr' 
+				pollSeconds='30'  
+				state='on'/>
+				
+			<table name='SD01A' tablename='nb_l3que_customer_data' processMode='StoreAndDelete' keyField='address_seq_no' 
+				sqlSelect="SELECT TOP 100 * FROM nb_l3que_customer_data WHERE adrscode &lt;&gt; 'INVOICE_TO' ORDER BY address_seq_no"
+				special1='Combine:customer:SELECT * FROM customer WHERE customer_id=@custnmbr' 
+				pollSeconds='30'  
+				state='on'/>
+
+			<table name='SD01B' tablename='nb_l3que_credit_status' processMode='StoreAndDelete' keyField='credit_seq_no' 
+				sqlOrder='credit_seq_no' pollSeconds='30'  
+				state='on'/>
+				
+			<table name = 'SD02' tablename='nb_l3que_invoice_master' processMode='StoreAndDelete' keyField='SOPNUMBE' 
+				sqlSelect="SELECT TOP 100 * FROM nb_l3que_invoice_master WHERE TRANSACTION_TYPE='SD02' ORDER BY SOPNUMBE" 
+				special="ParentChildren:nb_l3que_invoice_detail:SELECT * FROM nb_l3que_invoice_detail WHERE SOPNUMBE='@SOPNUMBE'" pollSeconds='30'  
+				state='on'/>
+
+			<table name = 'SD03' tablename='nb_l3que_invoice_master' processMode='StoreAndDelete' keyField='SOPNUMBE'
+				sqlSelect="SELECT TOP 100 * FROM nb_l3que_invoice_master WHERE TRANSACTION_TYPE='SD03' ORDER BY SOPNUMBE" 
+				special="ParentChildren:nb_l3que_invoice_detail:SELECT * FROM nb_l3que_invoice_detail WHERE SOPNUMBE='@SOPNUMBE'" pollSeconds='30'  
+				state='on'/>
+				
+			<table name = 'SD03A' tablename='nb_l3que_invoice_reversal' processMode='StoreAndDelete' keyField='reversal_seq_no'
+				sqlSelect="SELECT TOP 100 * FROM nb_l3que_invoice_reversal WHERE TRANSACTION_TYPE='SD03A' and APPLYDATE &lt; dateadd(hh,-24,getdate()) ORDER BY reversal_seq_no" 
+				pollSeconds='30'  
+				state='on'/>
+
+		</tables>
+		
+		<!-- Begin Standard Transport mechanism -->
+		<!-- Message matching to determine outgoing message name -->
+		<messages>
+			<message envelopeName='SM01' name='SM01' />
+			<message envelopeName='SM02' name='SM02' />
+			<message envelopeName='SM03' name='SM03' />
+			<message envelopeName='SM04' name='SM04' />
+			<message envelopeName='SD01' name='SD01' />
+			<message envelopeName='SD01A' name='SD01A' />
+			<message envelopeName='SD01B' name='SD01B' />
+			<message envelopeName='SD02' name='SD02' />
+			<message envelopeName='SD03' name='SD03' />
+			<message envelopeName='SD03A' name='SD03A' />
+		</messages>
+		<!-- Now use the derived message name and regular expression to select pipe -->
+		<pipes>
+			<pipe name='FromSpc' bucketSize='1' messageNamePattern='.*'  />
+		</pipes>
+	</transport>
+</rxeNode>

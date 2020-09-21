@@ -1,0 +1,11 @@
+<GL_Segments:root xmlns:GL_Segments="http://microsoft.com/eConnect/GL_Segments.xsd">
+  <eConnect ACTION="1" Requester_DOCTYPE="GL_Segments" DBNAME="GPPLY" TABLENAME="GL40200" DATE1="2006-04-13T13:00:15.467" SGMNTID="555" SGMTNUMB="3">
+    <GL_Segments>
+      <SGMNTID>555</SGMNTID>
+      <SGMTNUMB>3</SGMTNUMB>
+      <SGMTNUMB>3</SGMTNUMB>
+      <SGMNTID>555</SGMNTID>
+      <DSCRIPTN></DSCRIPTN>
+    </GL_Segments>
+  </eConnect>
+</GL_Segments:root>

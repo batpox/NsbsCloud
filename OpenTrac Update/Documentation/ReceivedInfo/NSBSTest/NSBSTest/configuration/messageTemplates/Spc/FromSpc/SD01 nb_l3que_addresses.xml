@@ -1,0 +1,18 @@
+<NewDataSet>
+  <nb_l3que_addresses>
+    <address_seq_no>1474</address_seq_no>
+    <custnmbr>1000</custnmbr>
+    <adrscode>9</adrscode>
+    <cntcprsn>DeAnn, Accounting</cntcprsn>
+    <address2>6303 County Road 10</address2>
+    <country>United States</country>
+    <city>Delta</city>
+    <state>OH</state>
+    <zipcode>43515</zipcode>
+    <phnumbr1>822-2561</phnumbr1>
+    <fax>822-2596</fax>
+    <integrationid>SPC</integrationid>
+    <createaddress>0</createaddress>
+    <updateifexists>1</updateifexists>
+  </nb_l3que_addresses>
+</NewDataSet>

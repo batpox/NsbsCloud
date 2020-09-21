@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<eConnect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SOPTransactionType>
+		<eConnectProcessInfo>
+			<Sender>RxE</Sender>
+		</eConnectProcessInfo>
+		<taSopLineIvcInsert_Items>
+			<taSopLineIvcInsert>
+				<SOPTYPE></SOPTYPE>
+				<SOPNUMBE></SOPNUMBE>
+				<CUSTNMBR></CUSTNMBR>
+				<DOCDATE></DOCDATE>
+				<ITEMNMBR></ITEMNMBR>
+				<UNITPRCE></UNITPRCE>
+				<XTNDPRCE></XTNDPRCE>
+				<QUANTITY></QUANTITY>
+				<COMMNTID></COMMNTID>
+				<COMMENT_1></COMMENT_1>
+				<COMMENT_2></COMMENT_2>
+				<COMMENT_3></COMMENT_3>
+				<COMMENT_4></COMMENT_4>
+				<PRCLEVEL></PRCLEVEL>
+				<ITEMDESC></ITEMDESC>
+				<NONINVEN></NONINVEN>
+				<LNITMSEQ></LNITMSEQ>
+				<DOCID></DOCID>
+				<SALSTERR></SALSTERR>
+				<SLPRSNID></SLPRSNID>
+
+				<ACTLSHIP></ACTLSHIP>
+				<SHIPMTHD></SHIPMTHD>
+				<INVINDX></INVINDX>
+
+				<INTEGRATIONID></INTEGRATIONID>
+				<UpdateIfExists></UpdateIfExists>
+
+				<CURNCYID></CURNCYID>
+				<UOFM></UOFM>
+				<USRDEFND1></USRDEFND1>
+				<USRDEFND2></USRDEFND2>
+				<USRDEFND3></USRDEFND3>
+			</taSopLineIvcInsert>
+		</taSopLineIvcInsert_Items>
+		<taSopUserDefined>
+			<SOPTYPE></SOPTYPE>
+			<SOPNUMBE></SOPNUMBE>
+			<USRTAB01></USRTAB01>
+			<USERDEF1></USERDEF1>
+			<USERDEF2></USERDEF2>
+			<USRDEF03></USRDEF03>
+			<USRDEF04></USRDEF04>
+			<USRDEFND1></USRDEFND1>
+		</taSopUserDefined>
+		<taSopHdrIvcInsert>
+			<SOPTYPE></SOPTYPE>
+			<DOCID></DOCID>
+			<SOPNUMBE></SOPNUMBE>
+
+			<SHIPMTHD></SHIPMTHD>
+			<DOCDATE></DOCDATE>
+			<FREIGHT></FREIGHT>
+			<MISCAMNT></MISCAMNT>
+			<TRDISAMT></TRDISAMT> <!-- {10May2006/dth} -->
+
+			<CUSTNMBR></CUSTNMBR>
+			<CUSTNAME></CUSTNAME>
+			<ShipToName></ShipToName>
+			<ADDRESS1></ADDRESS1>
+			<ADDRESS2></ADDRESS2>
+			<ADDRESS3></ADDRESS3>
+			<CNTCPRSN></CNTCPRSN>
+			<FAXNUMBR></FAXNUMBR>
+			<CITY></CITY>
+			<STATE></STATE>
+			<ZIPCODE></ZIPCODE>
+			<COUNTRY></COUNTRY>
+			<PHNUMBR1></PHNUMBR1>
+
+			<SUBTOTAL></SUBTOTAL>
+			<DOCAMNT></DOCAMNT>
+			<USER2ENT></USER2ENT>
+
+			<BACHNUMB></BACHNUMB>
+			<PRBTADCD></PRBTADCD>
+			<PRSTADCD></PRSTADCD>
+			<PYMTRMID></PYMTRMID>
+			<DUEDATE></DUEDATE>
+			<REFRENCE></REFRENCE>
+
+			<CREATEDIST></CREATEDIST>
+			<CURNCYID></CURNCYID>
+
+			<INTEGRATIONID></INTEGRATIONID>
+			<UpdateExisting></UpdateExisting>
+			<DEFPRICING></DEFPRICING>
+			<USRDEFND1></USRDEFND1>
+		</taSopHdrIvcInsert>
+	</SOPTransactionType>
+</eConnect>

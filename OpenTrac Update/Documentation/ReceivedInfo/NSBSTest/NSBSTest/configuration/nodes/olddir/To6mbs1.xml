@@ -1,0 +1,20 @@
+<rxeNode type='outflow' >
+	<transports>
+	<transport plugin='RxePlugins.RxeDbOutflow'
+		deadMessageFolder='D:\RxE\nsbstest\DeadMessages'
+		logEachMessage='false'>
+		<!-- Begin Custom Transport mechanism -->
+		<!-- External tables receiving the data -->
+		<tables connectString='Provider=SQLOLEDB;Data Source=nsdelsql03v;Initial Catalog=6MBS;User Id=RXE_User;Password=RXE_User1' >
+			<table name='nb_l4que_vendor' message='MB01' processMode='Insert'  />
+			<table name='nb_l4que_podet' message='MB02' processMode='Insert'  />
+			<table name='nb_l4que_cusbal' message='DB01' processMode='Insert'  />
+		</tables>
+		<!-- Begin Standard Transport mechanism -->
+		<!-- Now use the message name and filter to find pipe messages to send. Use % to send all -->
+		<pipes>
+			<pipe name='To6MBS' sqlFilter='%' bucketSize='1' checkSeconds='15' maxRetries='5' retrySeconds='3600' />
+		</pipes>
+	</transport>
+	</transports>
+</rxeNode>

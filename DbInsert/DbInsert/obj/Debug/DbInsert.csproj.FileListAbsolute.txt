@@ -1,0 +1,6 @@
+C:\(svn work)\Nsbs\DbInsert\DbInsert\bin\Debug\DbInsert.exe.config
+C:\(svn work)\Nsbs\DbInsert\DbInsert\obj\Debug\DbInsert.csprojResolveAssemblyReference.cache
+C:\(svn work)\Nsbs\DbInsert\DbInsert\obj\Debug\Dashboard.DialogAbout.resources
+C:\(svn work)\Nsbs\DbInsert\DbInsert\obj\Debug\Dashboard.FormMain.resources
+C:\(svn work)\Nsbs\DbInsert\DbInsert\obj\Debug\DbInsert.Properties.Resources.resources
+C:\(svn work)\Nsbs\DbInsert\DbInsert\obj\Debug\DbInsert.csproj.GenerateResource.Cache

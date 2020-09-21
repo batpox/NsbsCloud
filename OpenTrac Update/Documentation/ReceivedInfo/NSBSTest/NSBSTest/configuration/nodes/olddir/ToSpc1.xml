@@ -1,0 +1,20 @@
+<rxeNode type='outflow' >
+	<transports>
+	<transport plugin='RxePlugins.RxeDbOutflow'
+		deadMessageFolder='D:\RxE\NSBSTest\DeadMessages'
+		logEachMessage='false'>
+		<!-- Begin Custom Transport mechanism -->
+		<!-- External tables receiving the data -->
+		<tables connectString='Provider=Sybase.ASEOLEDBProvider.2;Initial Catalog=L3_test;Password=danHtemp;User ID=RxE_interface;Data Source=L3_Test;Persist Security Info=True' >
+			<table name='nb_l4que_vendor' message='MS01' processMode='Insert'  />
+			<table name='nb_l4que_podet' message='MS02' processMode='Insert'  />
+			<table name='nb_l4que_cusbal' message='DS01' processMode='Insert'  />
+		</tables>
+		<!-- Begin Standard Transport mechanism -->
+		<!-- Now use the message name and filter to find pipe messages to send. Use .* to send all -->
+		<pipes>
+			<pipe name='ToSpc' messageNamePattern='.*' bucketSize='1' checkSeconds='1' maxRetries='12' retrySeconds='7200' />
+		</pipes>
+	</transport>
+	</transports>
+</rxeNode>

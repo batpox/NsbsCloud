@@ -1,0 +1,40 @@
+<rxeNode type='pump'>
+	<transfers>
+	
+	<!-- Note that you can change the message name. If blank, it defaults to same -->
+	<transfer name='XmlTransfer' plugin='RxePlugins.RxeXmlTransfer' transformFile='From6Mbs.xml' checkInterval='30000' deadMessageFolder='D:\RxE\NSBSTEST\DeadMessages'>
+		<in pipe='From6Mbs' messageNamePattern='BD01$' description='customers' state='on' >
+			<out pipe='ToDynamics' transform='BD01' message='BD01' />
+		</in>
+		<in pipe='From6Mbs' messageNamePattern='BD01A$' description='addresses' state='on' >
+			<out pipe='ToDynamics' transform='BD01A' message='BD01A' />
+		</in>
+		<in pipe='From6Mbs' messageNamePattern='BD01B$' description='addresses' state='on' >
+			<out pipe='ToDynamics' transform='BD01B' message='BD01B' />
+		</in>
+		<in pipe='From6Mbs' messageNamePattern='BD02$' description='invoice claims' state='on' >
+			<out pipe='ToDynamics' transform='BD02' message='BD02' />
+		</in>
+		<in pipe='From6Mbs' messageNamePattern='BD03$' description='credit memo' state='on' >
+			<out pipe='ToDynamics' transform='BD03' message='BD03' />
+		</in>
+		<in pipe='From6Mbs' messageNamePattern='BD03A$' description='credit apply' state='on' >
+			<out pipe='ToDynamics' transform='BD03A' message='BD03A' />
+		</in>
+		<in pipe='From6Mbs' messageNamePattern='BM01$' description='freight costs' state='on'>
+			<out pipe='ToMaximo' transform='BM01' message='BM01' />
+		</in>
+		<in pipe='From6Mbs' messageNamePattern='BM02$' description='scrap receipts' state='on'>
+			<out pipe='ToMaximo' transform='BM02' message='BM02' />
+		</in>
+		<in pipe='From6Mbs' messageNamePattern='BM03$' description='meter readings' state='on'>
+			<out pipe='ToMaximo' transform='BM03' message='BM03' />
+		</in>
+		<in pipe='From6Mbs' messageNamePattern='BM04$' description='heat material' state='off'>
+			<out pipe='ToMaximo' transform='BM04' message='BM04' />
+		</in>
+	</transfer>
+	
+	</transfers>
+	
+</rxeNode>

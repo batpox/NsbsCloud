@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MXPOInterface xmlns="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="EN">
+  <Header operation="Notify" event="1">
+    <SenderID type="MAXIMO" majorversion="6" minorversion="0" build="01" dbbuild="V600-76">MX</SenderID>
+    <CreationDateTime>2006-02-21T11:28:06-05:00</CreationDateTime>
+    <RecipientID>SPC</RecipientID>
+    <MessageID>11405392866656513</MessageID>
+  </Header>
+  <Content>
+    <MXPO>
+      <PO action="Replace">
+        <PONUM>1072</PONUM>
+        <DESCRIPTION>Refurbishment of Turbine</DESCRIPTION>
+        <PURCHASEAGENT>NANKIN</PURCHASEAGENT>
+        <ORDERDATE>2006-02-21T11:27:47-05:00</ORDERDATE>
+        <REQUIREDDATE xsi:nil="true" />
+        <FOLLOWUPDATE xsi:nil="true" />
+        <POTYPE>STD</POTYPE>
+        <ORIGINALPONUM />
+        <STATUS changed="1" maxvalue="APPR">APPR</STATUS>
+        <STATUSDATE changed="1">2006-02-21T11:27:58-05:00</STATUSDATE>
+        <VENDOR>BWC</VENDOR>
+        <CONTACT>JOHN S. MOORE</CONTACT>
+        <FREIGHTTERMS />
+        <PAYMENTTERMS>NET 30</PAYMENTTERMS>
+        <SHIPVIA>UPS-GR</SHIPVIA>
+        <CUSTOMERNUM>223903</CUSTOMERNUM>
+        <FOB>PITTSBURGH, PA</FOB>
+        <SHIPTO />
+        <SHIPTOATTN />
+        <BILLTO />
+        <BILLTOATTN />
+        <TOTALCOST>3032.59</TOTALCOST>
+        <CHANGEBY changed="1">WILSON</CHANGEBY>
+        <CHANGEDATE changed="1">2006-02-21T11:28:05-05:00</CHANGEDATE>
+        <PRIORITY>0</PRIORITY>
+        <HISTORYFLAG>0</HISTORYFLAG>
+        <PO1 />
+        <PO2 />
+        <PO3 />
+        <PO4 />
+        <PO5 />
+        <PO6 xsi:nil="true" />
+        <PO7 xsi:nil="true" />
+        <PO8 xsi:nil="true" />
+        <PO9 xsi:nil="true" />
+        <PO10>0</PO10>
+        <VENDELIVERYDATE xsi:nil="true" />
+        <RECEIPTS maxvalue="NONE">NONE</RECEIPTS>
+        <CURRENCYCODE>USD</CURRENCYCODE>
+        <EXCHANGERATE changed="1">1.0</EXCHANGERATE>
+        <EXCHANGEDATE changed="1">2006-02-21T00:00:00-05:00</EXCHANGEDATE>
+        <BUYAHEAD>0</BUYAHEAD>
+        <TOTALTAX1>171.65</TOTALTAX1>
+        <TOTALTAX2>0.0</TOTALTAX2>
+        <TOTALTAX3>0.0</TOTALTAX3>
+        <INCLUSIVE1>1</INCLUSIVE1>
+        <INCLUSIVE2>0</INCLUSIVE2>
+        <INCLUSIVE3>0</INCLUSIVE3>
+        <INTERNAL>0</INTERNAL>
+        <TOTALTAX4>0.0</TOTALTAX4>
+        <TOTALTAX5>0.0</TOTALTAX5>
+        <INCLUSIVE4>0</INCLUSIVE4>
+        <INCLUSIVE5>0</INCLUSIVE5>
+        <STARTDATE xsi:nil="true" />
+        <ENDDATE xsi:nil="true" />
+        <PAYONRECEIPT>0</PAYONRECEIPT>
+        <BUYERCOMPANY />
+        <EXCHANGERATE2 xsi:nil="true" />
+        <MNETSENT />
+        <ECOMSTATUSDATE xsi:nil="true" />
+        <SOURCESYSID />
+        <OWNERSYSID />
+        <EXTERNALREFID />
+        <SENDERSYSID>MX</SENDERSYSID>
+        <SITEID>BEDFORD</SITEID>
+        <ORGID>EAGLENA</ORGID>
+        <DESCRIPTION_LONGDESCRIPTION />
+        <FREIGHTTERMS_LONGDESCRIPTION />
+        <CONTRACTREFNUM />
+        <POID>126</POID>
+        <CONTRACTREFID xsi:nil="true" />
+        <CONTRACTREFREV xsi:nil="true" />
+        <CONTRELEASESEQ xsi:nil="true" />
+        <STORELOC />
+        <STORELOCSITEID />
+        <INSPECTIONREQUIRED>0</INSPECTIONREQUIRED>
+        <NP_STATUSMEMO changed="1" />
+        <STATUSIFACE>0</STATUSIFACE>
+        <TRANS_LANGCODE>EN</TRANS_LANGCODE>
+        <POLINE>
+          <ITEMNUM />
+          <STORELOC />
+          <MODELNUM />
+          <CATALOGCODE />
+          <ORDERQTY xsi:nil="true" />
+          <ORDERUNIT />
+          <UNITCOST xsi:nil="true" />
+          <RECEIVEDQTY xsi:nil="true" />
+          <RECEIVEDUNITCOST>0.0</RECEIVEDUNITCOST>
+          <RECEIVEDTOTALCOST>0.0</RECEIVEDTOTALCOST>
+          <REJECTEDQTY>0.0</REJECTEDQTY>
+          <VENDELIVERYDATE xsi:nil="true" />
+          <SUPERVISOR />
+          <ENTERDATE>2006-02-21T11:27:48-05:00</ENTERDATE>
+          <ENTERBY>WILSON</ENTERBY>
+          <DESCRIPTION>Refurbish Turbine</DESCRIPTION>
+          <PL1 />
+          <PL2 />
+          <PL3 />
+          <PL4 xsi:nil="true" />
+          <PL5 />
+          <REQUESTEDBY>WILSON</REQUESTEDBY>
+          <REQDELIVERYDATE xsi:nil="true" />
+          <ISSUE>1</ISSUE>
+          <POLINENUM>1</POLINENUM>
+          <TAXED>0</TAXED>
+          <PLIN1 />
+          <PLIN2 />
+          <PLIN3 />
+          <PLIN4 xsi:nil="true" />
+          <PLIN5 xsi:nil="true" />
+          <ASSETNUM>12600</ASSETNUM>
+          <CHARGESTORE>0</CHARGESTORE>
+          <GLDEBITACCT>
+            <VALUE>6500-300-200</VALUE>
+            <GLCOMP glorder="0">6500</GLCOMP>
+            <GLCOMP glorder="1">300</GLCOMP>
+            <GLCOMP glorder="2">200</GLCOMP>
+          </GLDEBITACCT>
+          <GLCREDITACCT>
+            <VALUE>6800-930-600</VALUE>
+            <GLCOMP glorder="0">6800</GLCOMP>
+            <GLCOMP glorder="1">930</GLCOMP>
+            <GLCOMP glorder="2">600</GLCOMP>
+          </GLCREDITACCT>
+          <LINECOST>2567.0</LINECOST>
+          <TAX1CODE>PA</TAX1CODE>
+          <TAX1>154.02</TAX1>
+          <TAX2CODE />
+          <TAX2>0.0</TAX2>
+          <TAX3CODE />
+          <TAX3>0.0</TAX3>
+          <RECEIPTREQD>0</RECEIPTREQD>
+          <MANUFACTURER />
+          <TAX4CODE />
+          <TAX4>0.0</TAX4>
+          <TAX5CODE />
+          <TAX5>0.0</TAX5>
+          <CATEGORY />
+          <REMARK />
+          <LOCATION />
+          <LOADEDCOST>2567.0</LOADEDCOST>
+          <PRORATESERVICE>0</PRORATESERVICE>
+          <RECEIPTSCOMPLETE>0</RECEIPTSCOMPLETE>
+          <INSPECTIONREQUIRED>0</INSPECTIONREQUIRED>
+          <PRORATECOST>0.0</PRORATECOST>
+          <POLINEID>2092913675</POLINEID>
+          <LINECOST2 xsi:nil="true" />
+          <MRNUM />
+          <MRLINENUM xsi:nil="true" />
+          <PL6 />
+          <PL7 />
+          <PL8 />
+          <PL9 />
+          <PL10 />
+          <PLIN6 />
+          <PLIN7 />
+          <PLIN8 />
+          <PLIN9 />
+          <POLALN1 />
+          <POLALN2 />
+          <POLALN3 />
+          <POLALN4 />
+          <POLALN5 />
+          <PCARDNUM />
+          <PCARDTYPE />
+          <PCARDEXPDATE />
+          <FINCNTRLID />
+          <PCARDVERIFICATION />
+          <VENDORPACKCODE />
+          <VENDORPACKQUANTITY />
+          <VENDORWAREHOUSE />
+          <ORGID>EAGLENA</ORGID>
+          <ISDISTRIBUTED>0</ISDISTRIBUTED>
+          <REFWO>1001</REFWO>
+          <ENTEREDASTASK>0</ENTEREDASTASK>
+          <LINETYPE>SERVICE</LINETYPE>
+          <ITEMSETID>SET1</ITEMSETID>
+          <DESCRIPTION_LONGDESCRIPTION />
+          <REMARK_LONGDESCRIPTION />
+          <PRLINENUM xsi:nil="true" />
+          <PRNUM />
+          <CONDITIONCODE />
+          <CONTRACTREFNUM />
+          <COMMODITYGROUP />
+          <COMMODITY />
+          <CONTRACTREFID xsi:nil="true" />
+          <CONTRACTREFREV xsi:nil="true" />
+          <SCHEDULEID xsi:nil="true" />
+          <FCPROJECTID />
+          <FCTASKID />
+          <CONTREFLINEID xsi:nil="true" />
+          <TOSITEID>BEDFORD</TOSITEID>
+          <SHIPTO />
+          <SHIPTOATTN />
+          <CONVERSION>1.0</CONVERSION>
+          <MKTPLCITEM>0</MKTPLCITEM>
+          <POCOST>
+            <POCOSTID>2092913727</POCOSTID>
+            <POLINEID>2092913675</POLINEID>
+            <GLDEBITACCT>
+              <VALUE>6500-300-200</VALUE>
+              <GLCOMP glorder="0">6500</GLCOMP>
+              <GLCOMP glorder="1">300</GLCOMP>
+              <GLCOMP glorder="2">200</GLCOMP>
+            </GLDEBITACCT>
+            <FINCNTRLID />
+            <ORGID>EAGLENA</ORGID>
+            <LINECOST>2567.0</LINECOST>
+            <LOADEDCOST>2567.0</LOADEDCOST>
+            <PERCENTAGE>100.0</PERCENTAGE>
+            <GLCREDITACCT />
+            <FCPROJECTID />
+            <FCTASKID />
+            <COSTLINENUM>1</COSTLINENUM>
+            <QUANTITY xsi:nil="true" />
+          </POCOST>
+        </POLINE>
+        <POLINE>
+          <ITEMNUM>FREIGHT</ITEMNUM>
+          <STORELOC />
+          <MODELNUM />
+          <CATALOGCODE />
+          <ORDERQTY xsi:nil="true" />
+          <ORDERUNIT />
+          <UNITCOST xsi:nil="true" />
+          <RECEIVEDQTY xsi:nil="true" />
+          <RECEIVEDUNITCOST>0.0</RECEIVEDUNITCOST>
+          <RECEIVEDTOTALCOST>0.0</RECEIVEDTOTALCOST>
+          <REJECTEDQTY>0.0</REJECTEDQTY>
+          <VENDELIVERYDATE xsi:nil="true" />
+          <SUPERVISOR />
+          <ENTERDATE>2006-02-21T11:27:49-05:00</ENTERDATE>
+          <ENTERBY>WILSON</ENTERBY>
+          <DESCRIPTION>Freight</DESCRIPTION>
+          <PL1 />
+          <PL2 />
+          <PL3 />
+          <PL4 xsi:nil="true" />
+          <PL5 />
+          <REQUESTEDBY>WILSON</REQUESTEDBY>
+          <REQDELIVERYDATE xsi:nil="true" />
+          <ISSUE>1</ISSUE>
+          <POLINENUM>2</POLINENUM>
+          <TAXED>0</TAXED>
+          <PLIN1 />
+          <PLIN2 />
+          <PLIN3 />
+          <PLIN4 xsi:nil="true" />
+          <PLIN5 xsi:nil="true" />
+          <ASSETNUM>12600</ASSETNUM>
+          <CHARGESTORE>0</CHARGESTORE>
+          <GLDEBITACCT>
+            <VALUE>6500-300-200</VALUE>
+            <GLCOMP glorder="0">6500</GLCOMP>
+            <GLCOMP glorder="1">300</GLCOMP>
+            <GLCOMP glorder="2">200</GLCOMP>
+          </GLDEBITACCT>
+          <GLCREDITACCT>
+            <VALUE>6800-930-600</VALUE>
+            <GLCOMP glorder="0">6800</GLCOMP>
+            <GLCOMP glorder="1">930</GLCOMP>
+            <GLCOMP glorder="2">600</GLCOMP>
+          </GLCREDITACCT>
+          <LINECOST>132.0</LINECOST>
+          <TAX1CODE>PA</TAX1CODE>
+          <TAX1>7.92</TAX1>
+          <TAX2CODE />
+          <TAX2>0.0</TAX2>
+          <TAX3CODE />
+          <TAX3>0.0</TAX3>
+          <RECEIPTREQD>0</RECEIPTREQD>
+          <MANUFACTURER />
+          <TAX4CODE />
+          <TAX4>0.0</TAX4>
+          <TAX5CODE />
+          <TAX5>0.0</TAX5>
+          <CATEGORY />
+          <REMARK />
+          <LOCATION />
+          <LOADEDCOST>132.0</LOADEDCOST>
+          <PRORATESERVICE>0</PRORATESERVICE>
+          <RECEIPTSCOMPLETE>0</RECEIPTSCOMPLETE>
+          <INSPECTIONREQUIRED>0</INSPECTIONREQUIRED>
+          <PRORATECOST>0.0</PRORATECOST>
+          <POLINEID>2092913676</POLINEID>
+          <LINECOST2 xsi:nil="true" />
+          <MRNUM />
+          <MRLINENUM xsi:nil="true" />
+          <PL6 />
+          <PL7 />
+          <PL8 />
+          <PL9 />
+          <PL10 />
+          <PLIN6 />
+          <PLIN7 />
+          <PLIN8 />
+          <PLIN9 />
+          <POLALN1 />
+          <POLALN2 />
+          <POLALN3 />
+          <POLALN4 />
+          <POLALN5 />
+          <PCARDNUM />
+          <PCARDTYPE />
+          <PCARDEXPDATE />
+          <FINCNTRLID />
+          <PCARDVERIFICATION />
+          <VENDORPACKCODE />
+          <VENDORPACKQUANTITY />
+          <VENDORWAREHOUSE />
+          <ORGID>EAGLENA</ORGID>
+          <ISDISTRIBUTED>0</ISDISTRIBUTED>
+          <REFWO>1001</REFWO>
+          <ENTEREDASTASK>0</ENTEREDASTASK>
+          <LINETYPE>STDSERVICE</LINETYPE>
+          <ITEMSETID>SET1</ITEMSETID>
+          <DESCRIPTION_LONGDESCRIPTION />
+          <REMARK_LONGDESCRIPTION />
+          <PRLINENUM xsi:nil="true" />
+          <PRNUM />
+          <CONDITIONCODE />
+          <CONTRACTREFNUM />
+          <COMMODITYGROUP />
+          <COMMODITY />
+          <CONTRACTREFID xsi:nil="true" />
+          <CONTRACTREFREV xsi:nil="true" />
+          <SCHEDULEID xsi:nil="true" />
+          <FCPROJECTID />
+          <FCTASKID />
+          <CONTREFLINEID xsi:nil="true" />
+          <TOSITEID>BEDFORD</TOSITEID>
+          <SHIPTO />
+          <SHIPTOATTN />
+          <CONVERSION>1.0</CONVERSION>
+          <MKTPLCITEM>0</MKTPLCITEM>
+          <POCOST>
+            <POCOSTID>2092913731</POCOSTID>
+            <POLINEID>2092913676</POLINEID>
+            <GLDEBITACCT>
+              <VALUE>6500-300-200</VALUE>
+              <GLCOMP glorder="0">6500</GLCOMP>
+              <GLCOMP glorder="1">300</GLCOMP>
+              <GLCOMP glorder="2">200</GLCOMP>
+            </GLDEBITACCT>
+            <FINCNTRLID />
+            <ORGID>EAGLENA</ORGID>
+            <LINECOST>132.0</LINECOST>
+            <LOADEDCOST>132.0</LOADEDCOST>
+            <PERCENTAGE>100.0</PERCENTAGE>
+            <GLCREDITACCT />
+            <FCPROJECTID />
+            <FCTASKID />
+            <COSTLINENUM>1</COSTLINENUM>
+            <QUANTITY xsi:nil="true" />
+          </POCOST>
+        </POLINE>
+      </PO>
+    </MXPO>
+  </Content>
+</MXPOInterface>
+

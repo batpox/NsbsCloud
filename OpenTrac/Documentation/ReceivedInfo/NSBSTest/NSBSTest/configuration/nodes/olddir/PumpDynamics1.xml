@@ -1,0 +1,31 @@
+<rxeNode type='pump'>
+	<transfers>
+	
+	<!-- Note that you can change the message name. If blank, it defaults to same -->
+	<transfer name='XmlTransfer' plugin='RxePlugins.RxeXmlTransfer' transformFile='FromDynamics.xml' checkInterval='30000' deadMessageFolder='D:\RxE\NSBSTest\DeadMessages'>
+
+		<in pipe='FromDynamics' messageNamePattern='DS01$' state='on' >
+			<out pipe='ToSPC' transform='DS01' message='DS01' />
+			<out pipe='To6Mbs' transform='DB01' message='DB01' />
+		</in>
+		<in pipe='FromDynamics' messageNamePattern='DM01a$' state='on' >
+			<out pipe='ToMaximo' transform='DM01a' message='DM01a' />
+		</in>
+		<in pipe='FromDynamics' messageNamePattern='DM01b$' state='on' >
+			<out pipe='ToMaximo' transform='DM01b' message='DM01b' />
+		</in>
+		<in pipe='FromDynamics' messageNamePattern='DM02$' state='off' >
+			<out pipe='ToMaximo' transform='DM02' message='DM02' />
+		</in>
+		<in pipe='FromDynamics' messageNamePattern='DM03$' state='off' >
+			<out pipe='ToMaximo' transform='DM03' message='DM03' />
+		</in>
+		<in pipe='FromDynamics' messageNamePattern='DM04$' state='off' >
+			<out pipe='ToMaximo' transform='DM04' message='DM04' />
+		</in>
+
+	</transfer>
+	
+	</transfers>
+	
+</rxeNode>

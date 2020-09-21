@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MXINVISSUEInterface xmlns="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="EN">
+  <Header operation="Notify" event="1">
+    <SenderID>SPC-RXE</SenderID>
+    <RecipientID>MX</RecipientID>
+   </Header>
+  <Content>
+    <MXINVISSUE>
+     <MATUSETRANS>
+        <ITEMNUM>FERROVANADIUM</ITEMNUM>
+        <STORELOC>CONSUMABLES</STORELOC>
+        <QUANTITY>-1.0</QUANTITY>
+	<ISSUETYPE>ISSUE</ISSUETYPE> 
+	<MEMO>12</MEMO>
+        <ORGID>STEELMILL</ORGID>
+	<SITEID>DELTA</SITEID>
+        <ACTUALDATE>2007-06-12T09:37:49-05:00</ACTUALDATE>
+	<NS_SPCHEATNUM xsi:nil="true" />
+        <NS_SPCFCE />
+        <NS_SPCFROMAREA />
+        <NS_SPCFROMLOCATION xsi:nil="true" />
+      </MATUSETRANS>
+    </MXINVISSUE>
+  </Content>
+</MXINVISSUEInterface>

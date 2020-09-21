@@ -1,0 +1,61 @@
+﻿<transforms>
+  <transform name="DB01" in="Dynamics\FromDynamics\db01 customer_balances.xml" out="6MBS\To6MBS\DB01 nb_l4que_cusbal.xml">
+    <context in="//eConnect/Customer" out="//nb_l4que_cusbal">
+      <map in="CUSTNMBR" out="cus_cd" />
+    </context>
+    <context in="//eConnect/Customer/Balance" out="//nb_l4que_cusbal">
+      <map in="AGPERAMT_1" out="current_amt" />
+      <map in="AGPERAMT_2" out="amt1" />
+      <map in="AGPERAMT_5" out="amt2" />
+      <map in="AGPERAMT_6" out="amt3" />
+    </context>
+    <context in="Literal" out="//nb_l4que_cusbal">
+      <map literal="U" out="status" />
+      <map literal="{function}:GetDate()" out="datewritten" />
+      <map literal="{function}:GetDate()" out="dateprocessed" />
+    </context>
+  </transform>
+  <transform name="DS01" in="Dynamics\FromDynamics\ds01 customer_balances.xml" out="Spc\ToSpc\DS01 nb_l4que_cusbal.xml">
+    <context in="//eConnect/Customer" out="//nb_l4que_cusbal">
+      <map in="CUSTNMBR" out="cus_cd" />
+    </context>
+    <context in="//eConnect/Customer/Balance" out="//nb_l4que_cusbal">
+      <map in="AGPERAMT_1" out="current_amt" />
+      <map in="AGPERAMT_2" out="amt1" />
+      <map in="AGPERAMT_5" out="amt2" />
+      <map in="AGPERAMT_6" out="amt3" />
+    </context>
+    <context in="Literal" out="//nb_l4que_cusbal">
+      <map literal="U" out="status" />
+      <map literal="{function}:GetDate()" out="datewritten" />
+      <map literal="{function}:GetDate()" out="dateprocessed" />
+    </context>
+  </transform>
+  <transform name="DM01a" in="Dynamics\FromDynamics\DM01a ap_appl_final.xml" out="Maximo\ToMaximo\DM01a NSINVOICEInterface.xml">
+    <context in="//eConnect/AP_APPL_FINAL" out="//Content/MXINVOICE/INVOICE">
+      <map in="VCHRNMBR" out="INVOICENUM" />
+    </context>
+    <context in="Literal" out="//Content/MXINVOICE/INVOICE">
+      <map literal="PAID" out="STATUS" />
+      <map literal="DELTA" out="SITEID" />
+      <map literal="STEELMILL" out="ORGID" />
+      <map literal="DYNAMICS-RXE" out="SENDERSYSID" />
+      <map literal="{function}:GetDate()" out="CHANGEDATE" />
+      <map literal="MXINTADM" out="CHANGEBY" />
+    </context>
+  </transform>
+  <transform name="DM01b" in="Dynamics\FromDynamics\DM01b ap_appl_pstd_payment.xml" out="Maximo\ToMaximo\DM01b NSINVOICEInterface.XML">
+    <context in="//eConnect/AP_APPL_PSTD_Payment" out="//Content/MXINVOICE/INVOICE">
+      <map in="APTVCHNM" out="INVOICENUM" />
+      <map in="APTODCDT" out="PAIDDATE" />
+      <map in="APPLDAMT" out="PAID" />
+    </context>
+    <context in="Literal" out="//Content/MXINVOICE/INVOICE">
+      <map literal="DELTA" out="SITEID" />
+      <map literal="STEELMILL" out="ORGID" />
+      <map literal="DYNAMICS-RXE" out="SENDERSYSID" />
+      <map literal="{function}:GetDate()" out="CHANGEDATE" />
+      <map literal="MXINTADM" out="CHANGEBY" />
+    </context>
+  </transform>
+</transforms>

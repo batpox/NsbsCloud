@@ -1,0 +1,25 @@
+<NewDataSet>
+  <nb_l3que_rmr>
+    <rowid>Integer()</rowid>
+    <datewritten>Timestamp()</datewritten>
+    <dateprocessed>Timestamp()</dateprocessed>
+    <status>Char(2)</status>
+    <receiver_no>Integer()</receiver_no>
+    <purchase_order_no>Integer()</purchase_order_no>
+    <purchase_order_line_no>Integer()</purchase_order_line_no>
+    <material_type>Char(18)</material_type>
+    <quantity_received_buffer>Currency()</quantity_received_buffer>
+    <unit_of_measure>Char(8)</unit_of_measure>
+    <financial_transaction_cd>Char(2)</financial_transaction_cd>
+    <unit_cost_received_buffer>Currency()</unit_cost_received_buffer>
+    <received_datetime>Timestamp()</received_datetime>
+    <unit_of_measure_purchasing>Char(8)</unit_of_measure_purchasing>
+    <ticket_no>Integer()</ticket_no>
+    <transportation_mode>Char(1)</transportation_mode>
+    <posted_to_po>Char(2)</posted_to_po>
+    <ticket_type>Char(1)</ticket_type>
+    <bill_of_lading>Char(20)</bill_of_lading>
+    <vehicle_no>Char(20)</vehicle_no>
+    <po_no_ch>Char(12)</po_no_ch>
+  </nb_l3que_rmr>
+</NewDataSet>

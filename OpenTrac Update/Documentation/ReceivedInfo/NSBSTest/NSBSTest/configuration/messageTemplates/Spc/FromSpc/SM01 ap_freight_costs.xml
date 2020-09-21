@@ -1,0 +1,16 @@
+<NewDataSet>
+  <Table name="ap_freight_costs">
+    <invoice_no>282742</invoice_no>
+    <customer_id>1244</customer_id>
+    <order_no>104843</order_no>
+    <ship_to_no>1171</ship_to_no>
+    <financial_transaction_cd>L1</financial_transaction_cd>
+    <carrier_cd>14</carrier_cd>
+    <carrier_cost>359.3900</carrier_cost>
+    <load_id>269663</load_id>
+    <sent_to_financial_system_flag>Y</sent_to_financial_system_flag>
+    <change_datetime>2005-03-09T17:50:36.383-05:00</change_datetime>
+    <change_user_id>63</change_user_id>
+    <bill_of_lading_no>264916</bill_of_lading_no>
+  </Table>
+</NewDataSet>

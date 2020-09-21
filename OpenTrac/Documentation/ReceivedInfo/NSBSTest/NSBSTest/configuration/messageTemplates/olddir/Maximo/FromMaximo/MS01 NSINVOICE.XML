@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NSINVOICE xmlns="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="EN">
+  <Header operation="Notify" event="1">
+    <SenderID type="MAXIMO" majorversion="6" minorversion="0" build="03" dbbuild="V600-341">MX</SenderID>
+    <CreationDateTime>2006-04-21T08:42:59-05:00</CreationDateTime>
+    <RecipientID>DYNAMICS-RXE</RecipientID>
+    <MessageID>11456233792983779</MessageID>
+  </Header>
+  <Content>
+    <MXINVOICE>
+      <INVOICE action="Add">
+        <INVOICENUM>800007</INVOICENUM>
+        <DESCRIPTION>scrap po for Steve's tests</DESCRIPTION>
+        <PONUM>127005</PONUM>
+        <VENDOR>SCRAPCO2</VENDOR>
+        <CONTACT>Shrikant Kulahalli</CONTACT>
+        <PAYMENTTERMS />
+        <CHECKCODE />
+        <CHECKNUM />
+        <CURRENCYCODE>USD</CURRENCYCODE>
+        <EXCHANGERATE>1.0</EXCHANGERATE>
+        <EXCHANGEDATE>2006-04-21T00:00:00-05:00</EXCHANGEDATE>
+        <DOCUMENTTYPE>INVOICE</DOCUMENTTYPE>
+        <ORIGINVOICENUM />
+        <STATUS maxvalue="APPR">APPR</STATUS>
+        <STATUSDATE>2006-04-21T08:42:57-05:00</STATUSDATE>
+        <APPROVALNUM>100301</APPROVALNUM>
+        <INVOICEDATE xsi:nil="true" />
+        <DISCOUNTDATE xsi:nil="true" />
+        <DUEDATE xsi:nil="true" />
+        <PAIDDATE xsi:nil="true" />
+        <PAID xsi:nil="true" />
+        <ENTERDATE>2006-04-21T08:42:46-05:00</ENTERDATE>
+        <ENTERBY>MXINTADM</ENTERBY>
+        <CHANGEDATE>2006-04-21T08:42:57-05:00</CHANGEDATE>
+        <CHANGEBY>MXINTADM</CHANGEBY>
+        <HISTORYFLAG>1</HISTORYFLAG>
+        <TOTALTAX1>1.75</TOTALTAX1>
+        <TAX1GL />
+        <TOTALTAX2>0.0</TOTALTAX2>
+        <TAX2GL />
+        <TOTALTAX3>0.0</TOTALTAX3>
+        <TAX3GL />
+        <TOTALTAX4>0.0</TOTALTAX4>
+        <TAX4GL />
+        <INCLUSIVE1>1</INCLUSIVE1>
+        <INCLUSIVE2>1</INCLUSIVE2>
+        <INCLUSIVE3>1</INCLUSIVE3>
+        <DISCOUNT xsi:nil="true" />
+        <TOTALCOST>21.75</TOTALCOST>
+        <SYSCODE>128</SYSCODE>
+        <TOTALTAX5>0.0</TOTALTAX5>
+        <TAX5GL />
+        <INCLUSIVE4>1</INCLUSIVE4>
+        <INCLUSIVE5>1</INCLUSIVE5>
+        <VENDORINVOICENUM />
+        <BASETOTALCOST>21.75</BASETOTALCOST>
+        <APSUSPENSEACCT />
+        <APCONTROLACCT />
+        <FINANCIALPERIOD>1</FINANCIALPERIOD>
+        <EXCHANGERATE2 xsi:nil="true" />
+        <BANKACCOUNT />
+        <BANKNUM />
+        <SOURCESYSID />
+        <OWNERSYSID />
+        <EXTERNALREFID />
+        <SENDERSYSID>MX</SENDERSYSID>
+        <EINVOICE>0</EINVOICE>
+        <SITEID>DELTA</SITEID>
+        <ORGID>STEELMILL</ORGID>
+        <DESCRIPTION_LONGDESCRIPTION />
+        <INVOICEID>731317</INVOICEID>
+        <SCHEDULEID xsi:nil="true" />
+        <CONTRACTREFNUM />
+        <CONTRACTREFREV xsi:nil="true" />
+        <CONTRACTREFID xsi:nil="true" />
+        <TARGINVSTATUS />
+        <SCHEDULENUM xsi:nil="true" />
+        <NP_STATUSMEMO>Approved by Receipt trans Pay On Receipt</NP_STATUSMEMO>
+        <NS_INV_ROUTETO />
+        <STATUSIFACE>0</STATUSIFACE>
+        <TRANS_LANGCODE>EN</TRANS_LANGCODE>
+        <INVOICELINE>
+          <VENDOR>SCRAPCO2</VENDOR>
+          <PONUM>127005</PONUM>
+          <INVOICELINENUM>1</INVOICELINENUM>
+          <POLINENUM>1</POLINENUM>
+          <ITEMNUM>SCRAP01</ITEMNUM>
+          <DESCRIPTION>Grade 1 Scrap</DESCRIPTION>
+          <INVOICEQTY>2.0</INVOICEQTY>
+          <INVOICEUNIT>TON</INVOICEUNIT>
+          <UNITCOST>10.0</UNITCOST>
+          <LINECOST>20.0</LINECOST>
+          <RECEIPTREQD>1</RECEIPTREQD>
+          <TAX1CODE>OH</TAX1CODE>
+          <TAX1>1.75</TAX1>
+          <TAX2CODE />
+          <TAX2>0.0</TAX2>
+          <TAX3CODE />
+          <TAX3>0.0</TAX3>
+          <INVOICELIN1 />
+          <INVOICELIN2 />
+          <INVOICELIN3 />
+          <INVOICELIN4 />
+          <INVOICELIN5 />
+          <ENTERBY>MXINTADM</ENTERBY>
+          <ENTERDATE>2006-04-21T08:42:57-05:00</ENTERDATE>
+          <TAX4CODE />
+          <TAX4>0.0</TAX4>
+          <TAX5CODE />
+          <TAX5>0.0</TAX5>
+          <LOADEDCOST>20.0</LOADEDCOST>
+          <PRORATED>0</PRORATED>
+          <PRORATECOST>0.0</PRORATECOST>
+          <PRORATESERVICE>0</PRORATESERVICE>
+          <LINECOST2>0.0</LINECOST2>
+          <INVOICELIN6 />
+          <INVOICELIN7 />
+          <INVOICELIN8 />
+          <INVOICELIN9 />
+          <ORGID>STEELMILL</ORGID>
+          <LINETYPE>ITEM</LINETYPE>
+          <ITEMSETID>MASTER</ITEMSETID>
+          <DESCRIPTION_LONGDESCRIPTION />
+          <LOADEDCOSTFORUI>20.0</LOADEDCOSTFORUI>
+          <CONDITIONCODE />
+          <COMMODITYGROUP>RAWMAT</COMMODITYGROUP>
+          <COMMODITY>SCRAP</COMMODITY>
+          <INVOICELINEID>1205161</INVOICELINEID>
+          <CONTRACTREFNUM />
+          <CONTRACTREFREV xsi:nil="true" />
+          <CONTRACTREFID xsi:nil="true" />
+          <LEASEASSET />
+          <CONTREFLINEID xsi:nil="true" />
+          <CONVERSION>1.0</CONVERSION>
+          <NS_TAXABLE>0</NS_TAXABLE>
+          <NS_PAYONRECEIPT>0</NS_PAYONRECEIPT>
+          <PRICEVAR />
+          <INVOICECOST>
+            <VENDOR>SCRAPCO2</VENDOR>
+            <GLDEBITACCT>
+              <VALUE>10-00000-000-0000</VALUE>
+              <GLCOMP glorder="0">10</GLCOMP>
+              <GLCOMP glorder="1">00000</GLCOMP>
+              <GLCOMP glorder="2">000</GLCOMP>
+              <GLCOMP glorder="3">0000</GLCOMP>
+            </GLDEBITACCT>
+            <GLCREDITACCT />
+            <ASSETNUM />
+            <UNITCOST>10.0</UNITCOST>
+            <LINECOST>20.0</LINECOST>
+            <PERCENTAGE>100.0</PERCENTAGE>
+            <MEMO />
+            <COSTLINENUM>1</COSTLINENUM>
+            <CHARGESTORE>0</CHARGESTORE>
+            <ICT1 />
+            <ICT2 />
+            <ICT3 />
+            <QUANTITY>2.0</QUANTITY>
+            <LOCATION />
+            <FINCNTRLID />
+            <ORGID>STEELMILL</ORGID>
+            <REFWO />
+            <ENTEREDASTASK>0</ENTEREDASTASK>
+            <INVOICECOSTID>1212575</INVOICECOSTID>
+            <FCPROJECTID />
+            <FCTASKID />
+            <TOSITEID>DELTA</TOSITEID>
+          </INVOICECOST>
+        </INVOICELINE>
+      </INVOICE>
+    </MXINVOICE>
+  </Content>
+</NSINVOICE>
+

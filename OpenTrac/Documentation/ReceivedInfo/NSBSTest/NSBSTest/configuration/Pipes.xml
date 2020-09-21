@@ -1,0 +1,43 @@
+<PipesDataset>
+  <Pipes>
+    <PipeId>1</PipeId>
+    <PipeName>ToDynamics</PipeName>
+  </Pipes>
+  <Pipes>
+    <PipeId>2</PipeId>
+    <PipeName>FromDynamics</PipeName>
+  </Pipes>
+  <Pipes>
+    <PipeId>3</PipeId>
+    <PipeName>ToSpc</PipeName>
+  </Pipes>
+  <Pipes>
+    <PipeId>4</PipeId>
+    <PipeName>FromSpc</PipeName>
+  </Pipes>
+  <Pipes>
+    <PipeId>5</PipeId>
+    <PipeName>ToMaximo</PipeName>
+  </Pipes>
+  <Pipes>
+    <PipeId>6</PipeId>
+    <PipeName>FromMaximo</PipeName>
+  </Pipes>
+  <Pipes>
+    <PipeId>7</PipeId>
+    <PipeName>InvalidMessage</PipeName>
+  </Pipes>
+  <Pipes>
+    <PipeId>10</PipeId>
+    <PipeName>FromSpc2</PipeName>
+  </Pipes>
+  <Pipes>
+    <PipeId>11</PipeId>
+    <PipeName>FromMaximo2</PipeName>
+  </Pipes>
+  <Pipes>
+    <PipeId>12</PipeId>
+    <PipeName>ToOpenTrac</PipeName>
+  </Pipes>
+  
+</PipesDataset>

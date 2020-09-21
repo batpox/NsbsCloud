@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PublishMO02 xmlns="http://www.ibm.com/maximo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creationDateTime="2016-09-01T08:59:27-04:00" transLanguage="EN" baseLanguage="EN" messageID="1472734767760799101" maximoVersion="7 5 20160408-1816 V7515--1" event="1">
+  <MO02Set>
+    <PO action="Replace">
+      <PONUM>OT11111Y</PONUM>
+      <REVISIONNUM>0</REVISIONNUM>
+      <SITEID>DELTA</SITEID>
+      <STATUS changed="1" maxvalue="APPR">APPR</STATUS>
+      <POLINE>
+        <POLINENUM>1</POLINENUM>
+      </POLINE>
+      <POLINE>
+        <POLINENUM>2</POLINENUM>
+      </POLINE>
+      <POLINE>
+        <POLINENUM>3</POLINENUM>
+      </POLINE>
+    </PO>
+  </MO02Set>
+</PublishMO02>
+

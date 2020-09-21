@@ -1,0 +1,41 @@
+<rxeNode type='inflow' >
+	<!-- A transport receives from one source and places into 1 or more pipes -->
+	<transport  plugin='RxePlugins.RxeFileInflow' >
+		<!-- Begin Custom Transport mechanism -->
+		<folders root='' >
+
+			<folder name='in' path='\\nsdelappdev\maximo_mea_globaldir\xmlfiles' maxFileSize='500000' />
+			<folder name='error' path='\\nsdelappdev\maximo_mea_globaldir\maximo_to_rxe_errors' />
+			<folder name='success' path='\\nsdelappdev\maximo_mea_globaldir\maximo_to_rxe_backup' />
+
+<!--
+			<folder name='in' path='\\nsdelwas02v\maximo_mea_globaldir\xmlfiles' maxFileSize='500000' />
+			<folder name='error' path='\nsdelwas02v\maximo_mea_globaldir\maximo_to_rxe_errors' />
+			<folder name='success' path='\\nsdelwas02v\maximo_mea_globaldir\maximo_to_rxe_backup' />
+			-->
+			
+<!--
+			<folder name='in' path='\\srv50241\maximo_to_rxe' maxFileSize='500000' />
+			<folder name='error' path='\\srv50241\maximo_to_rxe_errors' />
+			<folder name='success' path='\\srv50241\maximo_to_rxe_backup' />
+			-->
+		</folders>
+		<!-- Begin Standard Transport mechanism -->
+		<!-- Message payload matching to determine message name -->
+		<messages payloadType='XML'>
+			
+			<message envelopePattern='^CG_DYNAMICS-RXE_CGMXVENDORInterface' name='MD01' />
+			<message envelopePattern='^CG_DYNAMICS-RXE_CGMXGL_MATRECTXInt' name='MD02a' />			
+			<message envelopePattern='^CG_DYNAMICS-RXE_CGMXGL_MATUSETXInt' name='MD02b' />
+			<message envelopePattern='^CG_DYNAMICS-RXE_CGMXGL_SERVRECTXInt' name='MD02c' />
+			<message envelopePattern='^CG_DYNAMICS-RXE_CGMXGL_INVTXInt' name='MD02d' />
+			<message envelopePattern='^CG_DYNAMICS-RXE_CGMXINVOICEInterface' name='MD03' />
+			<message envelopePattern='^CG_SPC-RXE_CGMXVENDORInterface' name='MS01' />
+			<message envelopePattern='^CG_SPC-RXE_CGMXPOInterface' name='MS02' />
+		</messages>
+		<!-- Now use the derived message name and regular expression to select pipe -->
+		<pipes>
+			<pipe name='FromMaximo' messageNamePattern='.*'  />
+		</pipes>
+	</transport>
+</rxeNode>

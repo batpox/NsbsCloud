@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MXCOAInterface xmlns="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="EN">
+  <Header operation="Notify" event="0">
+    <SenderID type="MAXIMO" majorversion="6" minorversion="0" build="03" dbbuild="V600-341">DYNAMICS-RXE</SenderID>
+    <CreationDateTime>2006-04-11T17:33:32-05:00</CreationDateTime>
+  </Header>
+  <Content>
+    <MXCOA>
+      <CHARTOFACCOUNTS>
+        <GLACCOUNT>
+          <VALUE />
+        </GLACCOUNT>
+        <GLCOMP01 />
+        <GLCOMP02 />
+        <GLCOMP03 />
+        <GLCOMP04 />
+        <GLCOMP05 />
+        <GLCOMP06 />
+        <GLCOMP07 />
+        <GLCOMP08 />
+        <GLCOMP09 />
+        <GLCOMP10 />
+        <GLCOMP11 />
+        <GLCOMP12 />
+        <GLCOMP13 />
+        <GLCOMP14 />
+        <GLCOMP15 />
+        <GLCOMP16 />
+        <GLCOMP17 />
+        <GLCOMP18 />
+        <GLCOMP19 />
+        <GLCOMP20 />
+        <ACCOUNTNAME />
+        <GLACCTYPE />
+        <SOURCESYSID />
+        <OWNERSYSID />
+        <EXTERNALREFID />
+        <SENDERSYSID />
+        <ORGID />
+        <ACTIVE />
+        <CHARTOFACCOUNTSID />
+        <TRANS_LANGCODE />
+      </CHARTOFACCOUNTS>
+    </MXCOA>
+  </Content>
+</MXCOAInterface>
+

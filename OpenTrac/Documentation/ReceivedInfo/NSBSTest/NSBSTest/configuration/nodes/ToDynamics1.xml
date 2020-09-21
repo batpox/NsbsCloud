@@ -1,0 +1,17 @@
+<rxeNode type='outflow' >
+	<transports>
+	<transport name='FileSend01' plugin='RxePlugins.RxeFileOutflow'
+		deadMessageFolder='D:\RxE\NSBSTest\DeadMessages'
+		logEachMessage='true' >
+		<!-- Begin Custom Transport mechanism -->
+		<folders root='' >
+			<folder name='out' path='\\nsdelmid01v\TestToDynamics' custom='.GPTST' loginfo='True'/>
+		</folders>
+		<!-- Begin Standard Transport mechanism -->
+		<!-- Now use the derived message name and regular expression to select messages -->
+		<pipes>
+			<pipe name='ToDynamics' sqlFilter='%' bucketSize='1' checkSeconds='1' maxRetries='12' retrySeconds='7200'  />
+		</pipes>
+	</transport>
+	</transports>
+</rxeNode>

@@ -1,0 +1,17 @@
+<NewDataSet>
+  <nb_l4que_podet>
+    <datewritten></datewritten>
+    <dateprocessed></dateprocessed>
+    <status></status>
+    <pod_po_no></pod_po_no>
+    <pod_status></pod_status>
+    <ven_code></ven_code>
+    <pod_seq_no></pod_seq_no>
+    <pod_sku_cd></pod_sku_cd>
+    <pod_units></pod_units>
+    <pod_rec_units></pod_rec_units>
+    <pod_unit_type></pod_unit_type>
+    <pod_rate></pod_rate>
+    <dt_promised></dt_promised>
+  </nb_l4que_podet>
+</NewDataSet>

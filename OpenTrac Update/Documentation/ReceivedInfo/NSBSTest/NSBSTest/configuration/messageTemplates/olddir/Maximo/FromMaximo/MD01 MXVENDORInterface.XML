@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MXVENDORInterface xmlns="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="EN">
+  <Header operation="Notify" event="1">
+    <SenderID type="MAXIMO" majorversion="6" minorversion="0" build="01" dbbuild="V600-76">MX</SenderID>
+    <CreationDateTime>2006-02-21T12:55:00-05:00</CreationDateTime>
+    <RecipientID>DYNAMICS</RecipientID>
+    <MessageID>11405445005324180</MessageID>
+  </Header>
+  <Content>
+    <MXVENDOR>
+      <COMPANIES action="Replace">
+        <COMPANY>KENWORTH</COMPANY>
+        <TYPE>M</TYPE>
+        <NAME langenabled="1">Kenworth Trucks</NAME>
+        <ADDRESS1>1234 My Street</ADDRESS1>
+        <ADDRESS2>Anytown</ADDRESS2>
+        <ADDRESS3>OH</ADDRESS3>
+        <ADDRESS4>99999</ADDRESS4>
+        <ADDRESS5>USA</ADDRESS5>
+        <CONTACT changed="1">General Contact</CONTACT>
+        <PHONE />
+        <FOB />
+        <FREIGHTTERMS />
+        <SHIPVIA />
+        <PAYMENTTERMS />
+        <CUSTOMERNUM />
+        <FAX />
+        <CHANGEBY changed="1">WILSON</CHANGEBY>
+        <CHANGEDATE changed="1">2006-02-21T12:54:59-05:00</CHANGEDATE>
+        <INCLUSIVE1>1</INCLUSIVE1>
+        <INCLUSIVE2>1</INCLUSIVE2>
+        <INCLUSIVE3>1</INCLUSIVE3>
+        <TAX1CODE />
+        <TAX2CODE />
+        <TAX3CODE />
+        <CURRENCYCODE>USD</CURRENCYCODE>
+        <LOCATION />
+        <REGISTRATION1 />
+        <REGISTRATION2 />
+        <REGISTRATION3 />
+        <APCONTROLACC>
+          <VALUE>6800-910-610</VALUE>
+          <GLCOMP glorder="0">6800</GLCOMP>
+          <GLCOMP glorder="1">910</GLCOMP>
+          <GLCOMP glorder="2">610</GLCOMP>
+        </APCONTROLACC>
+        <APSUSPENSEACC>
+          <VALUE>6800-920-610</VALUE>
+          <GLCOMP glorder="0">6800</GLCOMP>
+          <GLCOMP glorder="1">920</GLCOMP>
+          <GLCOMP glorder="2">610</GLCOMP>
+        </APSUSPENSEACC>
+        <RBNIACC>
+          <VALUE>6800-930-610</VALUE>
+          <GLCOMP glorder="0">6800</GLCOMP>
+          <GLCOMP glorder="1">930</GLCOMP>
+          <GLCOMP glorder="2">610</GLCOMP>
+        </RBNIACC>
+        <PAYVENDOR />
+        <BANKACCOUNT />
+        <INCLUSIVE4>1</INCLUSIVE4>
+        <INCLUSIVE5>1</INCLUSIVE5>
+        <REGISTRATION4 />
+        <REGISTRATION5 />
+        <TAX4CODE />
+        <TAX5CODE />
+        <DISABLED>0</DISABLED>
+        <REMITADDRESS1 changed="1">PO Box 1234</REMITADDRESS1>
+        <REMITADDRESS2 changed="1">Hometown</REMITADDRESS2>
+        <REMITADDRESS3 changed="1">OH</REMITADDRESS3>
+        <REMITADDRESS4 changed="1">99978</REMITADDRESS4>
+        <REMITCONTACT changed="1">Remit Contact</REMITCONTACT>
+        <PAYONRECEIPT>0</PAYONRECEIPT>
+        <HOMEPAGE />
+        <BANKNUM />
+        <DUNSNUM />
+        <TAXEXEMPTCODE />
+        <TAXEXEMPTNUM />
+        <ECOMMERCEENABLED>0</ECOMMERCEENABLED>
+        <MNETCOMPANYID />
+        <SOURCESYSID />
+        <OWNERSYSID />
+        <EXTERNALREFID />
+        <SENDERSYSID>MX</SENDERSYSID>
+        <AUTORECEIVEONASN>0</AUTORECEIVEONASN>
+        <VENDORSENDSASN>0</VENDORSENDSASN>
+        <VENDORSENDSINV>0</VENDORSENDSINV>
+        <ECOMINTERFACE />
+        <VENDORSENDSSTATUS>0</VENDORSENDSSTATUS>
+        <AUTOAPPROVEINV>0</AUTOAPPROVEINV>
+        <AUTOSENDPOCANCEL>0</AUTOSENDPOCANCEL>
+        <ORGID>EAGLENA</ORGID>
+        <DEFAULTWAREHOUSE />
+        <PARENTCOMPANY />
+        <USEPARENTREMITTO>0</USEPARENTREMITTO>
+        <ADDRESS5 />
+        <REMITADDRESS5 />
+        <CATALOGNAME />
+        <PUNCHOUTENABLED>0</PUNCHOUTENABLED>
+        <NAME_LONGDESCRIPTION langenabled="1" />
+        <FREIGHTTERMS_LONGDESCRIPTION />
+        <COMPANIESID>51</COMPANIESID>
+        <INSUREXPDATE xsi:nil="true" />
+        <INSPECTIONREQUIRED>0</INSPECTIONREQUIRED>
+        <TOOLCONTROLACCOUNT />
+        <CELLPHONE />
+        <NS_CLASS>SCRAP</NS_CLASS>
+        <NS_CARRIER_MODE />
+        <NS_CREATEDBY>NBFOUB</NS_CREATEDBY>
+        <NS_REMARKS />
+        <TRANS_LANGCODE>EN</TRANS_LANGCODE>
+        <COMPCONTACT>
+          <CONTACT>General Contact</CONTACT>
+          <POSITION>General</POSITION>
+          <VOICEPHONE>123-456-7890</VOICEPHONE>
+          <FAXPHONE />
+          <EMAIL>dufus@domain.com</EMAIL>
+          <HOMEPHONE />
+          <PAGERPHONE />
+          <PROCUREMENTCARDNUM />
+          <PROCCARDEXPIREDATE xsi:nil="true" />
+          <MNETUSERID />
+          <COMPCONTACTID>73</COMPCONTACTID>
+          <CELLPHONE />
+        </COMPCONTACT>
+        <COMPCONTACT>
+          <CONTACT>Remit Contact</CONTACT>
+          <POSITION>Remit Admin</POSITION>
+          <VOICEPHONE>4567891098</VOICEPHONE>
+          <FAXPHONE />
+          <EMAIL>remit@kenworth.com</EMAIL>
+          <HOMEPHONE />
+          <PAGERPHONE />
+          <PROCUREMENTCARDNUM />
+          <PROCCARDEXPIREDATE xsi:nil="true" />
+          <MNETUSERID />
+          <COMPCONTACTID>74</COMPCONTACTID>
+          <CELLPHONE />
+        </COMPCONTACT>
+      </COMPANIES>
+    </MXVENDOR>
+  </Content>
+</MXVENDORInterface>
+

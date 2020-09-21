@@ -1,0 +1,55 @@
+<NewDataSet>
+  <nb_l3que_customer_data>
+    <address_seq_no>Integer()</address_seq_no>
+    <custnmbr>Char(15)</custnmbr>
+    <adrscode>Char(15)</adrscode>
+    <primary_adrs>Char(15)</primary_adrs>
+    <slprsnid>Char(15)</slprsnid>
+    <cntcprsn>Char(60)</cntcprsn>
+    <address1>Char(60)</address1>
+    <address2>Char(60)</address2>
+    <address3>Char(60)</address3>
+    <country>Char(60)</country>
+    <city>Char(35)</city>
+    <state>Char(29)</state>
+    <zipcode>Char(10)</zipcode>
+    <phnumbr1>Char(14)</phnumbr1>
+    <phnumbr2>Char(14)</phnumbr2>
+    <fax>Char(14)</fax>
+    <integrationid>Char(30)</integrationid>
+    <salsterr>Char(15)</salsterr>
+    <createaddress>SmallInt()</createaddress>
+    <updateifexists>SmallInt()</updateifexists>
+  </nb_l3que_customer_data>
+
+  <customer>
+    <customer_id>Integer()</customer_id>
+    <name>Char(40)</name>
+    <corporate_cust_id>Integer()</corporate_cust_id>
+    <sales_region_cd>SmallInt()</sales_region_cd>
+    <sales_rep_cd>SmallInt()</sales_rep_cd>
+    <sic_cd>Integer()</sic_cd>
+    <cust_status>Char(1)</cust_status>
+    <max_coil_weight>Single()</max_coil_weight>
+    <min_coil_weight>Single()</min_coil_weight>
+    <customer_type>Char(1)</customer_type>
+    <sent_to_ar>Char(1)</sent_to_ar>
+    <est_annual_tonnage>Integer()</est_annual_tonnage>
+    <general_comments>Char(240)</general_comments>
+    <inside_sales_rep_cd>SmallInt()</inside_sales_rep_cd>
+    <fein_no>Char(10)</fein_no>
+    <duns_no>Char(20)</duns_no>
+    <english_metric_flag>???(17)()</english_metric_flag>
+    <change_user_id>SmallInt()</change_user_id>
+    <sold_to_contact_no>SmallInt()</sold_to_contact_no>
+    <invoice_to_contact_no>SmallInt()</invoice_to_contact_no>
+    <parent_no>Integer()</parent_no>
+    <add_datetime>Timestamp()</add_datetime>
+    <change_datetime>Timestamp()</change_datetime>
+    <worthington>Char(1)</worthington>
+    <fl_ship_untested>Char(1)</fl_ship_untested>
+    <fuel_override_flag>Char(1)</fuel_override_flag>
+  </customer>
+
+
+</NewDataSet>

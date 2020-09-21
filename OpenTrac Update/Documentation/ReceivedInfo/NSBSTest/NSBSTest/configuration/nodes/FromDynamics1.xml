@@ -1,0 +1,20 @@
+<rxeNode type='inflow' >
+	<!-- A transport receives from one source and places into 1 or more pipes -->
+	<transport name='MsmqInFlow01' plugin='RxePlugins.RxeMsmqInflow' >
+		<queues root='.\private$\' >
+			<queue name='FromDynamics' path='fromtestgp' 
+				create='true' emptyOnStart='false' format='binary' isDataXml='true' />
+		</queues>
+		<!-- Begin Standard Transport mechanism -->
+		<!-- Message matching to determine message name -->
+		<messages payloadType='XML'>
+			<message Regex='&lt;Customer_Balances:root' name='DS01' />
+			<message Regex='&lt;AP_APPL_FINAL:root' name='DM01a' />
+			<message Regex='&lt;AP_APPL_PSTD_Payment:root' name='DM01b' />
+		</messages>
+		<!-- Now use the derived message name and regular expression to select pipe -->
+		<pipes>
+			<pipe name='FromDynamics' bucketSize='1' messageNamePattern='.*'  />
+		</pipes>
+	</transport>
+</rxeNode>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="Dashboard.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+    </sectionGroup>
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="Dashboard.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+    </sectionGroup>
+    
+  <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 --></configSections>
+  <connectionStrings>
+    <add name="CasterParameterContext" connectionString="metadata=res://*/CasterParameterModel.csdl|res://*/CasterParameterModel.ssdl|res://*/CasterParameterModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=DTH2014T530\SQLSERVER2012;initial catalog=caster2012;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework&quot;"
+  providerName="System.Data.EntityClient" />
+
+    <add name="L1TablesContext" connectionString="metadata=res://*/L1TablesModel.csdl|res://*/L1TablesModel.ssdl|res://*/L1TablesModel.msl;provider=System.Data.SqlClient;&#xD;&#xA;                &#xD;&#xA;      provider connection string=&quot;      data source=DTH2014T530\SQLSERVER2012;initial catalog=caster2012;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="Caster2012Entities" connectionString="metadata=res://*/CasterParametersModel.csdl|res://*/CasterParametersModel.ssdl|res://*/CasterParametersModel.msl;provider=System.Data.SqlClient;&#xD;&#xA;                &#xD;&#xA;      provider connection string=&quot;data source=DTH2014T530\SQLSERVER2012;initial catalog=caster2012;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="CommonContext" connectionString="metadata=res://*/CommonModel.csdl|res://*/CommonModel.ssdl|res://*/CommonModel.msl;provider=System.Data.SqlClient;&#xD;&#xA;         provider connection string=&quot;data source=DTH2014T530\SQLSERVER2012;initial catalog=caster2012;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    
+    <add name="StatusContext" connectionString="metadata=res://*/StatusModel.csdl|res://*/StatusModel.ssdl|res://*/StatusModel.msl;provider=System.Data.SqlClient;&#xD;&#xA;         provider connection string=&quot;data source=DTH2014T530\SQLSERVER2012;initial catalog=caster2012;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+ 
+    <add name="ProductionContext" connectionString="metadata=res://*/ProductionModel.csdl|res://*/ProductionModel.ssdl|res://*/ProductionModel.msl;provider=System.Data.SqlClient;&#xD;&#xA;                &#xD;&#xA;      provider connection string=&quot;data source=DTH2014T530\SQLSERVER2012;initial catalog=caster2012;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="QualityContext" connectionString="metadata=res://*/QualityModel.csdl|res://*/QualityModel.ssdl|res://*/QualityModel.msl;provider=System.Data.SqlClient;&#xD;&#xA;                &#xD;&#xA;      provider connection string=&quot;data source=DTH2014T530\SQLSERVER2012;initial catalog=caster2012;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+
+  </connectionStrings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+  </startup>
+  <userSettings>
+    <Dashboard.Properties.Settings>
+      <setting name="LogFolder" serializeAs="String">
+        <value>d;\logs</value>
+      </setting>
+      <setting name="EventPumpServerName" serializeAs="String">
+        <value>ep.Caster</value>
+      </setting>
+      <setting name="EventPumpServerAddress" serializeAs="String">
+        <value>localhost</value>
+      </setting>
+      <setting name="EventPumpClientName" serializeAs="String">
+        <value>ep.Dashboard</value>
+      </setting>
+      <setting name="EventPumpClientAddress" serializeAs="String">
+        <value>localhost</value>
+      </setting>
+      <setting name="EventPumpPattern" serializeAs="String">
+        <value>xxx</value>
+      </setting>
+    </Dashboard.Properties.Settings>
+  </userSettings>
+  <entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.LocalDbConnectionFactory, EntityFramework">
+      <parameters>
+        <parameter value="v11.0" />
+      </parameters>
+    </defaultConnectionFactory>
+    <providers>
+      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+    </providers>
+  </entityFramework>
+  <applicationSettings>
+    <Dashboard.Properties.Settings>
+      <setting name="ProcessName" serializeAs="String">
+        <value>CFDashboard</value>
+      </setting>
+    </Dashboard.Properties.Settings>
+  </applicationSettings>
+</configuration>

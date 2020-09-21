@@ -1,0 +1,28 @@
+<rxeNode type='inflow' >
+	<!-- A transport receives from one source and places into 1 or more pipes -->
+	<transport  plugin='RxePlugins.RxeFileInflow' >
+		<!-- Begin Custom Transport mechanism -->
+		<folders root='' >
+			<folder name='in' path='\\srv50241\test_xmlfiles' maxFileSize='13000000' />
+			<folder name='error' path='\\srv50241\test_to_rxe_errors' />
+			<folder name='success' path='\\srv50241\test_to_rxe_backup' />
+		</folders>
+		<!-- Begin Standard Transport mechanism -->
+		<!-- Message payload matching to determine message name -->
+		<messages payloadType='XML'>
+			<message envelopePattern='^DYNAMICS-RXE_MXVENDORInterface' name='MD01' />
+			<message envelopePattern='^DYNAMICS-RXE_NSMATRECTXIF' name='MD02a' />			
+			<message envelopePattern='^DYNAMICS-RXE_NSMATUSETXIF' name='MD02b' />
+			<message envelopePattern='^DYNAMICS-RXE_NSSERVRECTXIF' name='MD02c' />
+			<message envelopePattern='^DYNAMICS-RXE_NSINVTRNTXIF' name='MD02d' />
+			<message envelopePattern='^DYNAMICS-RXE_NSINVOICE' name='MD03' />
+			<message envelopePattern='^SPC-RXE_MXVENDORInterface' name='MS01' />
+			<message envelopePattern='^SPC-RXE_NSPOInterface' name='MS02' />
+			<message envelopePattern='^SPC-RXE_NSInvoice' name='MS05' />
+		</messages>
+		<!-- Now use the derived message name and regular expression to select pipe -->
+		<pipes>
+			<pipe name='FromMaximo' messageNamePattern='.*'  />
+		</pipes>
+	</transport>
+</rxeNode>

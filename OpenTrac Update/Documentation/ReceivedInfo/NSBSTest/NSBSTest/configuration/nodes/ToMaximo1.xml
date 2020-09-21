@@ -1,0 +1,27 @@
+<rxeNode type='outflow' >
+	<transports>
+	<transport name='FileSend01' plugin='RxePlugins.RxeFileOutflow'
+		deadMessageFolder='D:\RxE\NSBSTest\DeadMessages'
+		logEachMessage='false' >
+		<!-- Begin Custom Transport mechanism -->
+		<folders root='' >
+			<folder name='out' path='\\nsdelmid01v\TestToMaximo' custom='.CGMX' loginfo='True'/>
+		</folders>
+
+		<!-- Begin Custom Transport mechanism -->
+
+  <!-- ***** Commented out for testing **************
+		<sites root='' >
+			<site name='maximo'  uri='http://srv50241:9081/meaweb/measervlet/maximo' />
+		</sites>
+  **** Commented out for testing **************** -->
+
+		<!-- Begin Standard Transport mechanism -->
+		<!-- Now use the sql filter to find a message to send -->
+		<pipes>
+			<pipe name='ToMaximo' sqlFilter='%' bucketSize='1' checkSeconds='10' maxRetries='12' retrySeconds='7200'  />
+                        <!-- Change bucket size to 1 messages and 10 seconds instread of 15 11/4/09 nbbaib -->
+		</pipes>
+	</transport>
+	</transports>
+</rxeNode>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PublishNSMO01 xmlns="http://www.ibm.com/maximo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creationDateTime="2016-08-22T13:14:44-04:00" transLanguage="EN" baseLanguage="EN" messageID="1471886084382430946" maximoVersion="7 5 20160408-1816 V7515--1" event="1">
+  <NSMO01Set>
+    <COMPANIES action="Replace">
+      <COMPANY>10338</COMPANY>
+      <DUNSNUM />
+      <FOB>PREPAID</FOB>
+      <NAME>American Motor Lines</NAME>
+      <NS_FOB_DESC changed="1">Prepaid</NS_FOB_DESC>
+      <NS_SHIPVIA_DESC changed="1">Rail</NS_SHIPVIA_DESC>
+      <NS_TERMS_DESC changed="1">Net 45</NS_TERMS_DESC>
+      <NS_VENDORTYPE>F</NS_VENDORTYPE>
+      <ORGID>STEELMILL</ORGID>
+      <PAYMENTTERMS>NET 45</PAYMENTTERMS>
+      <SHIPVIA changed="1">RAIL</SHIPVIA>
+    </COMPANIES>
+  </NSMO01Set>
+</PublishNSMO01>
+

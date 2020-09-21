@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CoilStore.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LogFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">d:\logs</Value>
+    </Setting>
+    <Setting Name="EventPumpServerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ep.Caster</Value>
+    </Setting>
+    <Setting Name="EventPumpServerAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="EventPumpClientName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ep.CoilStore</Value>
+    </Setting>
+    <Setting Name="EventPumpClientAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="ProcessName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CoilStore</Value>
+    </Setting>
+    <Setting Name="EventPumpPattern" Type="System.String" Scope="User">
+      <Value Profile="(Default)">xxx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

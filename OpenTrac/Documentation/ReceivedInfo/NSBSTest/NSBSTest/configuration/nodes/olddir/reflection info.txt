@@ -1,0 +1,151 @@
+"Batpox.Logging.ILog"
+    System.RuntimeType: "Batpox.Logging.ILog"
+    Assembly: {System.Reflection.Assembly}
+    AssemblyQualifiedName: "Batpox.Logging.ILog, Batpox.Logging, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null"
+    Attributes: 161
+    BaseType: Nothing
+    ContainsGenericParameters: False
+    DeclaringMethod: Exception of type: '{System.InvalidOperationException}' occurred.
+    DeclaringType: Nothing
+    DefaultBinder: {System.DefaultBinder}
+    Delimiter: "."c
+    EmptyTypes: {Length=0}
+    FilterAttribute: {System.Reflection.MemberFilter}
+    FilterName: {System.Reflection.MemberFilter}
+    FilterNameIgnoreCase: {System.Reflection.MemberFilter}
+    FullName: "Batpox.Logging.ILog"
+    GenericParameterAttributes: Exception of type: '{System.InvalidOperationException}' occurred.
+    GenericParameterPosition: Exception of type: '{System.InvalidOperationException}' occurred.
+    GUID: {System.Guid}
+    HasElementType: False
+    IsAbstract: True
+    IsAnsiClass: True
+    IsArray: False
+    IsAutoClass: False
+    IsAutoLayout: True
+    IsByRef: False
+    IsClass: False
+    IsCOMObject: False
+    IsContextful: False
+    IsEnum: False
+    IsExplicitLayout: False
+    IsGenericParameter: False
+    IsGenericType: False
+    IsGenericTypeDefinition: False
+    IsImport: False
+    IsInterface: True
+    IsLayoutSequential: False
+    IsMarshalByRef: False
+    IsNested: False
+    IsNestedAssembly: False
+    IsNestedFamANDAssem: False
+    IsNestedFamily: False
+    IsNestedFamORAssem: False
+    IsNestedPrivate: False
+    IsNestedPublic: False
+    IsNotPublic: False
+    IsPointer: False
+    IsPrimitive: False
+    IsPublic: True
+    IsSealed: False
+    IsSerializable: False
+    IsSpecialName: False
+    IsUnicodeClass: False
+    IsValueType: False
+    IsVisible: True
+    MemberType: TypeInfo {32}
+    MetadataToken: 33554439
+    Missing: {System.Reflection.Missing}
+    Module: {System.Reflection.Module}
+    Name: "ILog"
+    Namespace: "Batpox.Logging"
+    ReflectedType: Nothing
+    StructLayoutAttribute: Nothing
+    TypeHandle: {System.RuntimeTypeHandle}
+    TypeInitializer: Nothing
+    UnderlyingSystemType: "Batpox.Logging.ILog"
+
+
+------------- The Assembly -----------------
+{System.Reflection.Assembly}
+    CodeBase: "file:///C:/dth/samples2005/plugin test/bin/Plugin GoodAdd.DLL"
+    EntryPoint: Nothing
+    EscapedCodeBase: "file:///C:/dth/samples2005/plugin%20test/bin/Plugin%20GoodAdd.DLL"
+    Evidence: {System.Security.Policy.Evidence}
+    FullName: "Plugin GoodAdd, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    GlobalAssemblyCache: False
+    HostContext: 0
+    ImageRuntimeVersion: "v2.0.50727"
+    Location: "C:\dth\samples2005\plugin test\bin\Plugin GoodAdd.dll"
+    ManifestModule: {System.Reflection.Module}
+    ReflectionOnly: False
+
+-----------------
+
+
+"pluginInterface.IPlugin`1[[PluginGoodAdd.foo, Plugin GoodAdd, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+    System.RuntimeType: "pluginInterface.IPlugin`1[[PluginGoodAdd.foo, Plugin GoodAdd, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+    Assembly: {System.Reflection.Assembly}
+    AssemblyQualifiedName: "pluginInterface.IPlugin`1[[PluginGoodAdd.foo, Plugin GoodAdd, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], pluginInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    Attributes: 161
+    BaseType: Nothing
+    ContainsGenericParameters: False
+    DeclaringMethod: Exception of type: '{System.InvalidOperationException}' occurred.
+    DeclaringType: Nothing
+    DefaultBinder: {System.DefaultBinder}
+    Delimiter: "."c
+    EmptyTypes: {Length=0}
+    FilterAttribute: {System.Reflection.MemberFilter}
+    FilterName: {System.Reflection.MemberFilter}
+    FilterNameIgnoreCase: {System.Reflection.MemberFilter}
+    FullName: "pluginInterface.IPlugin`1[[PluginGoodAdd.foo, Plugin GoodAdd, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+    GenericParameterAttributes: Exception of type: '{System.InvalidOperationException}' occurred.
+    GenericParameterPosition: Exception of type: '{System.InvalidOperationException}' occurred.
+    GUID: {System.Guid}
+    HasElementType: False
+    IsAbstract: True
+    IsAnsiClass: True
+    IsArray: False
+    IsAutoClass: False
+    IsAutoLayout: True
+    IsByRef: False
+    IsClass: False
+    IsCOMObject: False
+    IsContextful: False
+    IsEnum: False
+    IsExplicitLayout: False
+    IsGenericParameter: False
+    IsGenericType: True
+    IsGenericTypeDefinition: False
+    IsImport: False
+    IsInterface: True
+    IsLayoutSequential: False
+    IsMarshalByRef: False
+    IsNested: False
+    IsNestedAssembly: False
+    IsNestedFamANDAssem: False
+    IsNestedFamily: False
+    IsNestedFamORAssem: False
+    IsNestedPrivate: False
+    IsNestedPublic: False
+    IsNotPublic: False
+    IsPointer: False
+    IsPrimitive: False
+    IsPublic: True
+    IsSealed: False
+    IsSerializable: False
+    IsSpecialName: False
+    IsUnicodeClass: False
+    IsValueType: False
+    IsVisible: True
+    MemberType: TypeInfo {32}
+    MetadataToken: 33554440
+    Missing: {System.Reflection.Missing}
+    Module: {System.Reflection.Module}
+    Name: "IPlugin`1"
+    Namespace: "pluginInterface"
+    ReflectedType: Nothing
+    StructLayoutAttribute: Nothing
+    TypeHandle: {System.RuntimeTypeHandle}
+    TypeInitializer: Nothing
+    UnderlyingSystemType: "pluginInterface.IPlugin`1[[PluginGoodAdd.foo, Plugin GoodAdd, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<eConnect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RMCustomerMasterType>
+		<eConnectProcessInfo>
+			<Sender>RxE</Sender>
+		</eConnectProcessInfo>
+		<taUpdateCreateCustomerRcd>
+			<CUSTNMBR>#PCDATA</CUSTNMBR>
+			<USERDEF2>#PCDATA</USERDEF2>
+
+			<CRLMTTYP>#PCDATA</CRLMTTYP>
+			<CRLMTAMT>#PCDATA</CRLMTAMT>
+
+			<INTEGRATIONID>#PCDATA</INTEGRATIONID>
+
+			<UpdateIfExists>#PCDATA</UpdateIfExists>
+
+			<USRDEFND1>#PCDATA</USRDEFND1>
+		</taUpdateCreateCustomerRcd>
+	</RMCustomerMasterType>
+</eConnect>

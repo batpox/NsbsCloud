@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NSINVOICE xmlns="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="EN">
+  <Header operation="Notify" event="0">
+    <SenderID type="MAXIMO" majorversion="6" minorversion="0" build="03" dbbuild="V600-341">SPC-RXE</SenderID>
+    <CreationDateTime>2006-04-19T12:36:46-05:00</CreationDateTime>
+  </Header>
+  <Content>
+    <MXINVOICE>
+      <INVOICE action="Add">
+        <DESCRIPTION />
+
+        <VENDOR />
+        <CONTACT />
+
+        <CURRENCYCODE />
+
+        <DOCUMENTTYPE />
+
+        <STATUS />
+        <STATUSDATE />
+        <INVOICEDATE  />
+
+        <ENTERDATE />
+        <ENTERBY />
+        <CHANGEDATE />
+        <CHANGEBY />
+
+        <TOTALCOST />
+
+        <VENDORINVOICENUM />
+
+        <SENDERSYSID />
+        <SITEID />
+        <ORGID />
+
+        <TRANS_LANGCODE />
+        <INVOICELINE>
+          <VENDOR />
+          <INVOICELINENUM />
+          <DESCRIPTION />
+          <INVOICEQTY />
+          <INVOICEUNIT />
+          <UNITCOST />
+          <LINECOST />
+          <RECEIPTREQD />
+
+          <INVOICELIN1 />
+
+          <ENTERBY />
+          <ENTERDATE />
+
+          <PRORATED />
+          <PRORATESERVICE />
+          <INVOICELINEID />
+
+          <ORGID />
+          <LINETYPE />
+
+          <NS_TAXABLE />
+          <NS_PAYONRECEIPT />
+          <INVOICECOST>
+            <VENDOR />
+            <GLDEBITACCT>
+              <VALUE />
+            </GLDEBITACCT>
+            <GLCREDITACCT>
+              <VALUE />
+            </GLCREDITACCT>
+            <UNITCOST />
+            <LINECOST />
+            <PERCENTAGE />
+            <COSTLINENUM />
+            <CHARGESTORE />
+
+            <ORGID />
+          </INVOICECOST>
+        </INVOICELINE>
+
+      </INVOICE>
+    </MXINVOICE>
+  </Content>
+</NSINVOICE>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<eConnect  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CMPInternetAddressType>
+		<eConnectProcessInfo>
+		</eConnectProcessInfo>
+		<taCreateInternetAddresses>
+			<Master_Type>VEN</Master_Type>
+			<Master_ID>COMPANY</Master_ID>
+			<ADRSCODE>PRIMARY/REMIT</ADRSCODE>
+			<INET1>mailto:email</INET1>
+			<INET2>homepage</INET2>
+			<EmailToAddress></EmailToAddress>
+			<USRDEFND1>timestamp</USRDEFND1>
+			<USRDEFND2></USRDEFND2>
+		</taCreateInternetAddresses>
+	</CMPInternetAddressType>
+</eConnect>

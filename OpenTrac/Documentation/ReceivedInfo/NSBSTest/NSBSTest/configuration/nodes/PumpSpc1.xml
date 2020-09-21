@@ -1,0 +1,34 @@
+<rxeNode type='pump'>
+	<transfers>
+	
+	<!-- Note that you can change the message name. If blank, it defaults to same -->
+	<transfer name='PumpSpc1' plugin='RxePlugins.RxeXmlTransfer' transformFile='FromSpc.xml' checkInterval='30000' deadMessageFolder='D:\RxE\NSBSTest\DeadMessages'>
+		<in pipe='FromSpc' messageNamePattern='SD01$' description='customers' state='on' >
+			<out pipe='ToDynamics' transform='SD01' message='SD01' />
+		</in>
+		<in pipe='FromSpc' messageNamePattern='SD01A$' description='addresses' state='on' >
+			<out pipe='ToDynamics' transform='SD01A' message='SD01A' />
+		</in>
+		<in pipe='FromSpc' messageNamePattern='SD01B$' description='addresses' state='on' >
+			<out pipe='ToDynamics' transform='SD01B' message='SD01B' />
+		</in>
+		<in pipe='FromSpc' messageNamePattern='SD02$' description='invoice claims' state='on' >
+			<out pipe='ToDynamics' transform='SD02' message='SD02' />
+		</in>
+		<in pipe='FromSpc' messageNamePattern='SD03$' description='credit memo' state='on' >
+			<out pipe='ToDynamics' transform='SD03' message='SD03' />
+		</in>
+		<in pipe='FromSpc' messageNamePattern='SD03A$' description='credit apply' state='on' >
+			<out pipe='ToDynamics' transform='SD03A' message='SD03A' />
+		</in>
+		<in pipe='FromSpc' messageNamePattern='SM01$' description='freight costs' state='on'>
+			<out pipe='ToMaximo' transform='SM01' message='SM01' />
+		</in>
+		<in pipe='FromSpc' messageNamePattern='SM02$' description='scrap receipts' state='on'>
+			<out pipe='ToMaximo' transform='SM02' message='SM02' />
+		</in>
+	</transfer>
+	
+	</transfers>
+	
+</rxeNode>

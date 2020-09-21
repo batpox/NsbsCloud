@@ -1,0 +1,62 @@
+<NewDataSet>
+  <ap_freight_costs>
+    <invoice_no>Integer()</invoice_no>
+    <customer_id>Integer()</customer_id>
+    <order_no>Integer()</order_no>
+    <ship_to_no>SmallInt()</ship_to_no>
+    <financial_transaction_cd>Char(2)</financial_transaction_cd>
+    <carrier_cd>SmallInt()</carrier_cd>
+    <carrier_cost>Currency()</carrier_cost>
+    <load_id>Integer()</load_id>
+    <sent_to_financial_system_flag>Char(1)</sent_to_financial_system_flag>
+    <change_datetime>Timestamp()</change_datetime>
+    <change_user_id>SmallInt()</change_user_id>
+    <bill_of_lading_no>Integer()</bill_of_lading_no>
+    <maximo_vendor>Integer()</maximo_vendor>
+  </ap_freight_costs>
+
+  <carrier>
+  <!-- Produce with Format 5 of the Test Harness. Join of Carrier and Carrier Contacts -->
+    <carrier_mode>System.String</carrier_mode>
+    <carrier_cd>System.Int16</carrier_cd>
+    <name>System.String</name>
+    <attention>System.String</attention>
+    <street_1>System.String</street_1>
+    <street_2>System.String</street_2>
+    <po_box>System.String</po_box>
+    <city>System.String</city>
+    <state>System.String</state>
+    <zip_code>System.String</zip_code>
+    <country>System.String</country>
+    <insurance_expire_date>System.DateTime</insurance_expire_date>
+    <contract_number>System.String</contract_number>
+    <contract_rate_expire_dt>System.DateTime</contract_rate_expire_dt>
+    <contract_rate_effective_dt>System.DateTime</contract_rate_effective_dt>
+    <carrier_comments>System.String</carrier_comments>
+    <ap_name>System.String</ap_name>
+    <ap_attention>System.String</ap_attention>
+    <ap_street1>System.String</ap_street1>
+    <ap_street2>System.String</ap_street2>
+    <ap_po_box>System.String</ap_po_box>
+    <ap_city>System.String</ap_city>
+    <ap_state>System.String</ap_state>
+    <ap_zip_code>System.String</ap_zip_code>
+    <ap_country>System.String</ap_country>
+    <contact_cd>System.Int16</contact_cd>
+    <scac>System.String</scac>
+    <equipment_availability>System.Int16</equipment_availability>
+    <change_datetime>System.DateTime</change_datetime>
+    <change_user_id>System.Int16</change_user_id>
+    <maximo_vendor>System.Int32</maximo_vendor>
+    <carrier_mode1>System.String</carrier_mode1>
+    <carrier_cd1>System.Int16</carrier_cd1>
+    <contact_cd1>System.Int16</contact_cd1>
+    <name1>System.String</name1>
+    <contact_title>System.String</contact_title>
+    <phone>System.String</phone>
+    <fax>System.String</fax>
+    <change_datetime1>System.DateTime</change_datetime1>
+    <change_user_id1>System.Int16</change_user_id1>
+  </carrier>
+
+</NewDataSet>

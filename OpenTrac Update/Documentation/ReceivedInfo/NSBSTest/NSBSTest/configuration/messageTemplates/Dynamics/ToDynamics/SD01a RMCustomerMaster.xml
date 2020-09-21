@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<eConnect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RMCustomerMasterType>
+		<eConnectProcessInfo>
+			<Sender>RXI</Sender>
+		</eConnectProcessInfo>
+		<taCreateCustomerAddress_Items>
+			<taCreateCustomerAddress>
+				<CUSTNMBR>#PCDATA</CUSTNMBR>
+				<ADRSCODE>#PCDATA</ADRSCODE>
+				<SLPRSNID>#PCDATA</SLPRSNID>
+
+				<CNTCPRSN>#PCDATA</CNTCPRSN>
+				<ADDRESS1>#PCDATA</ADDRESS1>
+				<ADDRESS2>#PCDATA</ADDRESS2>
+				<ADDRESS3>#PCDATA</ADDRESS3>
+				<COUNTRY>#PCDATA</COUNTRY>
+				<CITY>#PCDATA</CITY>
+				<STATE>#PCDATA</STATE>
+				<ZIPCODE>#PCDATA</ZIPCODE>
+				<PHNUMBR1>#PCDATA</PHNUMBR1>
+				<PHNUMBR2>#PCDATA</PHNUMBR2>
+				<FAX>#PCDATA</FAX>
+				<INTEGRATIONID>#PCDATA</INTEGRATIONID>
+				<SALSTERR>#PCDATA</SALSTERR>
+				<USRDEFND1>#PCDATA</USRDEFND1>
+
+			</taCreateCustomerAddress>
+		</taCreateCustomerAddress_Items>
+	</RMCustomerMasterType>
+</eConnect>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MXVENDORInterface xmlns="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="EN">
+  <Header operation="Notify" event="0">
+    <SenderID type="MAXIMO" majorversion="6" minorversion="0" build="03" dbbuild="V600-341">MX</SenderID>
+    <CreationDateTime>2006-04-19T12:47:12-05:00</CreationDateTime>
+  </Header>
+  <Content>
+    <MXVENDOR>
+      <COMPANIES>
+        <COMPANY />
+        <TYPE />
+        <NAME />
+        <ADDRESS1 />
+        <ADDRESS2 />
+        <ADDRESS3 />
+        <ADDRESS4 />
+        <CONTACT />
+        <PHONE />
+        <FOB />
+        <FREIGHTTERMS />
+        <SHIPVIA />
+        <PAYMENTTERMS />
+        <CUSTOMERNUM />
+        <FAX />
+        <CHANGEBY />
+        <CHANGEDATE />
+        <INCLUSIVE1 />
+        <INCLUSIVE2 />
+        <INCLUSIVE3 />
+        <TAX1CODE />
+        <TAX2CODE />
+        <TAX3CODE />
+        <CURRENCYCODE />
+        <LOCATION />
+        <REGISTRATION1 />
+        <REGISTRATION2 />
+        <REGISTRATION3 />
+        <APCONTROLACC>
+          <VALUE />
+        </APCONTROLACC>
+        <APSUSPENSEACC>
+          <VALUE />
+        </APSUSPENSEACC>
+        <RBNIACC>
+          <VALUE />
+        </RBNIACC>
+        <PAYVENDOR />
+        <BANKACCOUNT />
+        <INCLUSIVE4 />
+        <INCLUSIVE5 />
+        <REGISTRATION4 />
+        <REGISTRATION5 />
+        <TAX4CODE />
+        <TAX5CODE />
+        <DISABLED />
+        <REMITADDRESS1 />
+        <REMITADDRESS2 />
+        <REMITADDRESS3 />
+        <REMITADDRESS4 />
+        <REMITCONTACT />
+        <PAYONRECEIPT />
+        <HOMEPAGE />
+        <BANKNUM />
+        <DUNSNUM />
+        <TAXEXEMPTCODE />
+        <TAXEXEMPTNUM />
+        <ECOMMERCEENABLED />
+        <MNETCOMPANYID />
+        <SOURCESYSID />
+        <OWNERSYSID />
+        <EXTERNALREFID />
+        <SENDERSYSID />
+        <AUTORECEIVEONASN />
+        <VENDORSENDSASN />
+        <VENDORSENDSINV />
+        <ECOMINTERFACE />
+        <VENDORSENDSSTATUS />
+        <AUTOAPPROVEINV />
+        <AUTOSENDPOCANCEL />
+        <ORGID />
+        <DEFAULTWAREHOUSE />
+        <PARENTCOMPANY />
+        <USEPARENTREMITTO />
+        <ADDRESS5 />
+        <REMITADDRESS5 />
+        <CATALOGNAME />
+        <PUNCHOUTENABLED />
+        <NAME_LONGDESCRIPTION />
+        <FREIGHTTERMS_LONGDESCRIPTION />
+        <COMPANIESID />
+        <INSUREXPDATE />
+        <INSPECTIONREQUIRED />
+        <TOOLCONTROLACCOUNT>
+          <VALUE />
+        </TOOLCONTROLACCOUNT>
+        <CELLPHONE />
+        <NS_CLASS />
+        <NS_CARRIER_MODE />
+        <NS_CREATEDBY />
+        <NS_REMARKS />
+        <TRANS_LANGCODE />
+        <COMPCONTACT>
+          <CONTACT />
+          <POSITION />
+          <VOICEPHONE />
+          <FAXPHONE />
+          <EMAIL />
+          <HOMEPHONE />
+          <PAGERPHONE />
+          <PROCUREMENTCARDNUM />
+          <PROCCARDEXPIREDATE />
+          <MNETUSERID />
+          <COMPCONTACTID />
+          <CELLPHONE />
+        </COMPCONTACT>
+      </COMPANIES>
+    </MXVENDOR>
+  </Content>
+</MXVENDORInterface>

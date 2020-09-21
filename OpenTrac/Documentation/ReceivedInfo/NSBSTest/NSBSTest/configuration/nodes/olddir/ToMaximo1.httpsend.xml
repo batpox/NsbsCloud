@@ -1,0 +1,28 @@
+<rxeNode type='outflow' >
+	<transports>
+	<transport name='HttpSend01' plugin='RxePlugins.RxeHttpOutflow'
+		deadMessageFolder='D:\RxE\NSBSTest\DeadMessages'
+		logEachMessage='false' >
+		<!-- Begin Custom Transport mechanism -->
+                <!-- ***** Commented out for production **************
+		<folders root='' >
+			<folder name='out' path='\\nsdelmid01v\ProdToMaximo'/>
+		</folders>
+                  **** Commented out for production **************** -->
+
+		<!-- Begin Custom Transport mechanism -->
+		<sites root='' >
+			<site name='maximoSm01'  uri='nsdelappdev:9083/meaweb/esqueue/CG_SPC-RXE/CGMXInvoiceInterface_SPS' messageNamePattern='^SM01' />
+			<site name='maximoSm02'  uri='http://nsdelappdev:9083/meaweb/esqueue/CG_SPC-RXE/CGMXRECEIPTInterface' messageNamePattern='^SM02' />
+			<site name='maximoDm01'  uri='nsdelappdev:9083/meaweb/esqueue/CG_DYNAMICS-RXE/CGMXInvoiceInterface_Dyna' messageNamePattern='^DM01'/>
+		</sites>
+
+		<!-- Begin Standard Transport mechanism -->
+		<!-- Now use the sql filter to find a message to send -->
+		<pipes>
+			<pipe name='ToMaximo' messageNamePattern='.*' bucketSize='1' checkSeconds='10' maxRetries='12' retrySeconds='7200'  />
+                        <!-- Change bucket size to 1 messages and 10 seconds instread of 15 11/4/09 nbbaib -->
+		</pipes>
+	</transport>
+	</transports>
+</rxeNode>

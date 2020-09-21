@@ -1,0 +1,18 @@
+<NewDataSet>
+  <nb_l3que_heat_material>
+    <rowid>1</rowid>
+    <heat_no>80000</heat_no>
+    <addition_dt_stamp>2006-05-23T03:03:16-04:00</addition_dt_stamp>
+    <material_type>Al Wire</material_type>
+    <datewritten>2007-06-12T14:25:08.566-04:00</datewritten>
+    <dateprocessed>2007-06-12T14:25:08.566-04:00</dateprocessed>
+    <status>U</status>
+    <unit_of_measure>kg</unit_of_measure>
+    <material_actual_weight>900</material_actual_weight>
+    <furnace>L2</furnace>
+    <from_area>WF</from_area>
+    <from_location>1</from_location>
+    <issue_type>1</issue_type>
+    <memo>xxx</memo>
+  </nb_l3que_heat_material>
+</NewDataSet>

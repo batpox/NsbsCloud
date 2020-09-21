@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<eConnect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RMTransactionType>
+		<eConnectProcessInfo>
+			<Sender></Sender>
+		</eConnectProcessInfo>
+		<taRMTransaction>
+			<RMDTYPAL></RMDTYPAL>
+			<DOCNUMBR></DOCNUMBR>
+			<DOCDATE></DOCDATE>
+			<BACHNUMB></BACHNUMB>
+			<CUSTNMBR></CUSTNMBR>
+			<DOCAMNT></DOCAMNT>
+			<SLSAMNT></SLSAMNT>
+			<DOCDESCR></DOCDESCR>
+			<ADRSCODE></ADRSCODE>
+
+			<TRDISAMT></TRDISAMT>	<!-- {16May2006/dth} -->
+			<FRTAMNT></FRTAMNT>
+			<MISCAMNT></MISCAMNT>
+
+			<PYMTRMID></PYMTRMID>
+
+			<LSTUSRED></LSTUSRED>
+			<DistRef></DistRef>
+			<DUEDATE></DUEDATE>
+			<CURNCYID></CURNCYID>
+
+			<CREATEDIST></CREATEDIST>
+			<USRDEFND1></USRDEFND1>
+		</taRMTransaction>
+	</RMTransactionType>
+</eConnect>

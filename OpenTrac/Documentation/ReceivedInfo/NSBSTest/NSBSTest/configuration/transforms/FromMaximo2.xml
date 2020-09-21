@@ -1,0 +1,317 @@
+﻿<transforms>
+  <transform name="MD01" in="Maximo\FromMaximo\MD01 CGMXVENDORInterface.XML" out="Dynamics\ToDynamics\MD01 PMVendorMaster.xml">
+    <context in="//CGMXVENDORSet/COMPANIES" out="//PMVendorMasterType/taUpdateCreateVendorRcd">
+      <map in="COMPANY" out="VENDORID" />
+      <map in="NAME" out="VENDNAME" />
+      <map in="CONTACT" out="VNDCNTCT" />
+      <map in="ADDRESS1" out="ADDRESS1" />
+      <map in="ADDRESS2" out="CITY" />
+      <map in="ADDRESS3" out="STATE" />
+      <map in="ADDRESS4" out="ZIPCODE" />
+      <map in="PHONE" out="PHNUMBR1" />
+      <map in="CUSTOMERNUM" out="ACNMVNDR" />
+      <map in="CURRENCYCODE" out="CURNCYID" />
+      <map in="PAYMENTTERMS" out="PYMTRMID" />
+      <map in="ADDRESS5" out="COUNTRY" />
+      <map in="NS_CLASS" out="VNDCLSID" />
+      <map in="NS_CREATE" out="UpdateIfExists" />
+      <map in="NS_CREATE" out="UseVendorClass" />
+      <map in="NAME" out="VENDSHNM" />
+      <map in="NAME" out="VNDCHKNM" />
+    </context>
+    <context in="Literal" out="//PMVendorMasterType/taUpdateCreateVendorRcd">
+      <map literal="PRIMARY" out="VADDCDPR" />
+      <map literal="PRIMARY" out="VADCDPAD" />
+      <map literal="REMIT" out="VADCDTRO" />
+      <map literal="1" out="CreateAddress" />
+      <map literal="{function}:GetDate()" out="Usrdefnd1" />
+    </context>
+    <context in="//CGMXVENDORSet/COMPANIES" out="//PMVendorMasterType/taCreateVendorAddress_Items/taCreateVendorAddress">
+      <map in="REMITADDRESS2" out="CITY" />
+      <map in="REMITADDRESS3" out="STATE" />
+      <map in="REMITADDRESS4" out="ZIPCODE" />
+      <map in="REMITADDRESS1" out="ADDRESS1" />
+      <map in="COMPANY" out="VENDORID" />
+      <map in="REMITADDRESS5" out="COUNTRY" />
+      <map in="NS_REMIT_PHONE" out="PHNUMBR1" />
+      <map in="NS_REMIT_FAX" out="FAXNUMBR" />
+      <map in="REMITCONTACT" out="VNDCNTCT" />
+    </context>
+    <context in="Literal" out="//PMVendorMasterType/taCreateVendorAddress_Items/taCreateVendorAddress">
+      <map literal="REMIT" out="ADRSCODE" />
+      <map literal="{function}:GetDate()" out="Usrdefnd1" />
+    </context>
+  </transform>
+  <transform name="MS02" in="Maximo\FromMaximo\MS02 CGMXPOInterface.XML" out="Spc\ToSpc\MS02 nb_l4que_podet.xml">
+    <context in="//CGMXPOSet/PO" out="//nb_l4que_podet">
+      <map in="PONUM" out="pod_po_no" />
+      <map in="STATUS" out="pod_status" />
+      <map in="VENDOR" out="ven_code" />
+      <map in="NS_OVERRECEIVE" out="ns_overreceive" />
+      <map in="NS_OVRCVQTY" out="ns_ovrcvqty" />
+      <map in="NS_OVRRCVPCT" out="ns_ovrrcvpct" />
+      <map in="REVISIONNUM" out="revisionnum" />
+    </context>
+    <context in="Literal" out="//nb_l4que_podet">
+      <map literal="U" out="status" />
+      <map literal="{function}:GetDate()" out="datewritten" />
+    </context>
+    <context in="//CGMXPOSet/PO/POLINE" out="//nb_l4que_podet">
+      <map in="POLINENUM" out="pod_seq_no" />
+      <map in="ITEMNUM" out="pod_sku_cd" />
+      <map in="ORDERQTY" out="pod_units" />
+      <map in="RECEIVEDQTY" out="pod_rec_units" />
+      <map in="ORDERUNIT" out="pod_unit_type" />
+      <map in="UNITCOST" out="pod_rate" />
+      <map in="REQDELIVERYDATE" out="dt_promised" />
+    </context>
+  </transform>
+  <transform name="MS01" in="Maximo\FromMaximo\MS01 CGMXVENDORInterface.xml" out="Spc\ToSpc\MS01 nb_l4que_vendor.xml">
+    <context in="//CGMXVENDORSet/COMPANIES" out="//nb_l4que_vendor">
+      <map in="COMPANY" out="vendor_cd" />
+      <map in="NS_CARRIER_MODE" out="vendor_mode" />
+      <map in="NAME" out="name" />
+      <map in="CONTACT" out="attention" />
+      <map in="ADDRESS1" out="street_1" />
+      <map in="ADDRESS2" out="city" />
+      <map in="ADDRESS3" out="state" />
+      <map in="ADDRESS4" out="zip_code" />
+      <map in="INSUREXPDATE" out="insurance_expire_date" />
+      <map in="COMPANY" out="maximo_vendor" />
+      <map in="NS_CLASS" out="ns_class" />
+    </context>
+    <context in="Literal" out="//nb_l4que_vendor">
+      <map literal="{function}:GetDate()" out="datewritten" />
+      <map literal="U" out="status" />
+    </context>
+  </transform>
+  <transform name="MD01primary" in="Maximo\FromMaximo\MD01 CGMXVENDORInterface.XML" out="Dynamics\ToDynamics\MD01 CMPInternetAddress.xml">
+    <context in="Literal" out="//CMPInternetAddressType/taCreateInternetAddresses">
+      <map literal="VEN" out="Master_Type" />
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="PRIMARY" out="ADRSCODE" />
+    </context>
+    <context in="//CGMXVENDORSet/COMPANIES" out="//CMPInternetAddressType/taCreateInternetAddresses">
+      <map in="COMPANY" out="Master_ID" />
+      <map in="NS_CONTACT_EMAIL" out="INET1" />
+      <map in="HOMEPAGE" out="INET2" />
+    </context>
+  </transform>
+  <transform name="MD01remit" in="Maximo\FromMaximo\MD01 CGMXVENDORInterface.XML" out="Dynamics\ToDynamics\MD01 CMPInternetAddress.xml">
+    <context in="Literal" out="//CMPInternetAddressType/taCreateInternetAddresses">
+      <map literal="VEN" out="Master_Type" />
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="REMIT" out="ADRSCODE" />
+    </context>
+    <context in="//CGMXVENDORSet/COMPANIES" out="//CMPInternetAddressType/taCreateInternetAddresses">
+      <map in="COMPANY" out="Master_ID" />
+      <map in="NS_REMIT_EMAIL" out="INET1" />
+      <map in="HOMEPAGE" out="INET2" />
+      <map in="NS_REMIT_EMAIL" out="EmailToAddress" />
+    </context>
+  </transform>
+  <transform name="MD03Credit" in="Maximo\FromMaximo\MD03 CGMXINVOICEInterface.XML" out="Dynamics\ToDynamics\MD03 PMTransaction.xml">
+    <context in="Literal" out="//PMTransactionType/taPMDistribution_Items/taPMDistribution">
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="0.00" out="DEBITAMT" />
+    </context>
+    <context in="//CGMXINVOICESet/INVOICE" out="//PMTransactionType/taPMDistribution_Items/taPMDistribution">
+      <map in="INVOICENUM" out="VCHRNMBR" />
+      <map in="VENDOR" out="VENDORID" />
+      <map in="DOCUMENTTYPE" out="DOCTYPE" />
+    </context>
+    <context in="//CGMXINVOICESet/INVOICE/INVOICELINE" out="//PMTransactionType/taPMDistribution_Items/taPMDistribution">
+      <map in="DESCRIPTION" out="DistRef" />
+      <map in="ITEMNUM" out="DISTTYPE" />
+    </context>
+    <context in="//CGMXINVOICESet/INVOICE/INVOICELINE/INVOICECOST" out="//PMTransactionType/taPMDistribution_Items/taPMDistribution">
+      <map in="LINECOST" out="CRDTAMNT" />
+    </context>
+    <context in="Literal" out="//PMTransactionType/taPMTransactionInsert">
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="0" out="CREATEDIST" />
+      <map literal="MD03" out="BACHNUMB" />
+      <map literal="PRIMARY" out="VADDCDPR" />
+      <map literal="REMIT" out="VADCDTRO" />
+      <map literal="Maximo" out="MDFUSRID" />
+      <map literal="0.0" out="MSCCHAMT" />
+      <map literal=" " out="TRXDSCRN" />
+    </context>
+    <context in="//CGMXINVOICESet/INVOICE/INVOICELINE/INVOICECOST/GLCREDITACCT" out="//PMTransactionType/taPMDistribution_Items/taPMDistribution">
+      <map in="VALUE" out="ACTNUMST" />
+    </context>
+    <context in="Literal" out="//PMTransactionType/eConnectProcessInfo">
+      <map literal="Maximo-RxE" out="Sender" />
+    </context>
+    <context in="//CGMXINVOICESet/INVOICE" out="//PMTransactionType/taPMTransactionInsert">
+      <map in="INVOICENUM" out="VCHNUMWK" />
+      <map in="VENDOR" out="VENDORID" />
+      <map in="VENDORINVOICENUM" out="DOCNUMBR" />
+      <map in="TOTALCOST" out="DOCAMNT" />
+      <map in="INVOICEDATE" out="DOCDATE" />
+      <map in="PAYMENTTERMS" out="PYMTRMID" />
+      <map in="DUEDATE" out="DUEDATE" />
+      <map in="PONUM" out="PORDNMBR" />
+      <map in="NS_TOTAL_FREIGHT" out="FRTAMNT" />
+      <map in="CURRENCYCODE" out="CURNCYID" />
+      <map in="TOTALCOST" out="CHRGAMNT" />
+      <map in="DOCUMENTTYPE" out="DOCTYPE" />
+      <map in="NS_TOTAL_TAX" out="TAXAMNT" />
+      <map in="TOTALCOST" out="PRCHAMNT" />
+      <map in="ENTERDATE" out="PSTGDATE" />
+    </context>
+    <context in="//CGMXINVOICESet/INVOICE" out="//PMTransactionType/taPMTransactionTaxInsert_Items/taPMTransactionTaxInsert">
+      <map in="VENDOR" out="VENDORID" />
+      <map in="INVOICENUM" out="VCHRNMBR" />
+      <map in="NS_TOTAL_TAX" out="TAXAMNT" />
+    </context>
+    <context in="Literal" out="//PMTransactionType/taPMTransactionTaxInsert_Items/taPMTransactionTaxInsert">
+      <map literal="1" out="DOCTYPE" />
+      <map literal="MD03" out="BACHNUMB" />
+      <map literal="OHIO" out="TAXDTLID" />
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+    </context>
+  </transform>
+  <transform name="MD02" in="Maximo\FromMaximo\MD02 NSGLTXNInterface.xml" out="Dynamics\ToDynamics\MD02 GLTransaction.xml">
+    <context in="//MXGLTXNSet/MXGLTXN" out="//GLTransactionType/taGLTransactionHeaderInsert">
+      <map in="CURRENCYCODE" out="CURNCYID" />
+      <map in="ENTERBY" out="USERID" />
+      <map in="TRANSDATE" out="TRXDATE" />
+    </context>
+    <context in="Literal" out="//GLTransactionType/taGLTransactionHeaderInsert">
+      <map literal="0" out="TRXTYPE" />
+      <map literal="???" out="SOURCDOC" />
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="2" out="SERIES" />
+      <map literal="0" out="JRNENTRY" />
+      <map literal="?bachnumb_hd?" out="BACHNUMB" />
+    </context>
+    <context in="Literal" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="0" out="JRNENTRY" />
+      <map literal="?bachnumb_li?" out="BACHNUMB" />
+    </context>
+    <context in="//MXGLTXNSet/MXGLTXN" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map in="LINECOST" out="CRDTAMNT" />
+      <map in="LINECOST" out="DEBITAMT" />
+      <map in="NS_CUST_FLD" out="DSCRIPTN" />
+      <map in="ACTUALDATE" out="DOCDATE" />
+      <map in="CURRENCYCODE" out="CURNCYID" />
+    </context>
+    <context in="//MXGLTXNSet/MXGLTXN/GLDEBITACCT" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map in="VALUE" out="ACTNUMST" />
+    </context>
+  </transform>
+  <transform name="MD02a" in="Maximo\FromMaximo\MD02a CGMXGL_MATRECTXInt.xml" out="Dynamics\ToDynamics\MD02 GLTransaction.xml">
+    <context in="//CGMXGLTXNSet/MXGLTXN" out="//GLTransactionType/taGLTransactionHeaderInsert">
+      <map in="CURRENCYCODE" out="CURNCYID" />
+      <map in="ENTERBY" out="USERID" />
+      <map in="TRANSDATE" out="TRXDATE" />
+    </context>
+    <context in="Literal" out="//GLTransactionType/taGLTransactionHeaderInsert">
+      <map literal="0" out="TRXTYPE" />
+      <map literal="???" out="SOURCDOC" />
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="2" out="SERIES" />
+      <map literal="0" out="JRNENTRY" />
+    </context>
+    <context in="Literal" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="0" out="JRNENTRY" />
+    </context>
+    <context in="//CGMXGLTXNSet/MXGLTXN" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map in="LINECOST" out="CRDTAMNT" />
+      <map in="LINECOST" out="DEBITAMT" />
+      <map in="NS_CUST_FLD" out="DSCRIPTN" />
+      <map in="CURRENCYCODE" out="CURNCYID" />
+      <map in="TRANSDATE" out="DOCDATE" />
+    </context>
+    <context in="//CGMXGLTXNSet/MXGLTXN/GLDEBITACCT" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map in="VALUE" out="ACTNUMST" />
+    </context>
+  </transform>
+  <transform name="MD02b" in="Maximo\FromMaximo\MD02b CGMXGL_MATUSETXInt.xml" out="Dynamics\ToDynamics\MD02 GLTransaction.xml">
+    <context in="//CGMXGLTXNSet/MXGLTXN" out="//GLTransactionType/taGLTransactionHeaderInsert">
+      <map in="CURRENCYCODE" out="CURNCYID" />
+      <map in="ENTERBY" out="USERID" />
+      <map in="TRANSDATE" out="TRXDATE" />
+    </context>
+    <context in="Literal" out="//GLTransactionType/taGLTransactionHeaderInsert">
+      <map literal="0" out="TRXTYPE" />
+      <map literal="???" out="SOURCDOC" />
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="2" out="SERIES" />
+      <map literal="0" out="JRNENTRY" />
+    </context>
+    <context in="Literal" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="0" out="JRNENTRY" />
+    </context>
+    <context in="//CGMXGLTXNSet/MXGLTXN" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map in="LINECOST" out="CRDTAMNT" />
+      <map in="LINECOST" out="DEBITAMT" />
+      <map in="NS_CUST_FLD" out="DSCRIPTN" />
+      <map in="ACTUALDATE" out="DOCDATE" />
+      <map in="CURRENCYCODE" out="CURNCYID" />
+    </context>
+    <context in="//CGMXGLTXNSet/MXGLTXN/GLDEBITACCT" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map in="VALUE" out="ACTNUMST" />
+    </context>
+  </transform>
+  <transform name="MD02c" in="Maximo\FromMaximo\MD02c CGMXGL_SERVRECTXInt.xml" out="Dynamics\ToDynamics\MD02 GLTransaction.xml">
+    <context in="//CGMXGLTXNSet/MXGLTXN" out="//GLTransactionType/taGLTransactionHeaderInsert">
+      <map in="CURRENCYCODE" out="CURNCYID" />
+      <map in="ENTERBY" out="USERID" />
+      <map in="TRANSDATE" out="TRXDATE" />
+    </context>
+    <context in="Literal" out="//GLTransactionType/taGLTransactionHeaderInsert">
+      <map literal="0" out="TRXTYPE" />
+      <map literal="???" out="SOURCDOC" />
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="2" out="SERIES" />
+      <map literal="0" out="JRNENTRY" />
+    </context>
+    <context in="Literal" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="0" out="JRNENTRY" />
+    </context>
+    <context in="//CGMXGLTXNSet/MXGLTXN" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map in="LINECOST" out="CRDTAMNT" />
+      <map in="LINECOST" out="DEBITAMT" />
+      <map in="NS_CUST_FLD" out="DSCRIPTN" />
+      <map in="ACTUALDATE" out="DOCDATE" />
+      <map in="CURRENCYCODE" out="CURNCYID" />
+    </context>
+    <context in="//CGMXGLTXNSet/MXGLTXN/GLDEBITACCT" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map in="VALUE" out="ACTNUMST" />
+    </context>
+  </transform>
+  <transform name="MD02d" in="Maximo\FromMaximo\MD02d CGMXGL_INVTXInt.xml" out="Dynamics\ToDynamics\MD02 GLTransaction.xml">
+    <context in="//CGMXGLTXNSet/MXGLTXN" out="//GLTransactionType/taGLTransactionHeaderInsert">
+      <map in="CURRENCYCODE" out="CURNCYID" />
+      <map in="ENTERBY" out="USERID" />
+      <map in="TRANSDATE" out="TRXDATE" />
+    </context>
+    <context in="Literal" out="//GLTransactionType/taGLTransactionHeaderInsert">
+      <map literal="0" out="TRXTYPE" />
+      <map literal="???" out="SOURCDOC" />
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="2" out="SERIES" />
+      <map literal="0" out="JRNENTRY" />
+    </context>
+    <context in="Literal" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="0" out="JRNENTRY" />
+    </context>
+    <context in="//CGMXGLTXNSet/MXGLTXN" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map in="LINECOST" out="CRDTAMNT" />
+      <map in="LINECOST" out="DEBITAMT" />
+      <map in="NS_CUST_FLD" out="DSCRIPTN" />
+      <map in="ACTUALDATE" out="DOCDATE" />
+      <map in="CURRENCYCODE" out="CURNCYID" />
+    </context>
+    <context in="//CGMXGLTXNSet/MXGLTXN/GLDEBITACCT" out="//GLTransactionType/taGLTransactionLineInsert_Items/taGLTransactionLineInsert">
+      <map in="VALUE" out="ACTNUMST" />
+    </context>
+  </transform>
+</transforms>

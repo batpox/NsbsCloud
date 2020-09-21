@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7896a80664554d66bcdb9e936d60729d" Name="Diagram1">
+        <EntityTypeShape EntityType="CoilStoreModel.vCoilReading" Width="1.5" PointX="4.75" PointY="3.5" />
+        <EntityTypeShape EntityType="CoilStoreModel.vCoil" Width="1.5" PointX="7.25" PointY="1.75" />
+        <EntityTypeShape EntityType="CoilStoreModel.CoilReading" Width="1.5" PointX="3.25" PointY="1.125" />
+        <EntityTypeShape EntityType="CoilStoreModel.Coil" Width="1.5" PointX="1" PointY="0.5" />
+        <AssociationConnector Association="CoilStoreModel.FK_CoilReadings_Coils" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

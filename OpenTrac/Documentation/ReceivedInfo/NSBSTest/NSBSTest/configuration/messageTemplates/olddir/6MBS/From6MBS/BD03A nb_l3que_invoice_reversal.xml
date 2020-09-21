@@ -1,0 +1,13 @@
+<NewDataSet>
+  <nb_l3que_invoice_reversal>
+    <TRANSACTION_TYPE>Char(6)</TRANSACTION_TYPE>
+    <APTODCNM>Char(20)</APTODCNM>
+    <APFRDCNM>Char(20)</APFRDCNM>
+    <APPTOAMT>Currency()</APPTOAMT>
+    <APFRDCTY>Integer()</APFRDCTY>
+    <APTODCTY>Integer()</APTODCTY>
+    <APPLYDATE>Timestamp()</APPLYDATE>
+    <DISTKNAM>Money()</DISTKNAM>
+    <WROFAMNT>Money()</WROFAMNT>
+  </nb_l3que_invoice_reversal>
+</NewDataSet>

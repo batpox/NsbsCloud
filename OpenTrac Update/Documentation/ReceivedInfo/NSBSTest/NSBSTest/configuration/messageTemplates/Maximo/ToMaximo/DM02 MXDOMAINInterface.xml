@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MXDOMAINInterface xmlns="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="EN">
+  <Header operation="Notify" event="0">
+    <SenderID type="MAXIMO" majorversion="6" minorversion="0" build="03" dbbuild="V600-341">DYNAMICS-RXE</SenderID>
+    <CreationDateTime>2006-04-11T17:36:14-05:00</CreationDateTime>
+  </Header>
+  <Content>
+    <MXDOMAIN>
+      <MAXDOMAIN>
+        <DOMAINID />
+        <DESCRIPTION />
+        <DOMAINTYPE />
+        <MAXTYPE />
+        <LENGTH />
+        <SCALE />
+        <MAXDOMAINID />
+        <ALNDOMAIN>
+          <VALUE />
+          <DESCRIPTION />
+          <SITEID />
+          <ORGID />
+          <ALNDOMAINID />
+        </ALNDOMAIN>
+        <MAXTABLEDOMAIN>
+          <VALIDTNWHERECLAUSE />
+          <LISTWHERECLAUSE />
+          <ERRORRESOURCBUNDLE />
+          <ERRORACCESSKEY />
+          <OBJECTNAME />
+          <SITEID />
+          <ORGID />
+          <MAXTABLEDOMAINID />
+          <CROSSOVERDOMAIN>
+            <SOURCEFIELD />
+            <DESTFIELD />
+            <COPYIFNULL />
+            <CROSSOVERDOMAINID />
+          </CROSSOVERDOMAIN>
+        </MAXTABLEDOMAIN>
+        <NUMERICDOMAIN>
+          <VALUE />
+          <DESCRIPTION />
+          <SITEID />
+          <ORGID />
+          <NUMERICDOMAINID />
+        </NUMERICDOMAIN>
+        <SYNONYMDOMAIN>
+          <MAXVALUE />
+          <VALUE />
+          <DESCRIPTION />
+          <DEFAULTS />
+          <SITEID />
+          <ORGID />
+          <SYNONYMDOMAINID />
+        </SYNONYMDOMAIN>
+      </MAXDOMAIN>
+    </MXDOMAIN>
+  </Content>
+</MXDOMAINInterface>
+

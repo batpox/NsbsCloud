@@ -1,0 +1,21 @@
+<NewDataSet>
+  <nb_l4que_vendor>
+    <datewritten></datewritten>
+    <dateprocessed></dateprocessed>
+    <vendor_mode></vendor_mode>
+    <status></status>
+    <vendor_cd></vendor_cd>
+    <name></name>
+    <attention></attention>
+    <street_1></street_1>
+    <street_2></street_2>
+    <po_box></po_box>
+    <city></city>
+    <state></state>
+    <zip_code></zip_code>
+    <country></country>
+    <insurance_expire_date></insurance_expire_date>
+    <maximo_vendor></maximo_vendor>
+    <ns_class></ns_class>
+  </nb_l4que_vendor>
+</NewDataSet>

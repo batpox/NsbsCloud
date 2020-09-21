@@ -1,0 +1,338 @@
+<transforms>
+  <transform name="BM01" in="6MBS\From6MBS\BM01 combined.xml" out="Maximo\ToMaximo\BM01 NSINVOICE.XML">
+    <context in="Literal" out="//Content/MXINVOICE/INVOICE">
+      <map literal="AP Freight" out="DESCRIPTION" />
+      <map literal="USD" out="CURRENCYCODE" />
+      <map literal="INVOICE" out="DOCUMENTTYPE" />
+      <map literal="WAPPR" out="STATUS" />
+      <map literal="{function}:GetDate()" out="STATUSDATE" />
+      <map literal="{function}:GetDate()" out="ENTERDATE" />
+      <map literal="MXINTADM" out="ENTERBY" />
+      <map literal="{function}:GetDate()" out="CHANGEDATE" />
+      <map literal="MXINTADM" out="CHANGEBY" />
+      <map literal="DELTA" out="SITEID" />
+      <map literal="STEELMILL" out="ORGID" />
+      <map literal="EN" out="TRANS_LANGCODE" />
+      <map literal="6MBS-RXE" out="SENDERSYSID" />
+      <map literal="{function}:GetDate()" out="INVOICEDATE" />
+    </context>
+    <context in="//ap_freight_costs" out="//Content/MXINVOICE/INVOICE">
+      <map in="bill_of_lading_no" out="VENDORINVOICENUM" />
+      <map in="carrier_cost" out="TOTALCOST" />
+    </context>
+    <context in="Literal" out="//Content/MXINVOICE/INVOICE/INVOICELINE">
+      <map literal="1" out="INVOICELINENUM" />
+      <map literal="N" out="RECEIPTREQD" />
+      <map literal="0" out="PRORATED" />
+      <map literal="0" out="PRORATESERVICE" />
+      <map literal="STEELMILL" out="ORGID" />
+      <map literal="N" out="NS_TAXABLE" />
+      <map literal="0" out="NS_PAYONRECEIPT" />
+      <map literal="INVOICE FREIGHT COST" out="DESCRIPTION" />
+      <map literal="1" out="INVOICEQTY" />
+      <map literal="EA" out="INVOICEUNIT" />
+      <map literal="1" out="INVOICELIN1" />
+      <map literal="MXINTADM" out="ENTERBY" />
+      <map literal="{function}:GetDate()" out="ENTERDATE" />
+      <map literal="SERVICE" out="LINETYPE" />
+      <map literal="1" out="INVOICELINEID" />
+    </context>
+    <context in="//ap_freight_costs" out="//Content/MXINVOICE/INVOICE/INVOICELINE">
+      <map in="carrier_cost" out="LINECOST" />
+      <map in="carrier_cost" out="UNITCOST" />
+    </context>
+    <context in="//ap_freight_costs" out="//Content/MXINVOICE/INVOICE/INVOICELINE/INVOICECOST">
+      <map in="carrier_cost" out="LINECOST" />
+      <map in="carrier_cost" out="UNITCOST" />
+    </context>
+    <context in="Literal" out="//Content/MXINVOICE/INVOICE/INVOICELINE/INVOICECOST">
+      <map literal="100" out="PERCENTAGE" />
+      <map literal="1" out="COSTLINENUM" />
+      <map literal="0" out="CHARGESTORE" />
+      <map literal="STEELMILL" out="ORGID" />
+    </context>
+    <context in="//carrier" out="//Content/MXINVOICE/INVOICE/INVOICELINE/INVOICECOST">
+      <map in="maximo_vendor" out="VENDOR" />
+    </context>
+    <context in="//carrier" out="//Content/MXINVOICE/INVOICE/INVOICELINE">
+      <map in="maximo_vendor" out="VENDOR" />
+    </context>
+    <context in="//carrier" out="//Content/MXINVOICE/INVOICE">
+      <map in="maximo_vendor" out="VENDOR" />
+      <map in="name1" out="CONTACT" />
+    </context>
+    <context in="Literal" out="//Content/MXINVOICE/INVOICE/INVOICELINE/INVOICECOST/GLDEBITACCT">
+      <map literal="10-70157-000-0000" out="VALUE" />
+    </context>
+    <context in="Literal" out="//Content/MXINVOICE/INVOICE/INVOICELINE/INVOICECOST/GLCREDITACCT">
+      <map literal="10-23000-000-0000" out="VALUE" />
+    </context>
+    <context in="Literal" out="//Header">
+      <map literal="6MBS-RXE" out="SenderID" />
+      <map literal="{function}:GetDate()" out="CreationDateTime" />
+    </context>
+  </transform>
+  <transform name="BM02" in="6MBS\From6MBS\BM02 nb_l3que_rmr.xml" out="Maximo\ToMaximo\BM02 MXRECEIPTInterface.XML">
+    <context in="//nb_l3que_rmr" out="//Content/MXRECEIPT/MXRECEIPT">
+      <map in="material_type" out="ITEMNUM" />
+      <map in="received_datetime" out="ACTUALDATE" />
+      <map in="unit_of_measure_purchasing" out="RECEIVEDUNIT" />
+      <map in="unit_cost_received_buffer" out="UNITCOST" />
+      <map in="quantity_received_buffer" out="ACTUALCOST" />
+      <map in="purchase_order_no" out="PONUM" />
+      <map in="bill_of_lading" out="PACKINGSLIPNUM" />
+      <map in="purchase_order_line_no" out="POLINENUM" />
+      <map in="quantity_received_buffer" out="LINECOST" />
+      <map in="quantity_received_buffer" out="DESCRIPTION" />
+      <map in="quantity_received_buffer" out="LOADEDCOST" />
+      <map in="datewritten" out="STATUSDATE" />
+      <map in="vehicle_no" out="EXTERNALREFID" />
+      <map in="quantity_received_buffer" out="RECEIPTQUANTITY" />
+    </context>
+    <context in="Literal" out="//Content/MXRECEIPT/MXRECEIPT">
+      <map literal="0" out="REJECTQTY" />
+      <map literal="MXINTADM" out="ENTERBY" />
+      <map literal="N" out="OUTSIDE" />
+      <map literal="Y" out="ISSUE" />
+      <map literal="USD" out="CURRENCYCODE" />
+      <map literal="0" out="CURBAL" />
+      <map literal="6MBS-RXE" out="SENDERSYSID" />
+      <map literal="STEELMILL" out="ORGID" />
+      <map literal="DELTA" out="SITEID" />
+      <map literal="N" out="COSTINFO" />
+      <map literal="N" out="ENTEREDASTASK" />
+      <map literal="ITEM" out="LINETYPE" />
+      <map literal="RECEIPT" out="ISSUETYPE" />
+      <map literal="{function}:GetDateW3C()" out="TRANSDATE" />
+      <map literal="DELTA" out="POSITEID" />
+    </context>
+  </transform>
+  <transform name="BM03" in="6MBS\From6MBS\BM03 nb_maximo_meter_readings.xml" out="Maximo\ToMaximo\BM03 NSMTRRDGInterface.xml">
+    <context in="//nb_maximo_meter_readings" out="//Content/NSMTRRDG/NSMTRRDG">
+      <map in="meter_name" out="METER_NAME" />
+      <map in="delta" out="DELTA" />
+      <map in="reading_date" out="READING_DATE" />
+    </context>
+  </transform>
+  <transform name="BD01" in="6MBS\From6MBS\BD01 combined.xml" out="Dynamics\ToDynamics\BD01 RMCustomerMaster.xml">
+    <context in="//nb_l3que_customer_data" out="//RMCustomerMasterType/taUpdateCreateCustomerRcd">
+      <map in="custnmbr" out="CUSTNMBR" />
+      <map in="createaddress" out="CreateAddress" />
+      <map in="updateifexists" out="UpdateIfExists" />
+      <map in="cntcprsn" out="CNTCPRSN" />
+      <map in="city" out="CITY" />
+      <map in="state" out="STATE" />
+      <map in="zipcode" out="ZIPCODE" />
+      <map in="country" out="COUNTRY" />
+      <map in="phnumbr1" out="PHNUMBR1" />
+      <map in="fax" out="FAX" />
+      <map in="adrscode" out="ADRSCODE" />
+      <map in="adrscode" out="PRBTADCD" />
+      <map in="adrscode" out="STADDRCD" />
+      <map in="address1" out="ADDRESS1" />
+      <map in="address2" out="ADDRESS2" />
+      <map in="address3" out="ADDRESS3" />
+      <map in="phnumbr2" out="PHNUMBR2" />
+      <map in="integrationid" out="INTEGRATIONID" />
+      <map in="slprsnid" out="SLPRSNID" />
+      <map in="salsterr" out="SALSTERR" />
+      <map in="createaddress" out="UseCustomerClass" />
+    </context>
+    <context in="Literal" out="//RMCustomerMasterType/taUpdateCreateCustomerRcd">
+      <map literal="HOT_ROLL_BANDS" out="CUSTCLAS" />
+      <map literal="Net 30" out="PYMTRMID" />
+      <map literal="2" out="MXWOFTYP" />
+      <map literal="50.00" out="MXWROFAM" />
+      <map literal="USD" out="CURNCYID" />
+      <map literal="1" out="STMTCYCL" />
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+      <map literal="2" out="CRLMTTYP" />
+    </context>
+    <context in="//customer" out="//RMCustomerMasterType/taUpdateCreateCustomerRcd">
+      <map in="name" out="CUSTNAME" />
+      <map in="fein_no" out="USERDEF1" />
+      <map in="general_comments" out="NOTETEXT" />
+    </context>
+    <context in="Literal" out="//RMCustomerMasterType/eConnectProcessInfo">
+      <map literal="6MBS-RxE" out="Sender" />
+    </context>
+  </transform>
+  <transform name="BD01A" in="6MBS\From6MBS\BD01A combined.xml" out="Dynamics\ToDynamics\BD01A RMCustomerMaster.xml">
+    <context in="Literal" out="//RMCustomerMasterType/taCreateCustomerAddress_Items/taCreateCustomerAddress">
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+    </context>
+    <context in="//nb_l3que_customer_data" out="//RMCustomerMasterType/taCreateCustomerAddress_Items/taCreateCustomerAddress">
+      <map in="cntcprsn" out="CNTCPRSN" />
+      <map in="address1" out="ADDRESS1" />
+      <map in="address2" out="ADDRESS2" />
+      <map in="address3" out="ADDRESS3" />
+      <map in="country" out="COUNTRY" />
+      <map in="city" out="CITY" />
+      <map in="state" out="STATE" />
+      <map in="zipcode" out="ZIPCODE" />
+      <map in="phnumbr1" out="PHNUMBR1" />
+      <map in="fax" out="FAX" />
+      <map in="adrscode" out="ADRSCODE" />
+      <map in="custnmbr" out="CUSTNMBR" />
+      <map in="slprsnid" out="SLPRSNID" />
+      <map in="phnumbr2" out="PHNUMBR2" />
+      <map in="integrationid" out="INTEGRATIONID" />
+      <map in="salsterr" out="SALSTERR" />
+    </context>
+  </transform>
+  <transform name="BD01B" in="6MBS\From6MBS\BD01b nb_l3que_credit_status.xml" out="Dynamics\ToDynamics\BD01b RMCustomerMaster.xml">
+    <context in="//nb_l3que_credit_status" out="//RMCustomerMasterType/taUpdateCreateCustomerRcd">
+      <map in="custnmbr" out="CUSTNMBR" />
+      <map in="userdefnd2" out="USERDEF2" />
+      <map in="crlmtamt" out="CRLMTAMT" />
+    </context>
+    <context in="Literal" out="//RMCustomerMasterType/taUpdateCreateCustomerRcd">
+      <map literal="2" out="CRLMTTYP" />
+      <map literal="6MBS-RXE" out="INTEGRATIONID" />
+      <map literal="1" out="UpdateIfExists" />
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+    </context>
+  </transform>
+  <transform name="BD02" in="6MBS\From6MBS\BD02 nb_l3que_invoice_master.xml" out="Dynamics\ToDynamics\BD02 SOPTransaction.xml">
+    <context in="//nb_l3que_invoice_master" out="//SOPTransactionType/taSopHdrIvcInsert">
+      <map in="SOPTYPE" out="SOPTYPE" />
+      <map in="DOCID" out="DOCID" />
+      <map in="SOPNUMBE" out="SOPNUMBE" />
+      <map in="SHIPMTHD" out="SHIPMTHD" />
+      <map in="DOCDATE" out="DOCDATE" />
+      <map in="FREIGHT" out="FREIGHT" />
+      <map in="CUSTNMBR" out="CUSTNMBR" />
+      <map in="CUSTNAME" out="CUSTNAME" />
+      <map in="ShipToName" out="ShipToName" />
+      <map in="ADDRESS1" out="ADDRESS1" />
+      <map in="ADDRESS2" out="ADDRESS2" />
+      <map in="ADDRESS3" out="ADDRESS3" />
+      <map in="CNTCPRSN" out="CNTCPRSN" />
+      <map in="FAXNUMBR" out="FAXNUMBR" />
+      <map in="CITY" out="CITY" />
+      <map in="STATE" out="STATE" />
+      <map in="ZIPCODE" out="ZIPCODE" />
+      <map in="COUNTRY" out="COUNTRY" />
+      <map in="PHNUMBR1" out="PHNUMBR1" />
+      <map in="SUBTOTAL" out="SUBTOTAL" />
+      <map in="DOCAMNT" out="DOCAMNT" />
+      <map in="USER2ENT" out="USER2ENT" />
+      <map in="PRBTADCD" out="PRBTADCD" />
+      <map in="PRSTADCD" out="PRSTADCD" />
+      <map in="PYMTRMID" out="PYMTRMID" />
+      <map in="DUEDATE" out="DUEDATE" />
+      <map in="REFRENCE" out="REFRENCE" />
+      <map in="CURNCYID" out="CURNCYID" />
+      <map in="INTEGRATIONID" out="INTEGRATIONID" />
+      <map in="MISCAMNT" out="MISCAMNT" />
+      <map in="BACHNUMB" out="BACHNUMB" />
+      <map in="TRDISAMT" out="TRDISAMT" />
+    </context>
+    <context in="Literal" out="//SOPTransactionType/taSopHdrIvcInsert">
+      <map literal="0" out="UpdateExisting" />
+      <map literal="1" out="DEFPRICING" />
+      <map literal="1" out="CREATEDIST" />
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+    </context>
+    <context in="//nb_l3que_invoice_detail" out="//SOPTransactionType/taSopLineIvcInsert_Items/taSopLineIvcInsert">
+      <map in="SOPTYPE" out="SOPTYPE" />
+      <map in="SOPNUMBE" out="SOPNUMBE" />
+      <map in="CUSTNMBR" out="CUSTNMBR" />
+      <map in="DOCDATE" out="DOCDATE" />
+      <map in="ITEMNMBR" out="ITEMNMBR" />
+      <map in="UNITPRCE" out="UNITPRCE" />
+      <map in="QUANTITY" out="QUANTITY" />
+      <map in="COMMNTID" out="COMMNTID" />
+      <map in="COMMENT_1" out="COMMENT_1" />
+      <map in="COMMENT_2" out="COMMENT_2" />
+      <map in="COMMENT_3" out="COMMENT_3" />
+      <map in="COMMENT_4" out="COMMENT_4" />
+      <map in="PRCLEVEL" out="PRCLEVEL" />
+      <map in="ITEMDESC" out="ITEMDESC" />
+      <map in="NONINVEN" out="NONINVEN" />
+      <map in="LNITMSEQ" out="LNITMSEQ" />
+      <map in="DOCID" out="DOCID" />
+      <map in="SALSTERR" out="SALSTERR" />
+      <map in="SLPRSNID" out="SLPRSNID" />
+      <map in="ACTLSHIP" out="ACTLSHIP" />
+      <map in="SHIPMTHD" out="SHIPMTHD" />
+      <map in="INTEGRATIONID" out="INTEGRATIONID" />
+      <map in="UpdateIfExists" out="UpdateIfExists" />
+      <map in="CURNCYID" out="CURNCYID" />
+      <map in="UOFM" out="UOFM" />
+      <map in="USRDEFND1" out="USRDEFND1" />
+      <map in="USRDEFND2" out="USRDEFND2" />
+      <map in="XTNDPRCE" out="XTNDPRCE" />
+    </context>
+    <context in="Literal" out="//SOPTransactionType/taSopLineIvcInsert_Items/taSopLineIvcInsert">
+      <map literal="{function}:GetDate()" out="USRDEFND3" />
+    </context>
+    <context in="//nb_l3que_invoice_master" out="//SOPTransactionType/taSopUserDefined">
+      <map in="SOPTYPE" out="SOPTYPE" />
+      <map in="SOPNUMBE" out="SOPNUMBE" />
+      <map in="USRTAB01" out="USRTAB01" />
+      <map in="USERDEF1" out="USERDEF1" />
+      <map in="USERDEF2" out="USERDEF2" />
+      <map in="USRDEF03" out="USRDEF03" />
+      <map in="USRDEF04" out="USRDEF04" />
+    </context>
+    <context in="Literal" out="//SOPTransactionType/taSopUserDefined">
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+    </context>
+  </transform>
+  <transform name="BD03" in="6MBS\From6MBS\BD03 nb_l3que_invoice_master.xml" out="Dynamics\ToDynamics\BD03 RMTransaction.xml">
+    <context in="Literal" out="//RMTransactionType/taRMTransaction">
+      <map literal="7" out="RMDTYPAL" />
+      <map literal="1" out="CREATEDIST" />
+      <map literal="{function}:GetDate()" out="USRDEFND1" />
+    </context>
+    <context in="//nb_l3que_invoice_master" out="//RMTransactionType/taRMTransaction">
+      <map in="SOPNUMBE" out="DOCNUMBR" />
+      <map in="DOCDATE" out="DOCDATE" />
+      <map in="BACHNUMB" out="BACHNUMB" />
+      <map in="CUSTNMBR" out="CUSTNMBR" />
+      <map in="DOCAMNT" out="DOCAMNT" />
+      <map in="SUBTOTAL" out="SLSAMNT" />
+      <map in="DOCDESCR" out="DOCDESCR" />
+      <map in="PRSTADCD" out="ADRSCODE" />
+      <map in="FREIGHT" out="FRTAMNT" />
+      <map in="MISCAMNT" out="MISCAMNT" />
+      <map in="PYMTRMID" out="PYMTRMID" />
+      <map in="INTEGRATIONID" out="LSTUSRED" />
+      <map in="REFRENCE" out="DistRef" />
+      <map in="DUEDATE" out="DUEDATE" />
+      <map in="CURNCYID" out="CURNCYID" />
+      <map in="TRDISAMT" out="TRDISAMT" />
+    </context>
+  </transform>
+  <transform name="BD03A" in="6MBS\From6MBS\BD03A nb_l3que_invoice_reversal.xml" out="Dynamics\ToDynamics\BD03A RMApply.xml">
+    <context in="//nb_l3que_invoice_reversal" out="//RMApplyType/taRMApply">
+      <map in="APTODCNM" out="APTODCNM" />
+      <map in="APFRDCNM" out="APFRDCNM" />
+      <map in="APPTOAMT" out="APPTOAMT" />
+      <map in="APFRDCTY" out="APFRDCTY" />
+      <map in="APTODCTY" out="APTODCTY" />
+      <map in="APPLYDATE" out="APPLYDATE" />
+      <map in="DISTKNAM" out="DISTKNAM" />
+      <map in="WROFAMNT" out="WROFAMNT" />
+    </context>
+  </transform>
+  <transform name="BM04" in="6MBS\From6MBS\BM04 nb_l3que_heat_material.xml" out="Maximo\ToMaximo\BM04 MxInvIssueInterface.xml">
+    <context in="//nb_l3que_heat_material" out="//Content/MXINVISSUE/MATUSETRANS">
+      <map in="material_type" out="ITEMNUM" />
+      <map in="material_actual_weight" out="QUANTITY" />
+      <map in="heat_no" out="NS_SPCHEATNUM" />
+      <map in="furnace" out="NS_SPCFCE" />
+      <map in="from_area" out="NS_SPCFROMAREA" />
+      <map in="from_location" out="NS_SPCFROMLOCATION" />
+      <map in="memo" out="MEMO" />
+      <map in="addition_dt_stamp" out="ACTUALDATE" />
+      <map in="issue_type" out="ISSUETYPE" />
+    </context>
+    <context in="Literal" out="//Content/MXINVISSUE/MATUSETRANS">
+      <map literal="CONSUMABLES" out="STORELOC" />
+      <map literal="STEELMILL" out="ORGID" />
+      <map literal="DELTA" out="SITEID" />
+    </context>
+  </transform>
+</transforms>

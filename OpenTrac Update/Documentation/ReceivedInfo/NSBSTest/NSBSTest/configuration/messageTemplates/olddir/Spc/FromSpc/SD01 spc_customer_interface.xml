@@ -1,0 +1,9 @@
+<NewDataSet>
+  <Table name="spc_customer_interface">
+    <customer_seq_no>Single</customer_seq_no>
+    <customer_id>Single</customer_id>
+    <contact_no>???(5)</contact_no>
+    <createaddress>???(5)</createaddress>
+    <updateifexists>???(5)</updateifexists>
+  </Table>
+</NewDataSet>

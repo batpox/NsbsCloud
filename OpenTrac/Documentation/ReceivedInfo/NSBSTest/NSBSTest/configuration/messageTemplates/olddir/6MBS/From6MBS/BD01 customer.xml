@@ -1,0 +1,25 @@
+<NewDataSet>
+  <customer>
+    <customer_id>1000</customer_id>
+    <name>Worthington Steel - Delta</name>
+    <corporate_cust_id>327</corporate_cust_id>
+    <sales_region_cd>4</sales_region_cd>
+    <sales_rep_cd>1</sales_rep_cd>
+    <sic_cd>5051</sic_cd>
+    <cust_status>A</cust_status>
+    <customer_type>E</customer_type>
+    <sent_to_ar>N</sent_to_ar>
+    <general_comments>Other NSBHP customers should contact Scott Weisenborn (419) 822-2518 for info. about their processing capabilities. - GARY MOHLER (419- 822-2500) coordinates receiving / processing</general_comments>
+    <inside_sales_rep_cd>9</inside_sales_rep_cd>
+    <fein_no>XCP</fein_no>
+    <english_metric_flag>1</english_metric_flag>
+    <change_user_id>3572</change_user_id>
+    <sold_to_contact_no>2</sold_to_contact_no>
+    <invoice_to_contact_no>9</invoice_to_contact_no>
+    <parent_no>1000</parent_no>
+    <change_datetime>2005-02-07T13:11:49.256-05:00</change_datetime>
+    <worthington>T</worthington>
+    <fl_ship_untested>Y</fl_ship_untested>
+    <fuel_override_flag>N</fuel_override_flag>
+  </customer>
+</NewDataSet>

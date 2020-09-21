@@ -1,0 +1,47 @@
+<rxeNode type='pump'>
+	<transfers>
+	
+	<!-- Note that you can change the message name. If blank, it defaults to same -->
+	<transfer name='XmlTransfer' plugin='RxePlugins.RxeXmlTransfer' transformFile='FromMaximo.xml' checkInterval='30000' deadMessageFolder='D:\RxE\NSBSTest\DeadMessages'>
+		<in pipe='FromMaximo' messageNamePattern='MD01$' state='on' >
+			<out pipe='ToDynamics' transform='MD01' message='MD01' />
+			<out pipe='ToDynamics' transform='MD01primary' message='MD01a' />
+			<out pipe='ToDynamics' transform='MD01remit' message='MD01a' />
+		</in>
+		<in pipe='FromMaximo' messageNamePattern='MD02$' state='on' >
+			<out pipe='ToDynamics' transform='MD02' message='MD02' />
+		</in>
+		<in pipe='FromMaximo' messageNamePattern='MD02a$' state='on' >
+			<out pipe='ToDynamics' transform='MD02a' message='MD02a' />
+		</in>
+		<in pipe='FromMaximo' messageNamePattern='MD02b$' state='on' >
+			<out pipe='ToDynamics' transform='MD02b' message='MD02b' />
+		</in>
+		<in pipe='FromMaximo' messageNamePattern='MD02c$' state='on' >
+			<out pipe='ToDynamics' transform='MD02c' message='MD02c' />
+		</in>
+		<in pipe='FromMaximo' messageNamePattern='MD02d$' state='on' >
+			<out pipe='ToDynamics' transform='MD02d' message='MD02d' />
+		</in>
+		<in pipe='FromMaximo' messageNamePattern='MD03$' state='on' 
+			declineXPath="//*[local-name()='Content']/*[local-name()='MXINVOICE']/*[local-name()='INVOICE'][*[local-name()='TOTALCOST']=0]" >
+			<out pipe='ToDynamics' transform='MD03Credit' 
+				message='MD03' />
+		</in>
+		<in pipe='FromMaximo' messageNamePattern='MS01$' state='on' >
+			<out pipe='ToSpc' transform='MS01' message='MS01' />
+			<out pipe='To6MBS' transform='MB01' message='MB01' />
+		</in>
+		<in pipe='FromMaximo' messageNamePattern='MS02$' state='on' >
+			<out pipe='ToSpc' transform='MS02' mapping='OneToMany://nb_l4que_podet' message='MS02' />
+			<out pipe='To6MBS' transform='MB02' mapping='OneToMany://nb_l4que_podet' message='MB02' />
+		</in>
+		<in pipe='FromMaximo' messageNamePattern='MS05$' state='off' >
+			<out pipe='ToSpc' transform='MS05' message='MS05' />
+			<out pipe='To6MBS' transform='MB05' message='MB05' />
+		</in>
+	</transfer>
+	
+	</transfers>
+	
+</rxeNode>

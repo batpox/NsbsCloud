@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-16"?>
+<RxePipeMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PipeDataId>347f44e4-3da8-11e4-b1df-005056b1095c</PipeDataId>
+  <lastPipeDataId>370f7b9a-339a-11e4-bf9c-005056b1095c</lastPipeDataId>
+  <PipeId>1</PipeId>
+  <InsertUtcTime>2014-09-16T13:48:58.2513508Z</InsertUtcTime>
+  <messageName>SD01</messageName>
+  <insertNodeId>8</insertNodeId>
+  <ProcessStatus>Ready</ProcessStatus>
+  <processTime>0001-01-01T00:00:00</processTime>
+  <processNodeId>0</processNodeId>
+  <payload>&lt;eConnect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;RMCustomerMasterType&gt;&lt;eConnectProcessInfo&gt;&lt;Sender&gt;SPC-RxE&lt;/Sender&gt;&lt;/eConnectProcessInfo&gt;&lt;taUpdateCreateCustomerRcd&gt;&lt;CUSTNMBR&gt;1379&lt;/CUSTNMBR&gt;&lt;CUSTNAME&gt;56 Industries, Inc.&lt;/CUSTNAME&gt;&lt;CUSTCLAS&gt;HOT_ROLL_BANDS&lt;/CUSTCLAS&gt;&lt;ADRSCODE&gt;INVOICE_TO&lt;/ADRSCODE&gt;&lt;CNTCPRSN&gt;Mark H Demchuk, President&lt;/CNTCPRSN&gt;&lt;ADDRESS1&gt;13676 North Station Road&lt;/ADDRESS1&gt;&lt;ADDRESS2&gt;&lt;/ADDRESS2&gt;&lt;ADDRESS3&gt;&lt;/ADDRESS3&gt;&lt;CITY&gt;Columbia Station&lt;/CITY&gt;&lt;STATE&gt;OH&lt;/STATE&gt;&lt;ZIPCODE&gt;44028&lt;/ZIPCODE&gt;&lt;COUNTRY&gt;United States&lt;/COUNTRY&gt;&lt;PHNUMBR1&gt;4402365656&lt;/PHNUMBR1&gt;&lt;PHNUMBR2&gt;&lt;/PHNUMBR2&gt;&lt;FAX&gt;4402365640&lt;/FAX&gt;&lt;PRBTADCD&gt;INVOICE_TO&lt;/PRBTADCD&gt;&lt;STADDRCD&gt;INVOICE_TO&lt;/STADDRCD&gt;&lt;SLPRSNID&gt;7&lt;/SLPRSNID&gt;&lt;SALSTERR&gt;3&lt;/SALSTERR&gt;&lt;USERDEF1&gt;XCP&lt;/USERDEF1&gt;&lt;PYMTRMID&gt;Net 30&lt;/PYMTRMID&gt;&lt;NOTETEXT&gt;test again&lt;/NOTETEXT&gt;&lt;CRLMTTYP&gt;2&lt;/CRLMTTYP&gt;&lt;MXWOFTYP&gt;2&lt;/MXWOFTYP&gt;&lt;MXWROFAM&gt;50.00&lt;/MXWROFAM&gt;&lt;CURNCYID&gt;USD&lt;/CURNCYID&gt;&lt;STMTCYCL&gt;1&lt;/STMTCYCL&gt;&lt;INTEGRATIONID&gt;SPC&lt;/INTEGRATIONID&gt;&lt;UseCustomerClass&gt;0&lt;/UseCustomerClass&gt;&lt;CreateAddress&gt;0&lt;/CreateAddress&gt;&lt;UpdateIfExists&gt;1&lt;/UpdateIfExists&gt;&lt;USRDEFND1&gt;2014-09-16 09:48:58&lt;/USRDEFND1&gt;&lt;/taUpdateCreateCustomerRcd&gt;&lt;/RMCustomerMasterType&gt;&lt;/eConnect&gt;</payload>
+  <insertInfoXml />
+  <processInfoXml />
+  <sequencer>36198497382513508</sequencer>
+  <retries>0</retries>
+  <days>20140916</days>
+  <hours>2014091613</hours>
+</RxePipeMessage>

@@ -1,0 +1,85 @@
+<rxeNode type='inflow' >
+	<!-- A transport receives FROM one source and places into 1 or more pipes -->
+	<transport  plugin='RxePlugins.RxeDbInflow' >
+		<!-- Begin Custom Transport mechanism -->
+		<tables connectString='Provider=SQLOLEDB;Data Source=172.20.215.16;Initial Catalog=6MBS;User Id=RXE_User;Password=RXE_User1' >
+		
+			<table name='BM01' tablename='ap_freight_costs'  keyField='invoice_no' 
+				sqlSelect="SELECT TOP 1 * FROM RxE.ap_freight_costs WHERE sent_to_financial_system_flag='N' ORDER BY invoice_no"
+				processMode='UpdateStatus' statusField='sent_to_financial_system_flag' statusProcessed='Y'
+				pollSeconds='60' 
+				special1='Combine:carrier:SELECT * FROM dbo.carrier c LEFT OUTER JOIN dbo.carrier_contacts cc ON c.carrier_cd = cc.carrier_cd AND c.contact_cd = cc.contact_cd WHERE c.carrier_cd=@carrier_cd'
+				state='on'/>
+
+				
+			<table name='BM02' tablename='nb_l3que_rmr'  keyField='rowid' 
+				sqlSelect="SELECT TOP 1 * FROM RxE.nb_l3que_rmr WHERE status='U'  ORDER BY rowid"
+			  	processMode='UpdateStatus' statusField='status' statusProcessed='P'
+				pollSeconds='60'
+				state='on'/>
+
+
+			<table name='BM03' tablename='nb_maximo_meter_readings' processMode='StoreAndDelete' keyField='meter_seq_no' 
+				sqlOrder='reading_date' pollSeconds='60'  
+				state='off'/>
+
+			<table name='BM04' tablename='nb_l3que_heat_material'  keyField='rowid' 
+				sqlSelect="SELECT TOP 1 * FROM RxE.nb_l3que_heat_material WHERE status='U' ORDER BY rowid"
+			  	processMode='UpdateStatus' statusField='status' statusProcessed='P'
+				pollSeconds='60'  
+				state='off'/>
+				
+				
+			<table name='BD01' tablename='nb_l3que_customer_data' processMode='StoreAndDelete' keyField='address_seq_no' 
+				sqlSelect="SELECT TOP 100 * FROM RxE.nb_l3que_customer_data WHERE adrscode = 'INVOICE_TO' ORDER BY address_seq_no"
+				special1='Combine:customer:SELECT * FROM dbo.customer WHERE customer_id=@custnmbr' 
+				pollSeconds='60'  
+				state='on'/>
+				
+			<table name='BD01A' tablename='nb_l3que_customer_data' processMode='StoreAndDelete' keyField='address_seq_no' 
+				sqlSelect="SELECT TOP 100 * FROM RxE.nb_l3que_customer_data WHERE adrscode &lt;&gt; 'INVOICE_TO' ORDER BY address_seq_no"
+				special1='Combine:customer:SELECT * FROM dbo.customer WHERE customer_id=@custnmbr' 
+				pollSeconds='60'  
+				state='on'/>
+
+			<table name='BD01B' tablename='nb_l3que_credit_status' processMode='StoreAndDelete' keyField='credit_seq_no' 
+				sqlOrder='credit_seq_no' pollSeconds='60'  
+				state='on'/>
+				
+			<table name = 'BD02' tablename='nb_l3que_invoice_master' processMode='StoreAndDelete' keyField='SOPNUMBE' 
+				sqlSelect="SELECT TOP 100 * FROM RxE.nb_l3que_invoice_master WHERE TRANSACTION_TYPE='BD02' ORDER BY SOPNUMBE" 
+				special="ParentChildren:nb_l3que_invoice_detail:SELECT * FROM RxE.nb_l3que_invoice_detail WHERE SOPNUMBE='@SOPNUMBE'" pollSeconds='60'  
+				state='on'/>
+
+			<table name = 'BD03' tablename='nb_l3que_invoice_master' processMode='StoreAndDelete' keyField='SOPNUMBE'
+				sqlSelect="SELECT TOP 100 * FROM RxE.nb_l3que_invoice_master WHERE TRANSACTION_TYPE='BD03' ORDER BY SOPNUMBE" 
+				special="ParentChildren:nb_l3que_invoice_detail:SELECT * FROM RxE.nb_l3que_invoice_detail WHERE SOPNUMBE='@SOPNUMBE'" pollSeconds='60'  
+				state='on'/>
+				
+			<table name = 'BD03A' tablename='nb_l3que_invoice_reversal' processMode='StoreAndDelete' keyField='reversal_seq_no'
+				sqlSelect="SELECT TOP 100 * FROM RxE.nb_l3que_invoice_reversal WHERE TRANSACTION_TYPE='BD03A' and APPLYDATE &lt; dateadd(hh,-24,getdate()) ORDER BY reversal_seq_no" 
+				pollSeconds='60'  
+				state='on'/>
+
+		</tables>
+		
+		<!-- Begin Standard Transport mechanism -->
+		<!-- Message matching to determine outgoing message name -->
+		<messages>
+			<message envelopeName='BM01' name='BM01' />
+			<message envelopeName='BM02' name='BM02' />
+			<message envelopeName='BM03' name='BM03' />
+			<message envelopeName='BM04' name='BM04' />
+			<message envelopeName='BD01' name='BD01' />
+			<message envelopeName='BD01A' name='BD01A' />
+			<message envelopeName='BD01B' name='BD01B' />
+			<message envelopeName='BD02' name='BD02' />
+			<message envelopeName='BD03' name='BD03' />
+			<message envelopeName='BD03A' name='BD03A' />
+		</messages>
+		<!-- Now use the derived message name and regular expression to select pipe -->
+		<pipes>
+			<pipe name='From6MBS' bucketSize='1' messageNamePattern='.*'  />
+		</pipes>
+	</transport>
+</rxeNode>

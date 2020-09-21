@@ -1,0 +1,44 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OpenTracDashboard.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LogFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\logs</Value>
+    </Setting>
+    <Setting Name="OpenTracConnection" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DTHG502015\SQL2014EXPRESS;Initial Catalog=NsbsOpenTrac;Integrated Security=False;User ID=rxe_writer;Password=RXE_1022_writer&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DTHG502015\SQL2014EXPRESS;Initial Catalog=NsbsOpenTrac;Integrated Security=False;User ID=rxe_writer;Password=RXE_1022_writer</Value>
+    </Setting>
+    <Setting Name="SpcConnection" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=SQLNCLI11;Server=dthg502015\sql2014express;Database=nsbsSpc;user id=rxe_interface;password=danHtemp&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=SQLNCLI11;Server=dthg502015\sql2014express;Database=nsbsSpc;user id=rxe_interface;password=danHtemp</Value>
+    </Setting>
+    <Setting Name="ExtraConnection1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Sybase.ASEOLEDBProvider.2;Initial Catalog=nsbhp_spc_prod;Password=danHtemp;User ID=RxE_interface;Data Source=L3_Test;Persist Security Info=True
+
+&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Sybase.ASEOLEDBProvider.2;Initial Catalog=nsbhp_spc_prod;Password=danHtemp;User ID=RxE_interface;Data Source=L3_Test;Persist Security Info=True
+
+</Value>
+    </Setting>
+    <Setting Name="ExtraConnection2" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=NsDelSql2014v;Initial Catalog=NStar;Integrated Security=False;User ID=rxe_writer;Password=RXE_1022_writer&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=NsDelSql2014v;Initial Catalog=NStar;Integrated Security=False;User ID=rxe_writer;Password=RXE_1022_writer</Value>
+    </Setting>
+    <Setting Name="OpenTracMessagesPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\(data)\OpentracMessages.txt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

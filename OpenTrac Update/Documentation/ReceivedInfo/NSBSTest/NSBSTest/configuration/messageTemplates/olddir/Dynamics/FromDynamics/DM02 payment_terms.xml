@@ -1,0 +1,8 @@
+<Payment_Terms:root xmlns:Payment_Terms="http://microsoft.com/eConnect/Payment_Terms.xsd">
+  <eConnect ACTION="1" Requester_DOCTYPE="Payment_Terms" DBNAME="GPPLY" TABLENAME="SY03300" DATE1="2006-04-12T09:37:30.760" PYMTRMID="another new">
+    <Payment_Terms>
+      <PYMTRMID>another new</PYMTRMID>
+      <PYMTRMID>another new</PYMTRMID>
+    </Payment_Terms>
+  </eConnect>
+</Payment_Terms:root>

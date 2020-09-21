@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NSMTRRDGInterface xmlns="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="EN">
+  <Header operation="Notify" event="0">
+    <SenderID type="MAXIMO" majorversion="6" minorversion="0" build="03" dbbuild="V600-341">SPC-RXE</SenderID>
+    <CreationDateTime>2006-03-16T19:20:42-05:00</CreationDateTime>
+    <RecipientID>SPC-RXE</RecipientID>
+  </Header>
+  <Content>
+    <NSMTRRDG>
+      <NSMTRRDG>
+        <METER_NAME>TONS_CAST</METER_NAME>
+        <DELTA>20.20</DELTA>
+        <READING_DATE>2006-03-16T19:30:42-05:00</READING_DATE>
+      </NSMTRRDG>
+    </NSMTRRDG>
+  </Content>
+</NSMTRRDGInterface>

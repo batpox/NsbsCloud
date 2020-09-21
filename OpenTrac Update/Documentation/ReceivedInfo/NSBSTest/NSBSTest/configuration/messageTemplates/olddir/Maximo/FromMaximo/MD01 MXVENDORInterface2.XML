@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MXVENDORInterface xmlns="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" language="EN">
+  <Header operation="Notify" event="1">
+    <SenderID type="MAXIMO" majorversion="6" minorversion="0" build="03" dbbuild="V600-341">MX</SenderID>
+    <CreationDateTime>2006-04-20T15:17:44-05:00</CreationDateTime>
+    <RecipientID>DYNAMICS-RXE</RecipientID>
+    <MessageID>11455606645354865</MessageID>
+  </Header>
+  <Content>
+    <MXVENDOR>
+      <COMPANIES action="Replace">
+        <COMPANY>SCRAPCO2</COMPANY>
+        <TYPE>V</TYPE>
+        <NAME langenabled="1">Scrap vendor</NAME>
+        <ADDRESS1 changed="1">Address1</ADDRESS1>
+        <ADDRESS2 changed="1">Address2</ADDRESS2>
+        <ADDRESS3 changed="1">Address3</ADDRESS3>
+        <ADDRESS4 changed="1">Address4</ADDRESS4>
+        <CONTACT>Steve Markwood</CONTACT>
+        <PHONE>813-949-4290</PHONE>
+        <FOB />
+        <FREIGHTTERMS>dummy update5</FREIGHTTERMS>
+        <SHIPVIA />
+        <PAYMENTTERMS />
+        <CUSTOMERNUM />
+        <FAX>813-948-0689</FAX>
+        <CHANGEBY changed="1">MAXADMIN</CHANGEBY>
+        <CHANGEDATE changed="1">2006-04-20T15:17:44-05:00</CHANGEDATE>
+        <INCLUSIVE1>1</INCLUSIVE1>
+        <INCLUSIVE2>1</INCLUSIVE2>
+        <INCLUSIVE3>1</INCLUSIVE3>
+        <TAX1CODE>OH</TAX1CODE>
+        <TAX2CODE />
+        <TAX3CODE />
+        <CURRENCYCODE>USD</CURRENCYCODE>
+        <LOCATION />
+        <REGISTRATION1 />
+        <REGISTRATION2 />
+        <REGISTRATION3 />
+        <APCONTROLACC />
+        <APSUSPENSEACC />
+        <RBNIACC />
+        <PAYVENDOR />
+        <BANKACCOUNT />
+        <INCLUSIVE4>1</INCLUSIVE4>
+        <INCLUSIVE5>1</INCLUSIVE5>
+        <REGISTRATION4 />
+        <REGISTRATION5 />
+        <TAX4CODE />
+        <TAX5CODE />
+        <DISABLED>0</DISABLED>
+        <REMITADDRESS1>100 crosby dr</REMITADDRESS1>
+        <REMITADDRESS2>bedford</REMITADDRESS2>
+        <REMITADDRESS3>ma</REMITADDRESS3>
+        <REMITADDRESS4>17080</REMITADDRESS4>
+        <REMITCONTACT>Shrikant Kulahalli</REMITCONTACT>
+        <PAYONRECEIPT>1</PAYONRECEIPT>
+        <HOMEPAGE />
+        <BANKNUM />
+        <DUNSNUM />
+        <TAXEXEMPTCODE />
+        <TAXEXEMPTNUM />
+        <ECOMMERCEENABLED>0</ECOMMERCEENABLED>
+        <MNETCOMPANYID />
+        <SOURCESYSID />
+        <OWNERSYSID />
+        <EXTERNALREFID />
+        <SENDERSYSID>MX</SENDERSYSID>
+        <AUTORECEIVEONASN>0</AUTORECEIVEONASN>
+        <VENDORSENDSASN>0</VENDORSENDSASN>
+        <VENDORSENDSINV>0</VENDORSENDSINV>
+        <ECOMINTERFACE />
+        <VENDORSENDSSTATUS>0</VENDORSENDSSTATUS>
+        <AUTOAPPROVEINV>1</AUTOAPPROVEINV>
+        <AUTOSENDPOCANCEL>0</AUTOSENDPOCANCEL>
+        <ORGID>STEELMILL</ORGID>
+        <DEFAULTWAREHOUSE />
+        <PARENTCOMPANY />
+        <USEPARENTREMITTO>0</USEPARENTREMITTO>
+        <ADDRESS5 changed="1">Address5</ADDRESS5>
+        <REMITADDRESS5>USA</REMITADDRESS5>
+        <CATALOGNAME />
+        <PUNCHOUTENABLED>0</PUNCHOUTENABLED>
+        <NAME_LONGDESCRIPTION langenabled="1" />
+        <FREIGHTTERMS_LONGDESCRIPTION />
+        <COMPANIESID>15882</COMPANIESID>
+        <INSUREXPDATE xsi:nil="true" />
+        <INSPECTIONREQUIRED>0</INSPECTIONREQUIRED>
+        <TOOLCONTROLACCOUNT />
+        <CELLPHONE />
+        <NS_CLASS>SCRAP</NS_CLASS>
+        <NS_CARRIER_MODE />
+        <NS_CREATEDBY>NBFOUB</NS_CREATEDBY>
+        <NS_REMARKS />
+        <NS_REMIT_PHONE>212-333-3456 x345</NS_REMIT_PHONE>
+        <NS_REMIT_FAX>333-456-9876</NS_REMIT_FAX>
+        <NS_REMIT_EMAIL>mr.excitement@nascar.com</NS_REMIT_EMAIL>
+        <NS_CONTACT_EMAIL>brian.baird@nsbhp.com</NS_CONTACT_EMAIL>
+        <NS_CREATE></NS_CREATE>
+        <TRANS_LANGCODE>EN</TRANS_LANGCODE>
+        <COMPCONTACT>
+          <CONTACT>Shrikant Kulahalli</CONTACT>
+          <POSITION>Consultant</POSITION>
+          <VOICEPHONE>781-111-2222</VOICEPHONE>
+          <FAXPHONE>781-333-4444</FAXPHONE>
+          <EMAIL>Shrikant.Kulahalli@mro.com</EMAIL>
+          <HOMEPHONE />
+          <PAGERPHONE />
+          <PROCUREMENTCARDNUM />
+          <PROCCARDEXPIREDATE xsi:nil="true" />
+          <MNETUSERID />
+          <COMPCONTACTID>7894</COMPCONTACTID>
+          <CELLPHONE />
+        </COMPCONTACT>
+      </COMPANIES>
+    </MXVENDOR>
+  </Content>
+</MXVENDORInterface>
+

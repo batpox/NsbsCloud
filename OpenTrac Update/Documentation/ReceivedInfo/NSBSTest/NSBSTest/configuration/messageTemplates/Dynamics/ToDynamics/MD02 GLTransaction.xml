@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<eConnect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<GLTransactionType>
+		<eConnectProcessInfo>
+			<Sender></Sender>
+		</eConnectProcessInfo>
+		<taGLTransactionLineInsert_Items>
+			<taGLTransactionLineInsert>
+				<BACHNUMB></BACHNUMB>
+				<JRNENTRY></JRNENTRY>
+				<SQNCLINE></SQNCLINE>
+
+				<CRDTAMNT></CRDTAMNT>
+				<DEBITAMT></DEBITAMT>
+				<ACTNUMST></ACTNUMST>
+				<DSCRIPTN></DSCRIPTN>
+
+				<DOCDATE></DOCDATE>
+				<CURNCYID></CURNCYID>
+
+				<USRDEFND1></USRDEFND1>
+			</taGLTransactionLineInsert>
+		</taGLTransactionLineInsert_Items>
+		<taGLTransactionHeaderInsert>
+			<BACHNUMB></BACHNUMB>
+			<JRNENTRY></JRNENTRY>
+			<REFRENCE></REFRENCE>
+			<TRXDATE></TRXDATE>
+
+			<TRXTYPE></TRXTYPE>
+
+			<SERIES></SERIES>
+			<CURNCYID></CURNCYID>
+
+			<SOURCDOC></SOURCDOC>
+			<USERID></USERID>
+
+			<USRDEFND1></USRDEFND1>
+
+		</taGLTransactionHeaderInsert>
+
+	</GLTransactionType>
+</eConnect>

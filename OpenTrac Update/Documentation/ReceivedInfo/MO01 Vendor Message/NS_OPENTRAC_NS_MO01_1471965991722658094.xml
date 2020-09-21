@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PublishNS_MO01 xmlns="http://www.ibm.com/maximo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creationDateTime="2016-08-23T11:26:32-04:00" transLanguage="EN" baseLanguage="EN" messageID="1471965991722658094" maximoVersion="7 5 20160408-1816 V7515--1" event="1">
+  <NS_MO01Set>
+    <COMPANIES action="Replace">
+      <COMPANY>5272</COMPANY>
+      <DUNSNUM>341965647</DUNSNUM>
+      <FOB>PREPAID</FOB>
+      <NAME>Fulton County Processing, Ltd.</NAME>
+      <NS_FOB_DESC>Prepaid</NS_FOB_DESC>
+      <NS_SHIPVIA_DESC changed="1">Barge</NS_SHIPVIA_DESC>
+      <NS_TERMS_DESC>Net 30</NS_TERMS_DESC>
+      <NS_VENDORTYPE>P</NS_VENDORTYPE>
+      <ORGID>STEELMILL</ORGID>
+      <PAYMENTTERMS>NET30</PAYMENTTERMS>
+      <SHIPVIA changed="1">BA</SHIPVIA>
+    </COMPANIES>
+  </NS_MO01Set>
+</PublishNS_MO01>
+

@@ -1,0 +1,15 @@
+<NewDataSet>
+  <nb_l4que_cusbal>
+<!--    <rowid></rowid> -->
+    <datewritten></datewritten>
+    <dateprocessed></dateprocessed>
+    <status></status>
+    <cus_cd></cus_cd>
+    <cus_grp></cus_grp>
+    <current_amt></current_amt>
+    <amt1></amt1>
+    <amt2></amt2>
+    <amt3></amt3>
+    <sybase_dt></sybase_dt>
+  </nb_l4que_cusbal>
+</NewDataSet>

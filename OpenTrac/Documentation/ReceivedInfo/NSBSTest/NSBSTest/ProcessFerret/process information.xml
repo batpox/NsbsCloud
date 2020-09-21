@@ -1,0 +1,100 @@
+<processFerret>
+
+<general>
+	<!--mailbox name='dan.houck@batpox.com' minutes='10' /-->
+	<mailbox name='it_alerts@northstarbluescope.com' minutes='10' />
+</general>
+
+<templates>
+
+	<template name='Rxe NSBSTest'> 
+	  <parameters  
+	  	filename='D:\Program Files (x86)\RxE\Rxe V1-4\rxeNode.exe'
+	  	arguments=' /nodeName=ToSpc1 /rxeName="Rxe NSBSTest" /interactive=false' 
+	  	workingDirectory='d:\rxe'
+	  	allowReattach='True'
+	  	restarts='5'
+	  />
+	</template> 
+
+	<template name='Spoonfeed'> 
+	  <parameters  
+	  	filename='D:\RxE\Tools\spoonfeed\spoonfeed.exe'
+	  	arguments=' /infolder="D:\exERPts90\Files\Incoming_XML\ToBeProcessed" /outfolder="D:\exERPts90\Files\Incoming_XML\Incoming" /batchSize=10 /threshold=1 /pollSeconds=60' 
+	  	workingDirectory='D:\RxE\Tools\spoonfeed'
+	  	allowReattach='True'
+	  	restarts='5'
+	  />
+	</template> 
+
+</templates>
+
+<instances>
+	<instance name='test:ToSpc1' template='Rxe NsbsTest'>
+	  <parameters 
+	  	arguments='/nodeName=ToSpc1 /rxeName="Rxe NSBSTest" /interactive=false' 
+	  />
+	</instance>
+
+	<instance name='test:FromSpc1' template='Rxe NsbsTest'>
+	  <parameters 
+	  	arguments='/nodeName=FromSpc1 /rxeName="Rxe NSBSTest" /interactive=false' 
+	  />
+	</instance>
+	
+	<instance name='test:PumpSpc1' template='Rxe NsbsTest'>
+	  <parameters 
+	  	arguments='/nodeName=PumpSpc1 /rxeName="Rxe NSBSTest" /interactive=false' 
+	  />
+	</instance>
+
+	<instance name='test:ToMaximo1' template='Rxe NsbsTest'>
+	  <parameters 
+	  	arguments='/nodeName=ToMaximo1 /rxeName="Rxe NSBSTest" /interactive=false' 
+	  />
+	</instance>
+
+	<instance name='test:FromMaximo1' template='Rxe NsbsTest'>
+	  <parameters 
+	  	arguments='/nodeName=FromMaximo1 /rxeName="Rxe NSBSTest" /interactive=false' 
+	  />
+	</instance>
+
+	<instance name='test:PumpMaximo1' template='Rxe NsbsTest'>
+	  <parameters 
+	  	arguments='/nodeName=PumpMaximo1 /rxeName="Rxe NSBSTest" /interactive=false' 
+	  />
+	</instance>
+
+	<instance name='test:ToDynamics1' template='Rxe NsbsTest'>
+	  <parameters 
+	  	arguments='/nodeName=ToDynamics1 /rxeName="Rxe NSBSTest" /interactive=false' 
+	  />
+	</instance>
+
+	<instance name='test:FromDynamics1' template='Rxe NsbsTest'>
+	  <parameters 
+	  	arguments='/nodeName=FromDynamics1 /rxeName="Rxe NSBSTest" /interactive=false' 
+	  />
+	</instance>
+
+	<instance name='test:PumpDynamics1' template='Rxe NsbsTest'>
+	  <parameters 
+	  	arguments='/nodeName=PumpDynamics1 /rxeName="Rxe NSBSTest" /interactive=false' 
+	  />
+	</instance>
+
+	<instance name='test:RetryDynamics1' template='Spoonfeed'>
+	  <parameters 
+	  	filename='D:\RxE\Tools\spoonfeed\spoonfeed.exe'
+	  	arguments=' /infolder="D:\exERPts90\Files\Incoming_XML\ToBeProcessed" /outfolder="D:\exERPts90\Files\Incoming_XML\Incoming" /batchSize=10 /threshold=1 /pollSeconds=60' 
+	  />
+	</instance>
+
+</instances>
+
+<startup>
+ 	<start process='fred' prewait='5000' postwait='5000' />
+</startup>
+
+</processFerret>

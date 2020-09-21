@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="NsbsOpenTracModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.AP_BATCH_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.AP_DETAIL_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.AR_CREDIT_DEBIT_GL_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.AR_CREDIT_DEBIT_HEADER_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.AR_CREDIT_DEBIT_LINE_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.COMMERCIAL_INVOICE_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.CONTACT_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="CONTACT_TX">
+          <Key>
+            <PropertyRef Name="FINANSYS_TRANSACTION_SKEY" />
+          </Key>
+          <Property Name="FINANSYS_TRANSACTION_SKEY" Type="numeric" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="SERVICE_CODE" Type="nvarchar" MaxLength="20" />
+          <Property Name="CONTACT_RECORD_KEY" Type="nvarchar" MaxLength="10" />
+          <Property Name="ACTION_CODE" Type="nvarchar" MaxLength="8" />
+          <Property Name="FORMAT_CODE" Type="nvarchar" MaxLength="20" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="PHONE_NUMBER" Type="nvarchar" MaxLength="20" />
+          <Property Name="EMAIL_ADDR" Type="nvarchar" MaxLength="50" />
+          <Property Name="ADDR_LINE_1" Type="nvarchar" MaxLength="32" />
+          <Property Name="ADDR_LINE_2" Type="nvarchar" MaxLength="32" />
+          <Property Name="COUNTRY_CODE" Type="nvarchar" MaxLength="5" />
+          <Property Name="COUNTRY_TEXT" Type="nvarchar" MaxLength="32" />
+          <Property Name="CITY_TEXT" Type="nvarchar" MaxLength="32" />
+          <Property Name="REGION_CODE" Type="nvarchar" MaxLength="2" />
+          <Property Name="REGION_TEXT" Type="nvarchar" MaxLength="32" />
+          <Property Name="POSTAL_CODE" Type="nvarchar" MaxLength="10" />
+          <Property Name="URL" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.CUSTOMER_MASTER_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="CUSTOMER_MASTER_TX">
+          <Key>
+            <PropertyRef Name="FINANSYS_TRANSACTION_SKEY" />
+          </Key>
+          <Property Name="FINANSYS_TRANSACTION_SKEY" Type="numeric" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="FINANCIAL_ORG_CODE" Type="nvarchar" MaxLength="10" />
+          <Property Name="CUSTOMER_PLANT_DUNS" Type="nvarchar" MaxLength="9" />
+          <Property Name="BILL_TO_RECORD_KEY" Type="nvarchar" MaxLength="10" />
+          <Property Name="SHIP_TO_RECORD_KEY" Type="nvarchar" MaxLength="10" />
+          <Property Name="ACTIVE_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="UNITS_CODE" Type="nvarchar" MaxLength="1" />
+          <Property Name="INSIDE_SALES_TEAM_TEXT" Type="nvarchar" MaxLength="20" />
+          <Property Name="SALES_REGION" Type="nvarchar" MaxLength="15" />
+          <Property Name="PAYMENT_TERMS_CODE" Type="nvarchar" MaxLength="10" />
+          <Property Name="HOLD_FOR_CUST_RELEASE_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="INVOICE_VIA_EDI_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="INVOICE_VIA_MAIL_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="INVOICE_VIA_EMAIL_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="INVOICE_VIA_FAX_FREQ_CODE" Type="nvarchar" MaxLength="6" />
+          <Property Name="TEST_REPORT_EDI_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="TEST_REPORT_MAIL_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="TEST_REPORT_EMAIL_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="TEST_REPORT_FAX_FREQ_CODE" Type="nvarchar" MaxLength="6" />
+          <Property Name="ORDER_ACK_VIA_EDI_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="ORDER_ACK_VIA_MAIL_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="ORDER_ACK_VIA_EMAIL_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="ORDER_ACK_VIA_FAX_FREQ_CODE" Type="nvarchar" MaxLength="6" />
+          <Property Name="SHIP_NOTICE_VIA_EDI_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="SHIP_NOTICE_VIA_MAIL_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="SHIP_NOTICE_VIA_EMAIL_FLAG" Type="nchar" MaxLength="1" />
+          <Property Name="SHIP_NOTICE_VIA_FAX_FREQ_CODE" Type="nvarchar" MaxLength="6" />
+          <Property Name="SIC_CODE" Type="nvarchar" MaxLength="7" />
+          <Property Name="FEDERAL_TAX_ID" Type="nvarchar" MaxLength="11" />
+          <Property Name="TAX_EXEMPT_CERTIFICATE" Type="nvarchar" MaxLength="15" />
+          <Property Name="CUSTOMER_NOTE_1" Type="nvarchar" MaxLength="60" />
+          <Property Name="CUSTOMER_NOTE_2" Type="nvarchar" MaxLength="60" />
+          <Property Name="CREDIT_STATUS_CODE" Type="nvarchar" MaxLength="1" />
+          <Property Name="SHIP_MODE_CODE" Type="nvarchar" MaxLength="10" />
+          <Property Name="FREIGHT_PAYMENT" Type="nvarchar" MaxLength="10" />
+          <Property Name="PREFERRED_CARRIER" Type="nvarchar" MaxLength="20" />
+          <Property Name="FREIGHT_CONTRACT" Type="nvarchar" MaxLength="18" />
+          <Property Name="DELIVERY_ROUTE" Type="nvarchar" MaxLength="35" />
+          <Property Name="RECEIVING_HOURS" Type="nvarchar" MaxLength="15" />
+          <Property Name="SHIPPING_NOTE_1" Type="nvarchar" MaxLength="100" />
+          <Property Name="SHIPPING_NOTE_2" Type="nvarchar" MaxLength="100" />
+          <Property Name="SHIPPING_NOTE_3" Type="nvarchar" MaxLength="100" />
+          <Property Name="SHIPPING_NOTE_4" Type="nvarchar" MaxLength="100" />
+          <Property Name="ACCOUNT_TYPE_CODE" Type="nvarchar" MaxLength="1" />
+          <Property Name="OUTSIDE_SALES_TEAM_TEXT" Type="nvarchar" MaxLength="20" />
+          <Property Name="SHIPTO_DUNS" Type="nvarchar" MaxLength="9" />
+          <Property Name="HOLD_INVOICE_FLAG" Type="nchar" MaxLength="1" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.CUSTOMER_PART_PRICING_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.CUSTOMER_PART_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.IN_BOL_HEAD' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.IN_BOL_LINE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.INVOICE_BATCH_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.INVOICE_GL_ENTRY_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.INVOICE_HEAD_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.INVOICE_LINE_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="KeyStore">
+          <Key>
+            <PropertyRef Name="KeyStoreID" />
+          </Key>
+          <Property Name="KeyStoreID" Type="int" Nullable="false" />
+          <Property Name="LastTrackSysProcessed" Type="numeric" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="LastTrackSysProcessedTime" Type="datetimeoffset" Precision="7" />
+          <Property Name="LastFinanSysUsed" Type="numeric" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="LastFinanSysUsedTime" Type="datetimeoffset" Precision="7" />
+          <Property Name="LastTrackSysDescription" Type="nvarchar" MaxLength="1000" />
+          <Property Name="LastFinanSysDescription" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.MILL_CHEMISTRY_RAW_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.MILL_INVENTORY_RAW_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.MILL_LOAD_RAW_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.MILL_METAL_CERT_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.MILL_METAL_TEST_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.MILL_NOTE_LINE_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.MILL_ORDER_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.MILL_PART_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.MILL_SHIP_ORDER_RAW_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.MILL_TRANS_IN_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="MILL_TRANS_IN_TX">
+          <Key>
+            <PropertyRef Name="FINANSYS_TRANSACTION_SKEY" />
+          </Key>
+          <Property Name="FINANSYS_TRANSACTION_SKEY" Type="numeric" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="FINANCIAL_ORG_CODE" Type="nvarchar" MaxLength="10" />
+          <Property Name="SENDER_QUAL" Type="nvarchar" MaxLength="2" />
+          <Property Name="SENDER_ID" Type="nvarchar" MaxLength="22" />
+          <Property Name="RECEIVER_QUAL" Type="nvarchar" MaxLength="2" />
+          <Property Name="RECEIVER_ID" Type="nvarchar" MaxLength="22" />
+          <Property Name="TRANSACTION_TYPE" Type="nvarchar" MaxLength="5" />
+          <Property Name="ACKNOWLEDGEMENT_CODE" Type="nvarchar" MaxLength="5" />
+          <Property Name="APPLICATION" Type="nvarchar" MaxLength="20" />
+          <Property Name="MODIFIED_BY" Type="nvarchar" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="PREQ_HEAD_TX">
+          <Key>
+            <PropertyRef Name="TRACKSYS_TRANSACTION_SKEY" />
+          </Key>
+          <Property Name="TRACKSYS_TRANSACTION_SKEY" Type="numeric" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="FINANCIAL_ORG_CODE" Type="nvarchar" MaxLength="10" />
+          <Property Name="ENTRY_DATE" Type="datetime" />
+          <Property Name="ORDER_RECEIVE_DATE" Type="datetime" />
+          <Property Name="START_DATE" Type="datetime" />
+          <Property Name="END_DATE" Type="datetime" />
+          <Property Name="STATUS" Type="nvarchar" MaxLength="10" />
+          <Property Name="TRACKSYS_PREQ_NUMBER" Type="numeric" Precision="7" Scale="0" />
+          <Property Name="TRACKSYS_PREQ_REV_NUM" Type="numeric" Precision="3" Scale="0" />
+          <Property Name="FINANSYS_VENDOR_KEY" Type="nvarchar" MaxLength="12" />
+          <Property Name="PREQ_CREATED_BY" Type="nvarchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="PREQ_LINE_TX">
+          <Key>
+            <PropertyRef Name="TRACKSYS_TRANSACTION_SKEY" />
+            <PropertyRef Name="LINE_NUMBER" />
+          </Key>
+          <Property Name="TRACKSYS_TRANSACTION_SKEY" Type="numeric" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="LINE_NUMBER" Type="numeric" Precision="3" Scale="0" Nullable="false" />
+          <Property Name="QUANTITY" Type="numeric" Precision="12" Scale="3" />
+          <Property Name="STATUS" Type="nvarchar" MaxLength="10" />
+          <Property Name="DUE_DATE" Type="datetime" />
+          <Property Name="PRICE_UMCODE" Type="nvarchar" MaxLength="8" />
+          <Property Name="PROCESSING_CHARGE" Type="numeric" Precision="8" Scale="4" />
+          <Property Name="STORAGE_IN_CHARGE" Type="numeric" Precision="8" Scale="4" />
+          <Property Name="STORAGE_OUT_CHARGE" Type="numeric" Precision="8" Scale="4" />
+          <Property Name="STORAGE_DAY_CHARGE" Type="numeric" Precision="8" Scale="4" />
+          <Property Name="STORAGE_FREE_DAYS" Type="numeric" Precision="4" Scale="0" />
+          <Property Name="MISC_CHARGE" Type="numeric" Precision="8" Scale="4" />
+          <Property Name="STORAGE_EXPECTED_DAYS" Type="numeric" Precision="4" Scale="0" />
+          <Property Name="UNIT_COST" Type="numeric" Precision="8" Scale="4" />
+          <Property Name="EXTENDED_COST" Type="numeric" Precision="11" Scale="2" />
+          <Property Name="SPECIAL_INSTR_LINE_1" Type="nvarchar" MaxLength="50" />
+          <Property Name="SPECIAL_INSTR_LINE_2" Type="nvarchar" MaxLength="50" />
+          <Property Name="SPECIAL_INSTR_LINE_3" Type="nvarchar" MaxLength="50" />
+          <Property Name="TRACKSYS_PART_NUMBER" Type="numeric" Precision="7" Scale="0" />
+          <Property Name="TRACKSYS_PART_REVISION" Type="numeric" Precision="3" Scale="0" />
+          <Property Name="FINANSYS_BILLTO_KEY" Type="nvarchar" MaxLength="10" />
+          <Property Name="FINANSYS_SHIPTO_KEY" Type="nvarchar" MaxLength="10" />
+          <Property Name="GL_ACCOUNT_NUMBER" Type="nvarchar" MaxLength="20" />
+          <Property Name="MATERIAL_CHARGE" Type="numeric" Precision="8" Scale="4" />
+          <Property Name="FREIGHT1_CHARGE" Type="numeric" Precision="8" Scale="4" />
+          <Property Name="FREIGHT2_CHARGE" Type="numeric" Precision="8" Scale="4" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.PREQ_RESP_HEAD_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.PREQ_RESP_LINE_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.SALESORD_HEAD_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.SALESORD_LINE_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.SREQ_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.TRANSACTION_INBOUND' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="TRANSACTION_INBOUND">
+          <Key>
+            <PropertyRef Name="TRACKSYS_TRANSACTION_SKEY" />
+            <PropertyRef Name="ENTITY_TYPE_CODE" />
+            <PropertyRef Name="TRANSACTION_TYPE_CODE" />
+            <PropertyRef Name="SUBMISSION_DATETIME" />
+          </Key>
+          <Property Name="TRACKSYS_TRANSACTION_SKEY" Type="numeric" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="ENTITY_TYPE_CODE" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="TRANSACTION_TYPE_CODE" Type="nvarchar" MaxLength="6" Nullable="false" />
+          <Property Name="SUBMISSION_DATETIME" Type="datetime" Nullable="false" />
+          <Property Name="ENTITY_CODE" Type="nvarchar" MaxLength="5" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.TRANSACTION_OUTBOUND' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="TRANSACTION_OUTBOUND">
+          <Key>
+            <PropertyRef Name="FINANSYS_TRANSACTION_SKEY" />
+            <PropertyRef Name="ENTITY_TYPE_CODE" />
+            <PropertyRef Name="TRANSACTION_TYPE_CODE" />
+            <PropertyRef Name="SUBMISSION_DATETIME" />
+          </Key>
+          <Property Name="FINANSYS_TRANSACTION_SKEY" Type="numeric" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="ENTITY_TYPE_CODE" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="TRANSACTION_TYPE_CODE" Type="nvarchar" MaxLength="6" Nullable="false" />
+          <Property Name="SUBMISSION_DATETIME" Type="datetime" Nullable="false" />
+          <Property Name="ENTITY_CODE" Type="nvarchar" MaxLength="5" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NsbsOpenTrac.dbo.VENDOR_MASTER_TX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityContainer Name="NsbsOpenTracModelStoreContainer">
+          <EntitySet Name="KeyStore" EntityType="Self.KeyStore" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PREQ_HEAD_TX" EntityType="Self.PREQ_HEAD_TX" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PREQ_LINE_TX" EntityType="Self.PREQ_LINE_TX" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CONTACT_TX" EntityType="Self.CONTACT_TX" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [CONTACT_TX].[FINANSYS_TRANSACTION_SKEY] AS [FINANSYS_TRANSACTION_SKEY], 
+    [CONTACT_TX].[SERVICE_CODE] AS [SERVICE_CODE], 
+    [CONTACT_TX].[CONTACT_RECORD_KEY] AS [CONTACT_RECORD_KEY], 
+    [CONTACT_TX].[ACTION_CODE] AS [ACTION_CODE], 
+    [CONTACT_TX].[FORMAT_CODE] AS [FORMAT_CODE], 
+    [CONTACT_TX].[NAME] AS [NAME], 
+    [CONTACT_TX].[PHONE_NUMBER] AS [PHONE_NUMBER], 
+    [CONTACT_TX].[EMAIL_ADDR] AS [EMAIL_ADDR], 
+    [CONTACT_TX].[ADDR_LINE_1] AS [ADDR_LINE_1], 
+    [CONTACT_TX].[ADDR_LINE_2] AS [ADDR_LINE_2], 
+    [CONTACT_TX].[COUNTRY_CODE] AS [COUNTRY_CODE], 
+    [CONTACT_TX].[COUNTRY_TEXT] AS [COUNTRY_TEXT], 
+    [CONTACT_TX].[CITY_TEXT] AS [CITY_TEXT], 
+    [CONTACT_TX].[REGION_CODE] AS [REGION_CODE], 
+    [CONTACT_TX].[REGION_TEXT] AS [REGION_TEXT], 
+    [CONTACT_TX].[POSTAL_CODE] AS [POSTAL_CODE], 
+    [CONTACT_TX].[URL] AS [URL]
+    FROM [dbo].[CONTACT_TX] AS [CONTACT_TX]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="CUSTOMER_MASTER_TX" EntityType="Self.CUSTOMER_MASTER_TX" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [CUSTOMER_MASTER_TX].[FINANSYS_TRANSACTION_SKEY] AS [FINANSYS_TRANSACTION_SKEY], 
+    [CUSTOMER_MASTER_TX].[FINANCIAL_ORG_CODE] AS [FINANCIAL_ORG_CODE], 
+    [CUSTOMER_MASTER_TX].[CUSTOMER_PLANT_DUNS] AS [CUSTOMER_PLANT_DUNS], 
+    [CUSTOMER_MASTER_TX].[BILL_TO_RECORD_KEY] AS [BILL_TO_RECORD_KEY], 
+    [CUSTOMER_MASTER_TX].[SHIP_TO_RECORD_KEY] AS [SHIP_TO_RECORD_KEY], 
+    [CUSTOMER_MASTER_TX].[ACTIVE_FLAG] AS [ACTIVE_FLAG], 
+    [CUSTOMER_MASTER_TX].[UNITS_CODE] AS [UNITS_CODE], 
+    [CUSTOMER_MASTER_TX].[INSIDE_SALES_TEAM_TEXT] AS [INSIDE_SALES_TEAM_TEXT], 
+    [CUSTOMER_MASTER_TX].[SALES_REGION] AS [SALES_REGION], 
+    [CUSTOMER_MASTER_TX].[PAYMENT_TERMS_CODE] AS [PAYMENT_TERMS_CODE], 
+    [CUSTOMER_MASTER_TX].[HOLD_FOR_CUST_RELEASE_FLAG] AS [HOLD_FOR_CUST_RELEASE_FLAG], 
+    [CUSTOMER_MASTER_TX].[INVOICE_VIA_EDI_FLAG] AS [INVOICE_VIA_EDI_FLAG], 
+    [CUSTOMER_MASTER_TX].[INVOICE_VIA_MAIL_FLAG] AS [INVOICE_VIA_MAIL_FLAG], 
+    [CUSTOMER_MASTER_TX].[INVOICE_VIA_EMAIL_FLAG] AS [INVOICE_VIA_EMAIL_FLAG], 
+    [CUSTOMER_MASTER_TX].[INVOICE_VIA_FAX_FREQ_CODE] AS [INVOICE_VIA_FAX_FREQ_CODE], 
+    [CUSTOMER_MASTER_TX].[TEST_REPORT_EDI_FLAG] AS [TEST_REPORT_EDI_FLAG], 
+    [CUSTOMER_MASTER_TX].[TEST_REPORT_MAIL_FLAG] AS [TEST_REPORT_MAIL_FLAG], 
+    [CUSTOMER_MASTER_TX].[TEST_REPORT_EMAIL_FLAG] AS [TEST_REPORT_EMAIL_FLAG], 
+    [CUSTOMER_MASTER_TX].[TEST_REPORT_FAX_FREQ_CODE] AS [TEST_REPORT_FAX_FREQ_CODE], 
+    [CUSTOMER_MASTER_TX].[ORDER_ACK_VIA_EDI_FLAG] AS [ORDER_ACK_VIA_EDI_FLAG], 
+    [CUSTOMER_MASTER_TX].[ORDER_ACK_VIA_MAIL_FLAG] AS [ORDER_ACK_VIA_MAIL_FLAG], 
+    [CUSTOMER_MASTER_TX].[ORDER_ACK_VIA_EMAIL_FLAG] AS [ORDER_ACK_VIA_EMAIL_FLAG], 
+    [CUSTOMER_MASTER_TX].[ORDER_ACK_VIA_FAX_FREQ_CODE] AS [ORDER_ACK_VIA_FAX_FREQ_CODE], 
+    [CUSTOMER_MASTER_TX].[SHIP_NOTICE_VIA_EDI_FLAG] AS [SHIP_NOTICE_VIA_EDI_FLAG], 
+    [CUSTOMER_MASTER_TX].[SHIP_NOTICE_VIA_MAIL_FLAG] AS [SHIP_NOTICE_VIA_MAIL_FLAG], 
+    [CUSTOMER_MASTER_TX].[SHIP_NOTICE_VIA_EMAIL_FLAG] AS [SHIP_NOTICE_VIA_EMAIL_FLAG], 
+    [CUSTOMER_MASTER_TX].[SHIP_NOTICE_VIA_FAX_FREQ_CODE] AS [SHIP_NOTICE_VIA_FAX_FREQ_CODE], 
+    [CUSTOMER_MASTER_TX].[SIC_CODE] AS [SIC_CODE], 
+    [CUSTOMER_MASTER_TX].[FEDERAL_TAX_ID] AS [FEDERAL_TAX_ID], 
+    [CUSTOMER_MASTER_TX].[TAX_EXEMPT_CERTIFICATE] AS [TAX_EXEMPT_CERTIFICATE], 
+    [CUSTOMER_MASTER_TX].[CUSTOMER_NOTE_1] AS [CUSTOMER_NOTE_1], 
+    [CUSTOMER_MASTER_TX].[CUSTOMER_NOTE_2] AS [CUSTOMER_NOTE_2], 
+    [CUSTOMER_MASTER_TX].[CREDIT_STATUS_CODE] AS [CREDIT_STATUS_CODE], 
+    [CUSTOMER_MASTER_TX].[SHIP_MODE_CODE] AS [SHIP_MODE_CODE], 
+    [CUSTOMER_MASTER_TX].[FREIGHT_PAYMENT] AS [FREIGHT_PAYMENT], 
+    [CUSTOMER_MASTER_TX].[PREFERRED_CARRIER] AS [PREFERRED_CARRIER], 
+    [CUSTOMER_MASTER_TX].[FREIGHT_CONTRACT] AS [FREIGHT_CONTRACT], 
+    [CUSTOMER_MASTER_TX].[DELIVERY_ROUTE] AS [DELIVERY_ROUTE], 
+    [CUSTOMER_MASTER_TX].[RECEIVING_HOURS] AS [RECEIVING_HOURS], 
+    [CUSTOMER_MASTER_TX].[SHIPPING_NOTE_1] AS [SHIPPING_NOTE_1], 
+    [CUSTOMER_MASTER_TX].[SHIPPING_NOTE_2] AS [SHIPPING_NOTE_2], 
+    [CUSTOMER_MASTER_TX].[SHIPPING_NOTE_3] AS [SHIPPING_NOTE_3], 
+    [CUSTOMER_MASTER_TX].[SHIPPING_NOTE_4] AS [SHIPPING_NOTE_4], 
+    [CUSTOMER_MASTER_TX].[ACCOUNT_TYPE_CODE] AS [ACCOUNT_TYPE_CODE], 
+    [CUSTOMER_MASTER_TX].[OUTSIDE_SALES_TEAM_TEXT] AS [OUTSIDE_SALES_TEAM_TEXT], 
+    [CUSTOMER_MASTER_TX].[SHIPTO_DUNS] AS [SHIPTO_DUNS], 
+    [CUSTOMER_MASTER_TX].[HOLD_INVOICE_FLAG] AS [HOLD_INVOICE_FLAG]
+    FROM [dbo].[CUSTOMER_MASTER_TX] AS [CUSTOMER_MASTER_TX]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MILL_TRANS_IN_TX" EntityType="Self.MILL_TRANS_IN_TX" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [MILL_TRANS_IN_TX].[FINANSYS_TRANSACTION_SKEY] AS [FINANSYS_TRANSACTION_SKEY], 
+    [MILL_TRANS_IN_TX].[FINANCIAL_ORG_CODE] AS [FINANCIAL_ORG_CODE], 
+    [MILL_TRANS_IN_TX].[SENDER_QUAL] AS [SENDER_QUAL], 
+    [MILL_TRANS_IN_TX].[SENDER_ID] AS [SENDER_ID], 
+    [MILL_TRANS_IN_TX].[RECEIVER_QUAL] AS [RECEIVER_QUAL], 
+    [MILL_TRANS_IN_TX].[RECEIVER_ID] AS [RECEIVER_ID], 
+    [MILL_TRANS_IN_TX].[TRANSACTION_TYPE] AS [TRANSACTION_TYPE], 
+    [MILL_TRANS_IN_TX].[ACKNOWLEDGEMENT_CODE] AS [ACKNOWLEDGEMENT_CODE], 
+    [MILL_TRANS_IN_TX].[APPLICATION] AS [APPLICATION], 
+    [MILL_TRANS_IN_TX].[MODIFIED_BY] AS [MODIFIED_BY]
+    FROM [dbo].[MILL_TRANS_IN_TX] AS [MILL_TRANS_IN_TX]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TRANSACTION_INBOUND" EntityType="Self.TRANSACTION_INBOUND" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [TRANSACTION_INBOUND].[TRACKSYS_TRANSACTION_SKEY] AS [TRACKSYS_TRANSACTION_SKEY], 
+    [TRANSACTION_INBOUND].[ENTITY_TYPE_CODE] AS [ENTITY_TYPE_CODE], 
+    [TRANSACTION_INBOUND].[TRANSACTION_TYPE_CODE] AS [TRANSACTION_TYPE_CODE], 
+    [TRANSACTION_INBOUND].[SUBMISSION_DATETIME] AS [SUBMISSION_DATETIME], 
+    [TRANSACTION_INBOUND].[ENTITY_CODE] AS [ENTITY_CODE]
+    FROM [dbo].[TRANSACTION_INBOUND] AS [TRANSACTION_INBOUND]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TRANSACTION_OUTBOUND" EntityType="Self.TRANSACTION_OUTBOUND" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [TRANSACTION_OUTBOUND].[FINANSYS_TRANSACTION_SKEY] AS [FINANSYS_TRANSACTION_SKEY], 
+    [TRANSACTION_OUTBOUND].[ENTITY_TYPE_CODE] AS [ENTITY_TYPE_CODE], 
+    [TRANSACTION_OUTBOUND].[TRANSACTION_TYPE_CODE] AS [TRANSACTION_TYPE_CODE], 
+    [TRANSACTION_OUTBOUND].[SUBMISSION_DATETIME] AS [SUBMISSION_DATETIME], 
+    [TRANSACTION_OUTBOUND].[ENTITY_CODE] AS [ENTITY_CODE]
+    FROM [dbo].[TRANSACTION_OUTBOUND] AS [TRANSACTION_OUTBOUND]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NsbsOpenTracModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="KeyStore">
+          <Key>
+            <PropertyRef Name="KeyStoreID" />
+          </Key>
+          <Property Name="KeyStoreID" Type="Int32" Nullable="false" />
+          <Property Name="LastTrackSysProcessed" Type="Decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="LastTrackSysProcessedTime" Type="DateTimeOffset" Precision="7" />
+          <Property Name="LastFinanSysUsed" Type="Decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="LastFinanSysUsedTime" Type="DateTimeOffset" Precision="7" />
+          <Property Name="LastTrackSysDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="LastFinanSysDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PREQ_HEAD_TX">
+          <Key>
+            <PropertyRef Name="TRACKSYS_TRANSACTION_SKEY" />
+          </Key>
+          <Property Name="TRACKSYS_TRANSACTION_SKEY" Type="Decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="FINANCIAL_ORG_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ENTRY_DATE" Type="DateTime" Precision="3" />
+          <Property Name="ORDER_RECEIVE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="START_DATE" Type="DateTime" Precision="3" />
+          <Property Name="END_DATE" Type="DateTime" Precision="3" />
+          <Property Name="STATUS" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="TRACKSYS_PREQ_NUMBER" Type="Decimal" Precision="7" Scale="0" />
+          <Property Name="TRACKSYS_PREQ_REV_NUM" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="FINANSYS_VENDOR_KEY" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+          <Property Name="PREQ_CREATED_BY" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PREQ_LINE_TX">
+          <Key>
+            <PropertyRef Name="TRACKSYS_TRANSACTION_SKEY" />
+            <PropertyRef Name="LINE_NUMBER" />
+          </Key>
+          <Property Name="TRACKSYS_TRANSACTION_SKEY" Type="Decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="LINE_NUMBER" Type="Decimal" Precision="3" Scale="0" Nullable="false" />
+          <Property Name="QUANTITY" Type="Decimal" Precision="12" Scale="3" />
+          <Property Name="STATUS" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DUE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="PRICE_UMCODE" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="PROCESSING_CHARGE" Type="Decimal" Precision="8" Scale="4" />
+          <Property Name="STORAGE_IN_CHARGE" Type="Decimal" Precision="8" Scale="4" />
+          <Property Name="STORAGE_OUT_CHARGE" Type="Decimal" Precision="8" Scale="4" />
+          <Property Name="STORAGE_DAY_CHARGE" Type="Decimal" Precision="8" Scale="4" />
+          <Property Name="STORAGE_FREE_DAYS" Type="Decimal" Precision="4" Scale="0" />
+          <Property Name="MISC_CHARGE" Type="Decimal" Precision="8" Scale="4" />
+          <Property Name="STORAGE_EXPECTED_DAYS" Type="Decimal" Precision="4" Scale="0" />
+          <Property Name="UNIT_COST" Type="Decimal" Precision="8" Scale="4" />
+          <Property Name="EXTENDED_COST" Type="Decimal" Precision="11" Scale="2" />
+          <Property Name="SPECIAL_INSTR_LINE_1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SPECIAL_INSTR_LINE_2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SPECIAL_INSTR_LINE_3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TRACKSYS_PART_NUMBER" Type="Decimal" Precision="7" Scale="0" />
+          <Property Name="TRACKSYS_PART_REVISION" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="FINANSYS_BILLTO_KEY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="FINANSYS_SHIPTO_KEY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="GL_ACCOUNT_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MATERIAL_CHARGE" Type="Decimal" Precision="8" Scale="4" />
+          <Property Name="FREIGHT1_CHARGE" Type="Decimal" Precision="8" Scale="4" />
+          <Property Name="FREIGHT2_CHARGE" Type="Decimal" Precision="8" Scale="4" />
+        </EntityType>
+        <EntityType Name="CONTACT_TX">
+          <Key>
+            <PropertyRef Name="FINANSYS_TRANSACTION_SKEY" />
+          </Key>
+          <Property Name="FINANSYS_TRANSACTION_SKEY" Type="Decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="SERVICE_CODE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CONTACT_RECORD_KEY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ACTION_CODE" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="FORMAT_CODE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PHONE_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="EMAIL_ADDR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ADDR_LINE_1" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="ADDR_LINE_2" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="COUNTRY_CODE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="COUNTRY_TEXT" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="CITY_TEXT" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="REGION_CODE" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="REGION_TEXT" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="POSTAL_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="URL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CUSTOMER_MASTER_TX">
+          <Key>
+            <PropertyRef Name="FINANSYS_TRANSACTION_SKEY" />
+          </Key>
+          <Property Name="FINANSYS_TRANSACTION_SKEY" Type="Decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="FINANCIAL_ORG_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CUSTOMER_PLANT_DUNS" Type="String" MaxLength="9" FixedLength="false" Unicode="true" />
+          <Property Name="BILL_TO_RECORD_KEY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="SHIP_TO_RECORD_KEY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ACTIVE_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="UNITS_CODE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="INSIDE_SALES_TEAM_TEXT" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="SALES_REGION" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="PAYMENT_TERMS_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="HOLD_FOR_CUST_RELEASE_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="INVOICE_VIA_EDI_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="INVOICE_VIA_MAIL_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="INVOICE_VIA_EMAIL_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="INVOICE_VIA_FAX_FREQ_CODE" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="TEST_REPORT_EDI_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="TEST_REPORT_MAIL_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="TEST_REPORT_EMAIL_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="TEST_REPORT_FAX_FREQ_CODE" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="ORDER_ACK_VIA_EDI_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="ORDER_ACK_VIA_MAIL_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="ORDER_ACK_VIA_EMAIL_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="ORDER_ACK_VIA_FAX_FREQ_CODE" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="SHIP_NOTICE_VIA_EDI_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="SHIP_NOTICE_VIA_MAIL_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="SHIP_NOTICE_VIA_EMAIL_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="SHIP_NOTICE_VIA_FAX_FREQ_CODE" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="SIC_CODE" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+          <Property Name="FEDERAL_TAX_ID" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="TAX_EXEMPT_CERTIFICATE" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="CUSTOMER_NOTE_1" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="CUSTOMER_NOTE_2" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="CREDIT_STATUS_CODE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="SHIP_MODE_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="FREIGHT_PAYMENT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PREFERRED_CARRIER" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="FREIGHT_CONTRACT" Type="String" MaxLength="18" FixedLength="false" Unicode="true" />
+          <Property Name="DELIVERY_ROUTE" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+          <Property Name="RECEIVING_HOURS" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="SHIPPING_NOTE_1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SHIPPING_NOTE_2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SHIPPING_NOTE_3" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SHIPPING_NOTE_4" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ACCOUNT_TYPE_CODE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="OUTSIDE_SALES_TEAM_TEXT" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="SHIPTO_DUNS" Type="String" MaxLength="9" FixedLength="false" Unicode="true" />
+          <Property Name="HOLD_INVOICE_FLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MILL_TRANS_IN_TX">
+          <Key>
+            <PropertyRef Name="FINANSYS_TRANSACTION_SKEY" />
+          </Key>
+          <Property Name="FINANSYS_TRANSACTION_SKEY" Type="Decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="FINANCIAL_ORG_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="SENDER_QUAL" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="SENDER_ID" Type="String" MaxLength="22" FixedLength="false" Unicode="true" />
+          <Property Name="RECEIVER_QUAL" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="RECEIVER_ID" Type="String" MaxLength="22" FixedLength="false" Unicode="true" />
+          <Property Name="TRANSACTION_TYPE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="ACKNOWLEDGEMENT_CODE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="APPLICATION" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TRANSACTION_INBOUND">
+          <Key>
+            <PropertyRef Name="TRACKSYS_TRANSACTION_SKEY" />
+            <PropertyRef Name="ENTITY_TYPE_CODE" />
+            <PropertyRef Name="TRANSACTION_TYPE_CODE" />
+            <PropertyRef Name="SUBMISSION_DATETIME" />
+          </Key>
+          <Property Name="TRACKSYS_TRANSACTION_SKEY" Type="Decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="ENTITY_TYPE_CODE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TRANSACTION_TYPE_CODE" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SUBMISSION_DATETIME" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ENTITY_CODE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TRANSACTION_OUTBOUND">
+          <Key>
+            <PropertyRef Name="FINANSYS_TRANSACTION_SKEY" />
+            <PropertyRef Name="ENTITY_TYPE_CODE" />
+            <PropertyRef Name="TRANSACTION_TYPE_CODE" />
+            <PropertyRef Name="SUBMISSION_DATETIME" />
+          </Key>
+          <Property Name="FINANSYS_TRANSACTION_SKEY" Type="Decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="ENTITY_TYPE_CODE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TRANSACTION_TYPE_CODE" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SUBMISSION_DATETIME" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ENTITY_CODE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="OpenTracModel" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="KeyStores" EntityType="Self.KeyStore" />
+          <EntitySet Name="PREQ_HEAD_TX" EntityType="Self.PREQ_HEAD_TX" />
+          <EntitySet Name="PREQ_LINE_TX" EntityType="Self.PREQ_LINE_TX" />
+          <EntitySet Name="CONTACT_TX" EntityType="Self.CONTACT_TX" />
+          <EntitySet Name="CUSTOMER_MASTER_TX" EntityType="Self.CUSTOMER_MASTER_TX" />
+          <EntitySet Name="MILL_TRANS_IN_TX" EntityType="Self.MILL_TRANS_IN_TX" />
+          <EntitySet Name="TRANSACTION_INBOUND" EntityType="Self.TRANSACTION_INBOUND" />
+          <EntitySet Name="TRANSACTION_OUTBOUND" EntityType="Self.TRANSACTION_OUTBOUND" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NsbsOpenTracModelStoreContainer" CdmEntityContainer="OpenTracModel">
+          <EntitySetMapping Name="KeyStores">
+            <EntityTypeMapping TypeName="NsbsOpenTracModel.KeyStore">
+              <MappingFragment StoreEntitySet="KeyStore">
+                <ScalarProperty Name="KeyStoreID" ColumnName="KeyStoreID" />
+                <ScalarProperty Name="LastTrackSysProcessed" ColumnName="LastTrackSysProcessed" />
+                <ScalarProperty Name="LastTrackSysProcessedTime" ColumnName="LastTrackSysProcessedTime" />
+                <ScalarProperty Name="LastFinanSysUsed" ColumnName="LastFinanSysUsed" />
+                <ScalarProperty Name="LastFinanSysUsedTime" ColumnName="LastFinanSysUsedTime" />
+                <ScalarProperty Name="LastTrackSysDescription" ColumnName="LastTrackSysDescription" />
+                <ScalarProperty Name="LastFinanSysDescription" ColumnName="LastFinanSysDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PREQ_HEAD_TX">
+            <EntityTypeMapping TypeName="NsbsOpenTracModel.PREQ_HEAD_TX">
+              <MappingFragment StoreEntitySet="PREQ_HEAD_TX">
+                <ScalarProperty Name="TRACKSYS_TRANSACTION_SKEY" ColumnName="TRACKSYS_TRANSACTION_SKEY" />
+                <ScalarProperty Name="FINANCIAL_ORG_CODE" ColumnName="FINANCIAL_ORG_CODE" />
+                <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+                <ScalarProperty Name="ORDER_RECEIVE_DATE" ColumnName="ORDER_RECEIVE_DATE" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="TRACKSYS_PREQ_NUMBER" ColumnName="TRACKSYS_PREQ_NUMBER" />
+                <ScalarProperty Name="TRACKSYS_PREQ_REV_NUM" ColumnName="TRACKSYS_PREQ_REV_NUM" />
+                <ScalarProperty Name="FINANSYS_VENDOR_KEY" ColumnName="FINANSYS_VENDOR_KEY" />
+                <ScalarProperty Name="PREQ_CREATED_BY" ColumnName="PREQ_CREATED_BY" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PREQ_LINE_TX">
+            <EntityTypeMapping TypeName="NsbsOpenTracModel.PREQ_LINE_TX">
+              <MappingFragment StoreEntitySet="PREQ_LINE_TX">
+                <ScalarProperty Name="TRACKSYS_TRANSACTION_SKEY" ColumnName="TRACKSYS_TRANSACTION_SKEY" />
+                <ScalarProperty Name="LINE_NUMBER" ColumnName="LINE_NUMBER" />
+                <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="DUE_DATE" ColumnName="DUE_DATE" />
+                <ScalarProperty Name="PRICE_UMCODE" ColumnName="PRICE_UMCODE" />
+                <ScalarProperty Name="PROCESSING_CHARGE" ColumnName="PROCESSING_CHARGE" />
+                <ScalarProperty Name="STORAGE_IN_CHARGE" ColumnName="STORAGE_IN_CHARGE" />
+                <ScalarProperty Name="STORAGE_OUT_CHARGE" ColumnName="STORAGE_OUT_CHARGE" />
+                <ScalarProperty Name="STORAGE_DAY_CHARGE" ColumnName="STORAGE_DAY_CHARGE" />
+                <ScalarProperty Name="STORAGE_FREE_DAYS" ColumnName="STORAGE_FREE_DAYS" />
+                <ScalarProperty Name="MISC_CHARGE" ColumnName="MISC_CHARGE" />
+                <ScalarProperty Name="STORAGE_EXPECTED_DAYS" ColumnName="STORAGE_EXPECTED_DAYS" />
+                <ScalarProperty Name="UNIT_COST" ColumnName="UNIT_COST" />
+                <ScalarProperty Name="EXTENDED_COST" ColumnName="EXTENDED_COST" />
+                <ScalarProperty Name="SPECIAL_INSTR_LINE_1" ColumnName="SPECIAL_INSTR_LINE_1" />
+                <ScalarProperty Name="SPECIAL_INSTR_LINE_2" ColumnName="SPECIAL_INSTR_LINE_2" />
+                <ScalarProperty Name="SPECIAL_INSTR_LINE_3" ColumnName="SPECIAL_INSTR_LINE_3" />
+                <ScalarProperty Name="TRACKSYS_PART_NUMBER" ColumnName="TRACKSYS_PART_NUMBER" />
+                <ScalarProperty Name="TRACKSYS_PART_REVISION" ColumnName="TRACKSYS_PART_REVISION" />
+                <ScalarProperty Name="FINANSYS_BILLTO_KEY" ColumnName="FINANSYS_BILLTO_KEY" />
+                <ScalarProperty Name="FINANSYS_SHIPTO_KEY" ColumnName="FINANSYS_SHIPTO_KEY" />
+                <ScalarProperty Name="GL_ACCOUNT_NUMBER" ColumnName="GL_ACCOUNT_NUMBER" />
+                <ScalarProperty Name="MATERIAL_CHARGE" ColumnName="MATERIAL_CHARGE" />
+                <ScalarProperty Name="FREIGHT1_CHARGE" ColumnName="FREIGHT1_CHARGE" />
+                <ScalarProperty Name="FREIGHT2_CHARGE" ColumnName="FREIGHT2_CHARGE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CONTACT_TX">
+            <EntityTypeMapping TypeName="NsbsOpenTracModel.CONTACT_TX">
+              <MappingFragment StoreEntitySet="CONTACT_TX">
+                <ScalarProperty Name="FINANSYS_TRANSACTION_SKEY" ColumnName="FINANSYS_TRANSACTION_SKEY" />
+                <ScalarProperty Name="SERVICE_CODE" ColumnName="SERVICE_CODE" />
+                <ScalarProperty Name="CONTACT_RECORD_KEY" ColumnName="CONTACT_RECORD_KEY" />
+                <ScalarProperty Name="ACTION_CODE" ColumnName="ACTION_CODE" />
+                <ScalarProperty Name="FORMAT_CODE" ColumnName="FORMAT_CODE" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+                <ScalarProperty Name="EMAIL_ADDR" ColumnName="EMAIL_ADDR" />
+                <ScalarProperty Name="ADDR_LINE_1" ColumnName="ADDR_LINE_1" />
+                <ScalarProperty Name="ADDR_LINE_2" ColumnName="ADDR_LINE_2" />
+                <ScalarProperty Name="COUNTRY_CODE" ColumnName="COUNTRY_CODE" />
+                <ScalarProperty Name="COUNTRY_TEXT" ColumnName="COUNTRY_TEXT" />
+                <ScalarProperty Name="CITY_TEXT" ColumnName="CITY_TEXT" />
+                <ScalarProperty Name="REGION_CODE" ColumnName="REGION_CODE" />
+                <ScalarProperty Name="REGION_TEXT" ColumnName="REGION_TEXT" />
+                <ScalarProperty Name="POSTAL_CODE" ColumnName="POSTAL_CODE" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CUSTOMER_MASTER_TX">
+            <EntityTypeMapping TypeName="NsbsOpenTracModel.CUSTOMER_MASTER_TX">
+              <MappingFragment StoreEntitySet="CUSTOMER_MASTER_TX">
+                <ScalarProperty Name="FINANSYS_TRANSACTION_SKEY" ColumnName="FINANSYS_TRANSACTION_SKEY" />
+                <ScalarProperty Name="FINANCIAL_ORG_CODE" ColumnName="FINANCIAL_ORG_CODE" />
+                <ScalarProperty Name="CUSTOMER_PLANT_DUNS" ColumnName="CUSTOMER_PLANT_DUNS" />
+                <ScalarProperty Name="BILL_TO_RECORD_KEY" ColumnName="BILL_TO_RECORD_KEY" />
+                <ScalarProperty Name="SHIP_TO_RECORD_KEY" ColumnName="SHIP_TO_RECORD_KEY" />
+                <ScalarProperty Name="ACTIVE_FLAG" ColumnName="ACTIVE_FLAG" />
+                <ScalarProperty Name="UNITS_CODE" ColumnName="UNITS_CODE" />
+                <ScalarProperty Name="INSIDE_SALES_TEAM_TEXT" ColumnName="INSIDE_SALES_TEAM_TEXT" />
+                <ScalarProperty Name="SALES_REGION" ColumnName="SALES_REGION" />
+                <ScalarProperty Name="PAYMENT_TERMS_CODE" ColumnName="PAYMENT_TERMS_CODE" />
+                <ScalarProperty Name="HOLD_FOR_CUST_RELEASE_FLAG" ColumnName="HOLD_FOR_CUST_RELEASE_FLAG" />
+                <ScalarProperty Name="INVOICE_VIA_EDI_FLAG" ColumnName="INVOICE_VIA_EDI_FLAG" />
+                <ScalarProperty Name="INVOICE_VIA_MAIL_FLAG" ColumnName="INVOICE_VIA_MAIL_FLAG" />
+                <ScalarProperty Name="INVOICE_VIA_EMAIL_FLAG" ColumnName="INVOICE_VIA_EMAIL_FLAG" />
+                <ScalarProperty Name="INVOICE_VIA_FAX_FREQ_CODE" ColumnName="INVOICE_VIA_FAX_FREQ_CODE" />
+                <ScalarProperty Name="TEST_REPORT_EDI_FLAG" ColumnName="TEST_REPORT_EDI_FLAG" />
+                <ScalarProperty Name="TEST_REPORT_MAIL_FLAG" ColumnName="TEST_REPORT_MAIL_FLAG" />
+                <ScalarProperty Name="TEST_REPORT_EMAIL_FLAG" ColumnName="TEST_REPORT_EMAIL_FLAG" />
+                <ScalarProperty Name="TEST_REPORT_FAX_FREQ_CODE" ColumnName="TEST_REPORT_FAX_FREQ_CODE" />
+                <ScalarProperty Name="ORDER_ACK_VIA_EDI_FLAG" ColumnName="ORDER_ACK_VIA_EDI_FLAG" />
+                <ScalarProperty Name="ORDER_ACK_VIA_MAIL_FLAG" ColumnName="ORDER_ACK_VIA_MAIL_FLAG" />
+                <ScalarProperty Name="ORDER_ACK_VIA_EMAIL_FLAG" ColumnName="ORDER_ACK_VIA_EMAIL_FLAG" />
+                <ScalarProperty Name="ORDER_ACK_VIA_FAX_FREQ_CODE" ColumnName="ORDER_ACK_VIA_FAX_FREQ_CODE" />
+                <ScalarProperty Name="SHIP_NOTICE_VIA_EDI_FLAG" ColumnName="SHIP_NOTICE_VIA_EDI_FLAG" />
+                <ScalarProperty Name="SHIP_NOTICE_VIA_MAIL_FLAG" ColumnName="SHIP_NOTICE_VIA_MAIL_FLAG" />
+                <ScalarProperty Name="SHIP_NOTICE_VIA_EMAIL_FLAG" ColumnName="SHIP_NOTICE_VIA_EMAIL_FLAG" />
+                <ScalarProperty Name="SHIP_NOTICE_VIA_FAX_FREQ_CODE" ColumnName="SHIP_NOTICE_VIA_FAX_FREQ_CODE" />
+                <ScalarProperty Name="SIC_CODE" ColumnName="SIC_CODE" />
+                <ScalarProperty Name="FEDERAL_TAX_ID" ColumnName="FEDERAL_TAX_ID" />
+                <ScalarProperty Name="TAX_EXEMPT_CERTIFICATE" ColumnName="TAX_EXEMPT_CERTIFICATE" />
+                <ScalarProperty Name="CUSTOMER_NOTE_1" ColumnName="CUSTOMER_NOTE_1" />
+                <ScalarProperty Name="CUSTOMER_NOTE_2" ColumnName="CUSTOMER_NOTE_2" />
+                <ScalarProperty Name="CREDIT_STATUS_CODE" ColumnName="CREDIT_STATUS_CODE" />
+                <ScalarProperty Name="SHIP_MODE_CODE" ColumnName="SHIP_MODE_CODE" />
+                <ScalarProperty Name="FREIGHT_PAYMENT" ColumnName="FREIGHT_PAYMENT" />
+                <ScalarProperty Name="PREFERRED_CARRIER" ColumnName="PREFERRED_CARRIER" />
+                <ScalarProperty Name="FREIGHT_CONTRACT" ColumnName="FREIGHT_CONTRACT" />
+                <ScalarProperty Name="DELIVERY_ROUTE" ColumnName="DELIVERY_ROUTE" />
+                <ScalarProperty Name="RECEIVING_HOURS" ColumnName="RECEIVING_HOURS" />
+                <ScalarProperty Name="SHIPPING_NOTE_1" ColumnName="SHIPPING_NOTE_1" />
+                <ScalarProperty Name="SHIPPING_NOTE_2" ColumnName="SHIPPING_NOTE_2" />
+                <ScalarProperty Name="SHIPPING_NOTE_3" ColumnName="SHIPPING_NOTE_3" />
+                <ScalarProperty Name="SHIPPING_NOTE_4" ColumnName="SHIPPING_NOTE_4" />
+                <ScalarProperty Name="ACCOUNT_TYPE_CODE" ColumnName="ACCOUNT_TYPE_CODE" />
+                <ScalarProperty Name="OUTSIDE_SALES_TEAM_TEXT" ColumnName="OUTSIDE_SALES_TEAM_TEXT" />
+                <ScalarProperty Name="SHIPTO_DUNS" ColumnName="SHIPTO_DUNS" />
+                <ScalarProperty Name="HOLD_INVOICE_FLAG" ColumnName="HOLD_INVOICE_FLAG" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MILL_TRANS_IN_TX">
+            <EntityTypeMapping TypeName="NsbsOpenTracModel.MILL_TRANS_IN_TX">
+              <MappingFragment StoreEntitySet="MILL_TRANS_IN_TX">
+                <ScalarProperty Name="FINANSYS_TRANSACTION_SKEY" ColumnName="FINANSYS_TRANSACTION_SKEY" />
+                <ScalarProperty Name="FINANCIAL_ORG_CODE" ColumnName="FINANCIAL_ORG_CODE" />
+                <ScalarProperty Name="SENDER_QUAL" ColumnName="SENDER_QUAL" />
+                <ScalarProperty Name="SENDER_ID" ColumnName="SENDER_ID" />
+                <ScalarProperty Name="RECEIVER_QUAL" ColumnName="RECEIVER_QUAL" />
+                <ScalarProperty Name="RECEIVER_ID" ColumnName="RECEIVER_ID" />
+                <ScalarProperty Name="TRANSACTION_TYPE" ColumnName="TRANSACTION_TYPE" />
+                <ScalarProperty Name="ACKNOWLEDGEMENT_CODE" ColumnName="ACKNOWLEDGEMENT_CODE" />
+                <ScalarProperty Name="APPLICATION" ColumnName="APPLICATION" />
+                <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRANSACTION_INBOUND">
+            <EntityTypeMapping TypeName="NsbsOpenTracModel.TRANSACTION_INBOUND">
+              <MappingFragment StoreEntitySet="TRANSACTION_INBOUND">
+                <ScalarProperty Name="TRACKSYS_TRANSACTION_SKEY" ColumnName="TRACKSYS_TRANSACTION_SKEY" />
+                <ScalarProperty Name="ENTITY_TYPE_CODE" ColumnName="ENTITY_TYPE_CODE" />
+                <ScalarProperty Name="TRANSACTION_TYPE_CODE" ColumnName="TRANSACTION_TYPE_CODE" />
+                <ScalarProperty Name="SUBMISSION_DATETIME" ColumnName="SUBMISSION_DATETIME" />
+                <ScalarProperty Name="ENTITY_CODE" ColumnName="ENTITY_CODE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRANSACTION_OUTBOUND">
+            <EntityTypeMapping TypeName="NsbsOpenTracModel.TRANSACTION_OUTBOUND">
+              <MappingFragment StoreEntitySet="TRANSACTION_OUTBOUND">
+                <ScalarProperty Name="FINANSYS_TRANSACTION_SKEY" ColumnName="FINANSYS_TRANSACTION_SKEY" />
+                <ScalarProperty Name="ENTITY_TYPE_CODE" ColumnName="ENTITY_TYPE_CODE" />
+                <ScalarProperty Name="TRANSACTION_TYPE_CODE" ColumnName="TRANSACTION_TYPE_CODE" />
+                <ScalarProperty Name="SUBMISSION_DATETIME" ColumnName="SUBMISSION_DATETIME" />
+                <ScalarProperty Name="ENTITY_CODE" ColumnName="ENTITY_CODE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

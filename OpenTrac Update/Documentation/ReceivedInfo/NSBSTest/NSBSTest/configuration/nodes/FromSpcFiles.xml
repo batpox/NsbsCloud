@@ -1,0 +1,30 @@
+<rxeNode type='inflow' >
+	<!-- A transport receives from one source and places into 1 or more pipes -->
+	<transport  plugin='RxePlugins.RxeFileInflow' >
+		<!-- Begin Custom Transport mechanism -->
+		<folders root='' >
+			<folder name='in' path='d:\(test)\rxe\fromSpcFiles\in' maxFileSize='500000' />
+			<folder name='error' path='d:\(test)\rxe\fromSpcFiles\error' />
+			<folder name='success' path='d:\(test)\rxe\fromSpcFiles\success' />
+			
+		</folders>
+		<!-- Begin Standard Transport mechanism -->
+		<!-- Message payload matching to determine message name -->
+		<messages payloadType='XML'>
+			<message envelopePattern='^SM01' name='SM01' />
+			<message envelopePattern='^SM02' name='SM02' />
+			<message envelopePattern='^SM03' name='SM03' />
+			<message envelopePattern='^SM04' name='SM04' />
+			<message envelopePattern='^SD01' name='SD01' />
+			<message envelopePattern='^SD01A' name='SD01A' />
+			<message envelopePattern='^SD01B' name='SD01B' />
+			<message envelopePattern='^SD02' name='SD02' />
+			<message envelopePattern='^SD03' name='SD03' />
+			<message envelopePattern='^SD03A' name='SD03A' />
+		</messages>
+		<!-- Now use the derived message name and regular expression to select pipe -->
+		<pipes>
+			<pipe name='FromSpc' messageNamePattern='.*'  />
+		</pipes>
+	</transport>
+</rxeNode>

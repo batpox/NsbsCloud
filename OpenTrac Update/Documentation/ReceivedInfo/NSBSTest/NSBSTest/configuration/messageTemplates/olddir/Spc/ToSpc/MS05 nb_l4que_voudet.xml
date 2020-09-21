@@ -1,0 +1,20 @@
+<NewDataSet>
+  <nb_l4que_voudet>
+    <rowid>Integer()</rowid>
+    <datewritten>Timestamp()</datewritten>
+    <dateprocessed>Timestamp()</dateprocessed>
+    <status>Char(2)</status>
+    <vou_po_no>Char(10)</vou_po_no>
+    <vou_po_line_no>Integer()</vou_po_line_no>
+    <vou_rec_no>Integer()</vou_rec_no>
+    <ven_code>Integer()</ven_code>
+    <voud_units>Currency()</voud_units>
+    <voud_sku_cd>Char(20)</voud_sku_cd>
+    <voud_unit_type>Char(8)</voud_unit_type>
+    <voud_total_cost>Currency()</voud_total_cost>
+    <material_cost>Currency()</material_cost>
+    <tax_amt>Currency()</tax_amt>
+    <freight_amt>Currency()</freight_amt>
+    <broker_amt>Currency()</broker_amt>
+  </nb_l4que_voudet>
+</NewDataSet>
