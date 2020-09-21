@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CoilStoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CoilStoreContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="vCoilReadings" EntityType="CoilStoreModel.vCoilReading" />
+    <EntitySet Name="vCoils" EntityType="CoilStoreModel.vCoil" />
+    <EntitySet Name="CoilReadings" EntityType="CoilStoreModel.CoilReading" />
+    <EntitySet Name="Coils" EntityType="CoilStoreModel.Coil" />
+    <AssociationSet Name="FK_CoilReadings_Coils" Association="CoilStoreModel.FK_CoilReadings_Coils">
+      <End Role="Coil" EntitySet="Coils" />
+      <End Role="CoilReading" EntitySet="CoilReadings" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="vCoilReading">
+    <Key>
+      <PropertyRef Name="CoilReadingId" />
+      <PropertyRef Name="CoilId" />
+      <PropertyRef Name="ReadingNumber" />
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="CoilReadingId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CoilId" Type="Int64" Nullable="false" />
+    <Property Name="ReadingNumber" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+  </EntityType>
+  <EntityType Name="vCoil">
+    <Key>
+      <PropertyRef Name="CoilId" />
+      <PropertyRef Name="CoilNumber" />
+    </Key>
+    <Property Name="CoilId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CoilNumber" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ProducedTime" Type="DateTimeOffset" Precision="7" />
+    <Property Name="GageInUse" Type="Int32" />
+    <Property Name="NumberOfReadings" Type="Int32" />
+    <Property Name="OrderValue" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="PositiveTolerance" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="NegativeTolerance" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="CreationTimeUTC" Type="DateTime" Precision="3" />
+    <Property Name="Readings" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DataType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CoilReading">
+    <Key>
+      <PropertyRef Name="CoilReadingId" />
+    </Key>
+    <Property Name="CoilReadingId" Type="Int64" Nullable="false" />
+    <Property Name="CoilId" Type="Int64" Nullable="false" />
+    <Property Name="ReadingNumber" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <NavigationProperty Name="Coil" Relationship="CoilStoreModel.FK_CoilReadings_Coils" FromRole="CoilReading" ToRole="Coil" />
+  </EntityType>
+  <EntityType Name="Coil">
+    <Key>
+      <PropertyRef Name="CoilId" />
+    </Key>
+    <Property Name="CoilId" Type="Int64" Nullable="false" />
+    <Property Name="CoilNumber" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ProducedTime" Type="DateTimeOffset" Precision="7" />
+    <Property Name="GageInUse" Type="Int32" />
+    <Property Name="NumberOfReadings" Type="Int32" />
+    <Property Name="OrderValue" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="PositiveTolerance" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="NegativeTolerance" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="CreationTimeUTC" Type="DateTime" Precision="3" />
+    <Property Name="Readings" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DataType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CoilReadings" Relationship="CoilStoreModel.FK_CoilReadings_Coils" FromRole="Coil" ToRole="CoilReading" />
+  </EntityType>
+  <Association Name="FK_CoilReadings_Coils">
+    <End Type="CoilStoreModel.Coil" Role="Coil" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CoilStoreModel.CoilReading" Role="CoilReading" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Coil">
+        <PropertyRef Name="CoilId" />
+      </Principal>
+      <Dependent Role="CoilReading">
+        <PropertyRef Name="CoilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CoilStoreModelStoreContainer" CdmEntityContainer="CoilStoreContext">
+    <EntitySetMapping Name="vCoilReadings">
+      <EntityTypeMapping TypeName="CoilStoreModel.vCoilReading">
+        <MappingFragment StoreEntitySet="vCoilReadings">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ReadingNumber" ColumnName="ReadingNumber" />
+          <ScalarProperty Name="CoilId" ColumnName="CoilId" />
+          <ScalarProperty Name="CoilReadingId" ColumnName="CoilReadingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vCoils">
+      <EntityTypeMapping TypeName="CoilStoreModel.vCoil">
+        <MappingFragment StoreEntitySet="vCoils">
+          <ScalarProperty Name="DataType" ColumnName="DataType" />
+          <ScalarProperty Name="Readings" ColumnName="Readings" />
+          <ScalarProperty Name="CreationTimeUTC" ColumnName="CreationTimeUTC" />
+          <ScalarProperty Name="NegativeTolerance" ColumnName="NegativeTolerance" />
+          <ScalarProperty Name="PositiveTolerance" ColumnName="PositiveTolerance" />
+          <ScalarProperty Name="OrderValue" ColumnName="OrderValue" />
+          <ScalarProperty Name="NumberOfReadings" ColumnName="NumberOfReadings" />
+          <ScalarProperty Name="GageInUse" ColumnName="GageInUse" />
+          <ScalarProperty Name="ProducedTime" ColumnName="ProducedTime" />
+          <ScalarProperty Name="CoilNumber" ColumnName="CoilNumber" />
+          <ScalarProperty Name="CoilId" ColumnName="CoilId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CoilReadings">
+      <EntityTypeMapping TypeName="CoilStoreModel.CoilReading">
+        <MappingFragment StoreEntitySet="CoilReadings">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ReadingNumber" ColumnName="ReadingNumber" />
+          <ScalarProperty Name="CoilId" ColumnName="CoilId" />
+          <ScalarProperty Name="CoilReadingId" ColumnName="CoilReadingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Coils">
+      <EntityTypeMapping TypeName="CoilStoreModel.Coil">
+        <MappingFragment StoreEntitySet="Coils">
+          <ScalarProperty Name="DataType" ColumnName="DataType" />
+          <ScalarProperty Name="Readings" ColumnName="Readings" />
+          <ScalarProperty Name="CreationTimeUTC" ColumnName="CreationTimeUTC" />
+          <ScalarProperty Name="NegativeTolerance" ColumnName="NegativeTolerance" />
+          <ScalarProperty Name="PositiveTolerance" ColumnName="PositiveTolerance" />
+          <ScalarProperty Name="OrderValue" ColumnName="OrderValue" />
+          <ScalarProperty Name="NumberOfReadings" ColumnName="NumberOfReadings" />
+          <ScalarProperty Name="GageInUse" ColumnName="GageInUse" />
+          <ScalarProperty Name="ProducedTime" ColumnName="ProducedTime" />
+          <ScalarProperty Name="CoilNumber" ColumnName="CoilNumber" />
+          <ScalarProperty Name="CoilId" ColumnName="CoilId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

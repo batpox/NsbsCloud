@@ -1,0 +1,12 @@
+E:\(svn azure)\NsbsCloud\CoilStoreApi\bin\Debug\CoilStoreApi.dll.config
+E:\(svn azure)\NsbsCloud\CoilStoreApi\bin\Debug\CoilStoreApi.dll
+E:\(svn azure)\NsbsCloud\CoilStoreApi\bin\Debug\CoilStoreApi.pdb
+E:\(svn azure)\NsbsCloud\CoilStoreApi\obj\Debug\CoilStoreApi.csprojAssemblyReference.cache
+E:\(svn azure)\NsbsCloud\CoilStoreApi\obj\Debug\CoilStoreApi.csproj.CoreCompileInputs.cache
+E:\(svn azure)\NsbsCloud\CoilStoreApi\obj\Debug\CoilStoreApi.dll
+E:\(svn azure)\NsbsCloud\CoilStoreApi\obj\Debug\CoilStoreApi.pdb
+E:\(svn azure)\NsbsCloud\CoilStoreApi\bin\Debug\EntityFramework.dll
+E:\(svn azure)\NsbsCloud\CoilStoreApi\bin\Debug\EntityFramework.SqlServer.dll
+E:\(svn azure)\NsbsCloud\CoilStoreApi\bin\Debug\EntityFramework.xml
+E:\(svn azure)\NsbsCloud\CoilStoreApi\bin\Debug\EntityFramework.SqlServer.xml
+E:\(svn azure)\NsbsCloud\CoilStoreApi\obj\Debug\CoilStoreApi.csproj.CopyComplete

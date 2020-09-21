@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CoilStoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CoilReadings">
+    <Key>
+      <PropertyRef Name="CoilReadingId" />
+    </Key>
+    <Property Name="CoilReadingId" Type="bigint" Nullable="false" />
+    <Property Name="CoilId" Type="bigint" Nullable="false" />
+    <Property Name="ReadingNumber" Type="int" Nullable="false" />
+    <Property Name="Value" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Coils">
+    <Key>
+      <PropertyRef Name="CoilId" />
+    </Key>
+    <Property Name="CoilId" Type="bigint" Nullable="false" />
+    <Property Name="CoilNumber" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ProducedTime" Type="datetimeoffset" Precision="7" />
+    <Property Name="GageInUse" Type="int" />
+    <Property Name="NumberOfReadings" Type="int" />
+    <Property Name="OrderValue" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="PositiveTolerance" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="NegativeTolerance" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="CreationTimeUTC" Type="datetime" />
+    <Property Name="Readings" Type="varchar(max)" />
+    <Property Name="DataType" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CoilStore.dbo.vCoilReadings' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vCoilReadings">
+    <Key>
+      <PropertyRef Name="CoilReadingId" />
+      <PropertyRef Name="CoilId" />
+      <PropertyRef Name="ReadingNumber" />
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="CoilReadingId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CoilId" Type="bigint" Nullable="false" />
+    <Property Name="ReadingNumber" Type="int" Nullable="false" />
+    <Property Name="Value" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CoilStore.dbo.vCoils' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vCoils">
+    <Key>
+      <PropertyRef Name="CoilId" />
+      <PropertyRef Name="CoilNumber" />
+    </Key>
+    <Property Name="CoilId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CoilNumber" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ProducedTime" Type="datetimeoffset" Precision="7" />
+    <Property Name="GageInUse" Type="int" />
+    <Property Name="NumberOfReadings" Type="int" />
+    <Property Name="OrderValue" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="PositiveTolerance" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="NegativeTolerance" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="CreationTimeUTC" Type="datetime" />
+    <Property Name="Readings" Type="varchar(max)" />
+    <Property Name="DataType" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK_CoilReadings_Coils">
+    <End Role="Coils" Type="Self.Coils" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CoilReadings" Type="Self.CoilReadings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Coils">
+        <PropertyRef Name="CoilId" />
+      </Principal>
+      <Dependent Role="CoilReadings">
+        <PropertyRef Name="CoilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CoilStoreModelStoreContainer">
+    <EntitySet Name="CoilReadings" EntityType="Self.CoilReadings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Coils" EntityType="Self.Coils" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vCoilReadings" EntityType="Self.vCoilReadings" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vCoilReadings].[CoilReadingId] AS [CoilReadingId], 
+    [vCoilReadings].[CoilId] AS [CoilId], 
+    [vCoilReadings].[ReadingNumber] AS [ReadingNumber], 
+    [vCoilReadings].[Value] AS [Value]
+    FROM [dbo].[vCoilReadings] AS [vCoilReadings]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vCoils" EntityType="Self.vCoils" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vCoils].[CoilId] AS [CoilId], 
+    [vCoils].[CoilNumber] AS [CoilNumber], 
+    [vCoils].[ProducedTime] AS [ProducedTime], 
+    [vCoils].[GageInUse] AS [GageInUse], 
+    [vCoils].[NumberOfReadings] AS [NumberOfReadings], 
+    [vCoils].[OrderValue] AS [OrderValue], 
+    [vCoils].[PositiveTolerance] AS [PositiveTolerance], 
+    [vCoils].[NegativeTolerance] AS [NegativeTolerance], 
+    [vCoils].[CreationTimeUTC] AS [CreationTimeUTC], 
+    [vCoils].[Readings] AS [Readings], 
+    [vCoils].[DataType] AS [DataType]
+    FROM [dbo].[vCoils] AS [vCoils]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_CoilReadings_Coils" Association="Self.FK_CoilReadings_Coils">
+      <End Role="Coils" EntitySet="Coils" />
+      <End Role="CoilReadings" EntitySet="CoilReadings" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

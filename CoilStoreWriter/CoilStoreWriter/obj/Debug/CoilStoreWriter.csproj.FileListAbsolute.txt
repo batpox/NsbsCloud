@@ -1,0 +1,6 @@
+E:\(svn azure)\NsbsCloud\CoilStoreWriter\CoilStoreWriter\obj\Debug\CoilStoreWriter.csprojAssemblyReference.cache
+E:\(svn azure)\NsbsCloud\CoilStoreWriter\CoilStoreWriter\obj\Debug\CoilStore.DialogAbout.resources
+E:\(svn azure)\NsbsCloud\CoilStoreWriter\CoilStoreWriter\obj\Debug\CoilStore.FormMain.resources
+E:\(svn azure)\NsbsCloud\CoilStoreWriter\CoilStoreWriter\obj\Debug\CoilStore.Properties.Resources.resources
+E:\(svn azure)\NsbsCloud\CoilStoreWriter\CoilStoreWriter\obj\Debug\CoilStoreWriter.csproj.GenerateResource.cache
+E:\(svn azure)\NsbsCloud\CoilStoreWriter\CoilStoreWriter\obj\Debug\CoilStoreWriter.csproj.CoreCompileInputs.cache
